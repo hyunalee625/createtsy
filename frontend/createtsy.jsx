@@ -4,11 +4,11 @@ import * as sessionAPIUtil from './util/session_api_util'
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const store = configureStore();
-    window.signup = sessionAPIUtil.signup;
-    window.login = sessionAPIUtil.login;
-    window.logout = sessionAPIUtil.logout;
-    window.getState = store.getState
+    // const store = configureStore();
+    // window.signup = sessionAPIUtil.signup;
+    // window.login = sessionAPIUtil.login;
+    // window.logout = sessionAPIUtil.logout;
+    // window.getState = store.getState
     
     
     const root = document.getElementById("root");
