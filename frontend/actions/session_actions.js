@@ -1,31 +1,42 @@
-// const { login } = require("../util/session_api_util");
-
-// export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
-// export const LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER";
-// export const RECEIVE_ERRORS = "RECEIVE_ERRORS"
+import * as sessionAPIUtil from "../util/session_api_util";
 
 
-// export const receiveCurrentUser = currentUser => {
+export const RECEIVE_USER = "RECEIVE_CURRENT_USER";
+export const LOGOUT_USER = "LOGOUT_CURRENT_USER";
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS"
 
-// }
+// action creators 
+export const receiveUser = user => ({
+    type: RECEIVE_USER,
+    user
+});
 
-// export const logoutCurrentUser = () => {
+export const logoutUser = () => ({
+    type: LOGOUT_USER,
+});
 
-// }
+export const receiveErrors = errors => ({   // receivces an array
+    type: RECEIVE_ERRORS,
+    errors
+});
 
-// export const receivceErrors = errors => {
 
-// }
+// thunk action creators
+export const login = user => dispatch => {
+    return sessionAPIUtil.login(user)
+        .then(user => dispatch(receiveUser(user))
+        ), error => dispatch(receiveErrors(error.responseJSON))
+}
 
-// export const login = user => {
+export const logout = () => dispatch => {
+    return sessionAPIUtil.logout()
+        .then(() => dispatch(logoutUser())
+    )
+}
 
-// }
-
-// export const logout = user => {
-
-// }
-
-// export const signup = user => {
-
-// }
+export const signup = user => dispatch => {
+    return sessionAPIUtil.signup(user)
+        .then(user => dispatch(receiveUser(user))
+        ), error => dispatch(receiveErrors(error.responseJSON))
+}
 
