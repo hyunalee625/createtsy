@@ -1,9 +1,9 @@
 import * as sessionAPIUtil from "../util/session_api_util";
 
 
-export const RECEIVE_USER = "RECEIVE_CURRENT_USER";
-export const LOGOUT_USER = "LOGOUT_CURRENT_USER";
-export const RECEIVE_ERRORS = "RECEIVE_ERRORS"
+export const RECEIVE_USER = "RECEIVE_USER";
+export const LOGOUT_USER = "LOGOUT_USER";
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
 // action creators 
 export const receiveUser = user => ({
@@ -15,7 +15,7 @@ export const logoutUser = () => ({
     type: LOGOUT_USER,
 });
 
-export const receiveErrors = errors => ({   // receivces an array
+export const receiveErrors = errors => ({   // receives an array
     type: RECEIVE_ERRORS,
     errors
 });

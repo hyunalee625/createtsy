@@ -1,9 +1,22 @@
 import React from 'react';
-// import { Provider } from 'react - redux';
-// import { Route, Redirect, Switch, Link, HashRouter } from 'react - router - dom';
+// import { Provider } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
+// , Redirect, Switch, Link, HashRouter
+import LoginFormContainer from './session/login_form_container';
+import SignupFormContainer from './session/signup_form_container';
+import { AuthRoute } from '../util/route_util';
+
+
 const App = () => (
     <div>
-        <h1>test test</h1>
+        {/* <header>
+            <h1>Createtsy!</h1>
+        </header> */}
+        <Switch>
+            <AuthRoute path="/login" component={LoginFormContainer} />
+            <AuthRoute path="/signup" component={SignupFormContainer} />
+            <Route path="/"></Route>
+        </Switch>
     </div>
 );
 
