@@ -6,26 +6,34 @@ export const LOGOUT_USER = "LOGOUT_USER";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
 // action creators 
-export const receiveUser = user => ({
-    type: RECEIVE_USER,
-    user
-});
+export const receiveUser = currentUser => {
+    return {
+        type: RECEIVE_USER,
+        currentUser
+    }
+};
 
-export const logoutUser = () => ({
-    type: LOGOUT_USER,
-});
+export const logoutUser = () => {
+    return { type: LOGOUT_USER }
+};
 
-export const receiveErrors = errors => ({   // receives an array
-    type: RECEIVE_ERRORS,
-    errors
-});
+export const receiveErrors = errors => {   // receives an array
+    // debugger
+    return {
+        type: RECEIVE_ERRORS,
+        errors
+    }
+};
 
 
 // thunk action creators
 export const login = user => dispatch => {
+    // debugger
     return sessionAPIUtil.login(user)
         .then(user => dispatch(receiveUser(user))
-        ), error => dispatch(receiveErrors(error.responseJSON))
+    , err => (
+        dispatch(receiveErrors(err.responseJSON))
+    ))
 }
 
 export const logout = () => dispatch => {
@@ -37,6 +45,7 @@ export const logout = () => dispatch => {
 export const signup = user => dispatch => {
     return sessionAPIUtil.signup(user)
         .then(user => dispatch(receiveUser(user))
-        ), error => dispatch(receiveErrors(error.responseJSON))
+        , error => dispatch(receiveErrors(error.responseJSON))
+        )
 }
 

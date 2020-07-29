@@ -4,16 +4,19 @@ import { login } from '../../actions/session_actions';
 import SessionForm from './session_form';
 import { Link } from 'react-router-dom';
 
-const msp = ({ errors }) => ({
+const msp = ({ errors }) => {
+    // debugger
+    return {
     errors: errors.session,
     formType: "Sign in",
-    navLink: <Link to="/signup">Register</Link>
-
-})
+    navLinkSignUp: <Link to="/signup">Register</Link>
+    }
+}
 
 const mdp = dispatch => {
+    // debugger
     return {
-        sessionForm: user => dispatch(login(user))
+        actionForm: user => dispatch(login(user))
     }
 }
 

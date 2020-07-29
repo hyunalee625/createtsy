@@ -2,15 +2,18 @@
 
 import { RECEIVE_USER, RECEIVE_ERRORS } from '../actions/session_actions';
 
-export default (state = [], action) => {
+const sessionErrorsReducer = (state = [], action) => {
     Object.freeze(state);
-
+    //  debugger
     switch(action.type) {
+        case RECEIVE_ERRORS:
+            // debugger
+            return action.errors;
         case RECEIVE_USER:
             return []; // clears out the errors
-        case RECEIVE_ERRORS:
-            return action.errors;
         default:
             return state;
     }
 }
+
+export default sessionErrorsReducer;

@@ -7,6 +7,7 @@ class SessionForm extends React.Component {
         super(props);
 
         this.state = {email: "", first_name: "", password: ""};
+        // this.state = { email: "", password: "" };
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -21,10 +22,12 @@ class SessionForm extends React.Component {
         e.preventDefault();
         
         const user = Object.assign({}, this.state);
-        this.props.sessionForm(user);
+        // debugger
+        this.props.actionForm(user);
     }
 
     renderErrors() {
+        //debugger
         return(
             <ul>
                 {this.props.errors.map((error, idx) => (
@@ -37,7 +40,7 @@ class SessionForm extends React.Component {
     }
 
     render() {
-        return this.props.formType === "Sign in" ? 
+        return (this.props.formType === "Sign in" ? 
         (
             <div className="signin-form-container">
                 <form className="signin-form-box" onSubmit={this.handleSubmit}>
@@ -115,18 +118,16 @@ class SessionForm extends React.Component {
                         </label>
                         <br />
 
-                        <input className="session-submit-container"
+                        <button className="session-submit-container"
                             type="submit"
-                            value={this.props.formType}
-                        />
+                        >{this.props.formType}</button>
                             {/* <Link to="/login">Register</Link> */}
                     </div>
 
                 </form>
             </div>
-        )
+        ))
     }
-
 }
 
 export default SessionForm;
