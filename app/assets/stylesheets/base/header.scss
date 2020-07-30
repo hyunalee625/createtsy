@@ -1,0 +1,23 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.right-nav-buttons {
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 10px;
+}
+
+
+.shopping-cart-icon {
+    width: 40px;
+    cursor: pointer;
+}

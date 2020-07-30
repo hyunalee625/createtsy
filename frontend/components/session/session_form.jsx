@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { closeModal } from '../../actions/modal_actions'
 
 class SessionForm extends React.Component {
 
@@ -23,7 +24,8 @@ class SessionForm extends React.Component {
         
         const user = Object.assign({}, this.state);
         // debugger
-        this.props.actionForm(user);
+        this.props.actionForm(user).then(this,props.closeModal)
+            .then(() => {this.props.history.push("/")})
     }
 
     renderErrors() {
@@ -44,11 +46,15 @@ class SessionForm extends React.Component {
         (
             <div className="signin-form-container">
                 <form className="signin-form-box" onSubmit={this.handleSubmit}>
+                <div className="signing-form-top-level">
                     <h3 className="signin-form-header">Sign in</h3>
-                    {/* <button type="button" onClick={this.props.signup} className="register-button">Register</button> */}
-                        <Link to="/signup">Register</Link>
-                    {/* {this.props.navLink} */}
-                    <button type="button" className="demo-button">Demo</button>
+                        <div className="signin-demo-buttons">
+                            {/* <button type="button" onClick={this.props.signup} className="register-button">Register</button> */}
+                            <Link to="/signup" className="signup-button">Register</Link>
+                            {/* {this.props.navLink} */}
+                        <button type="button" className="demo-button">Demo</button>
+                        </div>
+                </div>
 
                     <div className="form-errors-container">{this.renderErrors()}</div>
                     <div className="form-input">

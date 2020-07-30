@@ -1,0 +1,41 @@
+.signin-form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.signin-form-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signing-form-top-level {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin-form-header {
+    font-size: 15px;
+
+}
+
+.signin-demo-buttons {
+    display: flex;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+.signup-button {
+
+    border-style: solid;
+    display: inline-block;
+}
+
+.demo-button {
+
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+}
