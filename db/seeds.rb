@@ -8,8 +8,9 @@
 
 
 # creating User
-# u1 = User.create!(
-#     email: 'lauren@gmail.com',
-#     first_name: 'lauren',
-#     password: 'lauren12345'
-# )
+User.destroy_all
+
+u1 = User.create!(
+    email: 'lauren@gmail.com',
+    password: 'abcde'
+)
