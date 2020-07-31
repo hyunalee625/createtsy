@@ -1,0 +1,65 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.right-nav-buttons {
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 15px;
+}
+
+.nav-signin-button {
+    border-radius: 20px;
+    border: 1px solid rgb(255, 146, 87);
+    text-align: center;
+    // border: 1px 1px solid white;
+    width: 75px;
+    height: 35px;
+    color: rgb(255, 146, 87);
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.nav-signin-button:hover {
+    border-radius: 20px;
+    background-color: rgb(255, 146, 87);
+    color: white;
+}
+
+.shopping-cart-icon {
+    border-radius: 50px;
+    text-align: center;
+    // border: 1px solid white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    // margin-left: 20px;
+    color: rgb(255, 146, 87);
+}
+
+.shopping-cart-icon:hover {
+    border-radius: 50%;
+    background-color: lightgrey;
+    padding: 6px;
+    
+}
+
+.nav-signout-button {
+    border-radius: 20px;
+    text-align: center;
+    // border: 1px solid white;
+}
+
+.nav-signout-button:hover {
+    border-radius: 20px;
+    background-color: lightgrey;
+}

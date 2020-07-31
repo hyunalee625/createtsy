@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { closeModal } from '../../actions/modal_actions'
+// import { openModal, closeModal } from '../../actions/modal_actions'
 
 class SessionForm extends React.Component {
 
@@ -11,6 +11,8 @@ class SessionForm extends React.Component {
         // this.state = { email: "", password: "" };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        // this.toggleToSignup = this.toggleToSignup.bind(this);
+        this.demoLogin = this.demoLogin.bind(this);
     }
     
     update(field) {
@@ -24,8 +26,23 @@ class SessionForm extends React.Component {
         
         const user = Object.assign({}, this.state);
         // debugger
-        this.props.actionForm(user).then(this,props.closeModal)
-            .then(() => {this.props.history.push("/")})
+        this.props.actionForm(user).then(this.props.closeModal)
+            // .then(() => {this.props.history.push("/")})
+    }
+
+    // toggleToSignup(){
+    //     this.props.otherForm
+    // }
+
+    demoLogin(e) {
+        e.preventDefault;
+
+        const demoUser = {
+            email: "lauren@gmail.com",
+            password: "abcde"
+        }
+
+        this.actionForm(demoUser).then(this.props.closeModal);
     }
 
     renderErrors() {
@@ -42,97 +59,124 @@ class SessionForm extends React.Component {
     }
 
     render() {
-        return (this.props.formType === "Sign in" ? 
-        (
-            <div className="signin-form-container">
-                <form className="signin-form-box" onSubmit={this.handleSubmit}>
-                <div className="signing-form-top-level">
-                    <h3 className="signin-form-header">Sign in</h3>
-                        <div className="signin-demo-buttons">
-                            {/* <button type="button" onClick={this.props.signup} className="register-button">Register</button> */}
-                            <Link to="/signup" className="signup-button">Register</Link>
-                            {/* {this.props.navLink} */}
-                        <button type="button" className="demo-button">Demo</button>
-                        </div>
+        return this.props.formType === "Sign in" ? (
+          <div className="signin-form-container">
+            <form className="signin-form-box" onSubmit={this.handleSubmit}>
+              <div className="signin-input-form-container">
+                <div className="signin-form-top-level">
+                  <h3 className="signin-form-header">Sign in</h3>
+                  <div className="register-demo-buttons">
+                    {this.props.otherForm}
+                    <button
+                      type="button"
+                      onClick={this.demoLogin}
+                      className="demo-button"
+                    >
+                      Demo
+                    </button>
+                  </div>
                 </div>
+                <div className="form-errors-container">
+                  {this.renderErrors()}
+                </div>
+                <div className="form-input">
+                  {/* <div class="form-input-box"> */}
+                  <label>
+                    <div className="input-title">Email address</div>
+                    <input
+                      className="info-input-form"
+                      type="text"
+                      value={this.state.email}
+                      onChange={this.update("email")}
+                    />
+                  </label>
+                  <br />
+                  <label>
+                    <div className="input-title">Password</div>
+                    <input
+                      className="info-input-form"
+                      type="password"
+                      value={this.state.password}
+                      onChange={this.update("password")}
+                    />
+                  </label>
+                  {/* </div> */}
 
-                    <div className="form-errors-container">{this.renderErrors()}</div>
-                    <div className="form-input">
-                        <label className="login-input-title">Email address
-                            <input className="login-form"
-                                type="text"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                            />
-                        </label>   
-                        <br />
-                        <label className='login-input-title'>Password
-                            <input className="login-form"
-                                type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                            />
-                        </label>
+                  <div className="forgot-password-button">
+                    <a href="/forgot_password?">Forgot your password?</a>
+                  </div>
+                </div>
+                <button className="session-submit-container" type="button">
+                  {this.props.formType}
+                </button>
 
-                        <div className="forgot-password-button">
-                        <a href="/forgot_password?">Forgot your password?</a>
-                        </div>
-
-                        <input className="session-submit-container"
-                            type="submit"
-                            value={this.props.formType}
-                        /> 
-                    </div>
-
-                        <div className="trouble-signing-in-button">
-                            <a href="/trouble-signing-in?">Trouble signing in?</a>
-                        </div>
-                </form>
-            </div>
-
+                <div className="trouble-signing-in-button">
+                  <a href="/trouble-signing-in?">Trouble signing in?</a>
+                </div>
+              </div>
+            </form>
+          </div>
         ) : (
-            <div className="register-form-container">
-                <form className="register-form-box" onSubmit={this.handleSubmit}>
-                    <h3 className="register-form-header">Create you account</h3>
-                    <p>Registration is easy.</p>
-                    <button type="button" className="demo-button">Demo</button>
+          <div className="register-form-container">
+            <form className="register-form-box" onSubmit={this.handleSubmit}>
+              <div className="register-input-form-container">
+                <div className="register-form-top-level">
+                  <h3 className="register-form-header">Create you account</h3>
 
-                    <div className="form-errors-container">{this.renderErrors()}</div>
-                    <div className="form-input">
-                        <label className="login-input-title">Email address
-                            <input className="login-form"
-                                type="text"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                            />
-                        </label>
-                        <br />
-                        <label className='login-input-title'>First name
-                            <input className="login-form"
-                                type="text"
-                                value={this.state.first_name}
-                                onChange={this.update('first_name')}
-                            />
-                        </label>
-                        <br />
-                        <label className='login-input-title'>Password
-                        <input className="login-form"
-                                type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                            />
-                        </label>
-                        <br />
+                  <div className="signin-demo-buttons">
+                    {this.props.otherForm}
+                    <button type="button"  onClick={this.demoLogin} className="demo-button">
+                      Demo
+                    </button>
+                  </div>
+                </div>
+                <h5 className="sub-header">Registration is easy.</h5>
 
-                        <button className="session-submit-container"
-                            type="submit"
-                        >{this.props.formType}</button>
-                            {/* <Link to="/login">Register</Link> */}
-                    </div>
-
-                </form>
-            </div>
-        ))
+                <div className="form-errors-container">
+                  {this.renderErrors()}
+                </div>
+                <div className="form-input">
+                  <div class="form-input-box">
+                    <label>
+                      <div className="input-title">Email address</div>
+                      <input
+                        className="info-input-form"
+                        type="text"
+                        value={this.state.email}
+                        onChange={this.update("email")}
+                      />
+                    </label>
+                    <br />
+                    <label>
+                      <div className="input-title">First name</div>
+                      <input
+                        className="info-input-form"
+                        type="text"
+                        value={this.state.first_name}
+                        onChange={this.update("first_name")}
+                      />
+                    </label>
+                    <br />
+                    <label>
+                      <div className="input-title">Password</div>
+                      <input
+                        className="info-input-form"
+                        type="password"
+                        value={this.state.password}
+                        onChange={this.update("password")}
+                      />
+                    </label>
+                    <br />
+                  </div>
+                  <button type="submit" className="session-submit-btn">
+                    {this.props.formType}
+                  </button>
+                </div>
+                {/* <Link to="/login">Register</Link> */}
+              </div>
+            </form>
+          </div>
+        );
     }
 }
 

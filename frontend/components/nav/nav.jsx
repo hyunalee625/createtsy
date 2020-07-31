@@ -4,7 +4,7 @@ const Nav = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
         <nav className="navbar-container">
             <div className="right-nav-buttons">
-                <button className="login-button" onClick={ () => openModal('login')}>Sign in</button>
+                <button className="nav-signin-button" onClick={ () => openModal('login')}>Sign in</button>
                 <div className="shopping-cart-icon">
                     <a href="/cart"><img src="https://www.iconsdb.com/icons/preview/red/shopping-cart-xxl.png" /></a>
                 </div>
@@ -14,7 +14,7 @@ const Nav = ({ currentUser, logout, openModal }) => {
     const personalGreeting = () => (  // when logged in
         <hgroup className="header">
             <h3 className="greeting">Welcome back, {currentUser.first_name}!</h3>
-            <button className="logout-button" onClick={ logout }>Sign out</button>
+            <button className="nav-signout-button" onClick={ logout }>Sign out</button>
         </hgroup>
     )
 

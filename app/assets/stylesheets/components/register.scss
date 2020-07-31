@@ -1,0 +1,79 @@
+.register-form-container {
+    padding: 18px;
+}
+.register-form-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    height: 475px;
+    width: 375px;
+    border-radius: 3px;
+    // padding: 18px;
+    // border: none;
+    // margin-top: 45px;
+}
+
+.register-input-form-container {
+    padding: 5px;
+    width: 365px;
+    height: 500px;
+}
+
+.register-form-top-level {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.register-form-header {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.signin-demo-buttons {
+    display: flex;
+    font-size: 15px;
+    color: rgb(255, 146, 87);
+    text-align: center;
+    margin-right: 15px;
+    position: relative;
+}
+
+.sub-header {
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.signin-button {
+    border: 1px solid rgb(255, 146, 87);
+    border-radius: 4px;
+    // height: 15px;
+    // width: 20px;
+    // display: inline-block;
+    text-align: center;
+    margin: 4px 2px;
+    padding: 10px
+
+}
+
+.signin-button:hover {
+    background-color: rgb(255, 146, 87);
+    color: white;
+
+}
+
+.session-submit-btn {
+    margin: 35px 25px;
+    background-color: rgb(255, 146, 87);
+    height: 47px;
+    width: 322px;
+    border-radius: 3px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}

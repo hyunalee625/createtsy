@@ -13,7 +13,7 @@ function Modal({modal, closeModal}) {
     let component;
     switch(modal) {
         case 'login':
-            componenet = <LoginFormContainer />;
+            component = <LoginFormContainer />;
             break;
         case 'signup':
             component = <SignupFormContainer />;
