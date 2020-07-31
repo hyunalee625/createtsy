@@ -35,14 +35,18 @@ class SessionForm extends React.Component {
     // }
 
     demoLogin(e) {
-        e.preventDefault;
+        e.preventDefault();
 
         const demoUser = {
             email: "lauren@gmail.com",
             password: "abcde"
         }
 
-        this.actionForm(demoUser).then(this.props.closeModal);
+        this.props.demoAction(demoUser).then(this.props.closeModal);
+    }
+
+    componentWillUnmount() {
+        this.props.clearErrors();
     }
 
     renderErrors() {
@@ -65,19 +69,9 @@ class SessionForm extends React.Component {
               <div className="signin-input-form-container">
                 <div className="signin-form-top-level">
                   <h3 className="signin-form-header">Sign in</h3>
-                  <div className="register-demo-buttons">
+                  <div className="top-register-button">
                     {this.props.otherForm}
-                    <button
-                      type="button"
-                      onClick={this.demoLogin}
-                      className="demo-button"
-                    >
-                      Demo
-                    </button>
                   </div>
-                </div>
-                <div className="form-errors-container">
-                  {this.renderErrors()}
                 </div>
                 <div className="form-input">
                   {/* <div class="form-input-box"> */}
@@ -106,15 +100,18 @@ class SessionForm extends React.Component {
                     <a href="/forgot_password?">Forgot your password?</a>
                   </div>
                 </div>
-                <button className="session-submit-container" type="button">
-                  {this.props.formType}
+                <button className="session-submit-container" type="submit">
+                  Sign in
                 </button>
 
                 <div className="trouble-signing-in-button">
                   <a href="/trouble-signing-in?">Trouble signing in?</a>
                 </div>
               </div>
+              <div className="form-errors-container">{this.renderErrors()}</div>
             </form>
+
+            <button type="button" onClick={this.demoLogin} className="demo-button">Demo</button>
           </div>
         ) : (
           <div className="register-form-container">
@@ -123,20 +120,14 @@ class SessionForm extends React.Component {
                 <div className="register-form-top-level">
                   <h3 className="register-form-header">Create you account</h3>
 
-                  <div className="signin-demo-buttons">
+                  <div className="top-signin-button">
                     {this.props.otherForm}
-                    <button type="button"  onClick={this.demoLogin} className="demo-button">
-                      Demo
-                    </button>
                   </div>
                 </div>
                 <h5 className="sub-header">Registration is easy.</h5>
 
-                <div className="form-errors-container">
-                  {this.renderErrors()}
-                </div>
                 <div className="form-input">
-                  <div class="form-input-box">
+                  <div className="form-input-box">
                     <label>
                       <div className="input-title">Email address</div>
                       <input
@@ -171,10 +162,14 @@ class SessionForm extends React.Component {
                   <button type="submit" className="session-submit-btn">
                     {this.props.formType}
                   </button>
+                  <div className="form-errors-container">
+                    {this.renderErrors()}
+                  </div>
                 </div>
                 {/* <Link to="/login">Register</Link> */}
               </div>
             </form>
+            <button type="button" onClick={this.demoLogin} className="register-demo-button">Demo</button>
           </div>
         );
     }

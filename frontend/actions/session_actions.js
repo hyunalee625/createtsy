@@ -4,6 +4,7 @@ import * as sessionAPIUtil from "../util/session_api_util";
 export const RECEIVE_USER = "RECEIVE_USER";
 export const LOGOUT_USER = "LOGOUT_USER";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
 
 // action creators 
 export const receiveUser = currentUser => {
@@ -22,6 +23,13 @@ export const receiveErrors = errors => {   // receives an array
     return {
         type: RECEIVE_ERRORS,
         errors
+    }
+};
+
+export const removeErrors = () => {
+    return {
+        type: CLEAR_ERRORS,
+        errors: []
     }
 };
 
@@ -48,4 +56,8 @@ export const signup = user => dispatch => {
         , error => dispatch(receiveErrors(error.responseJSON))
         )
 }
+
+export const clearErrors = () => dispatch => dispatch(removeErrors())
+
+
 

@@ -32,7 +32,7 @@
     margin-bottom: 0px;
 }
 
-.signin-demo-buttons {
+.top-signin-button {
     display: flex;
     font-size: 15px;
     color: rgb(255, 146, 87);
@@ -63,6 +63,25 @@
     background-color: rgb(255, 146, 87);
     color: white;
 
+}
+
+.register-demo-button {
+    border: 1px solid rgb(255, 146, 87);
+    border-radius: 4px;
+    // display: inline-block;
+    text-align: center;
+    margin: 4px 2px;
+    padding: 10px;
+    position: absolute;
+    top: 43px;
+    right: 109px;
+    color: rgb(255, 146, 87);
+    
+}
+
+.register-demo-button:hover {
+    background-color: rgb(255, 146, 87);
+    color: white;
 }
 
 .session-submit-btn {

@@ -33,7 +33,7 @@
     margin-bottom: 0px;
 }
 
-.register-demo-buttons {
+.top-register-button {
     display: flex;
     color: rgb(255, 146, 87);
     text-align: center;
@@ -64,6 +64,11 @@
     text-align: center;
     margin: 4px 2px;
     padding: 10px;
+    position: absolute;
+    top: 43px;
+    right: 117px;
+    color: rgb(255, 146, 87)
+
 }
 
 .demo-button:hover {
