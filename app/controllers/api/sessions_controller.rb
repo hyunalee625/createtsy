@@ -11,7 +11,7 @@ class Api::SessionsController < ApplicationController
             render 'api/users/show'
         else
             # debugger
-            render json: ['Invalid email or password. Try again.'], status: 422
+            render json: ["Can't be blank."], status: 422
             #render json: @user.errors.full_messages, status: 401
         end
     end

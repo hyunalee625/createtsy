@@ -33,25 +33,26 @@
     margin-bottom: 0px;
 }
 
-.top-register-button {
+.register-demo-buttons {
     display: flex;
-    color: rgb(255, 146, 87);
+    // color: rgb(255, 146, 87);
     text-align: center;
     font-size: 15px;
     margin-right: 15px;
+    color: rgb(255, 146, 87);
     // position: relative;
 }
 
-.register-button {
+.modal-register-button {
     border: 1px solid rgb(255, 146, 87);
-    border-radius: 4px;
+    border-radius: 20px;
     // display: inline-block;
     text-align: center;
     margin: 4px 2px;
     padding: 10px;
 }
 
-.register-button:hover {
+.modal-register-button:hover {
     background-color: rgb(255, 146, 87);
     color: white;
 }
@@ -59,16 +60,11 @@
 
 .demo-button {
     border: 1px solid rgb(255, 146, 87);
-    border-radius: 4px;
+    border-radius: 20px;
     // display: inline-block;
     text-align: center;
     margin: 4px 2px;
     padding: 10px;
-    position: absolute;
-    top: 43px;
-    right: 117px;
-    color: rgb(255, 146, 87)
-
 }
 
 .demo-button:hover {
@@ -88,12 +84,17 @@
     border-radius: 3px;
     border: 1px solid white;
     margin-left: 25px;
+    font-size: 15px;
 
 }
 
 .info-input-form:hover {
     border-color: rgb(255, 146, 87);
 }
+
+// .info-input-form:required:invalid {
+//     border: 1px solid rgb(179, 72, 51)
+// }
 
 .session-submit-container {
     margin: 35px 25px;
@@ -108,13 +109,26 @@
     font-size: 16px;
 }
 
-.forgot-password-button {
-    text-align: right;
-    margin-right: 15px;
-    margin-top: 20px;
+.form-errors-container {
+    margin-left: 26px;
+    color: rgb(179, 72, 51)
 }
 
-.trouble-signing-in-button {
-    text-align: center;
-
+.email-input-form {
+    margin-top: 8px;
+    margin-bottom: 6px;
 }
+
+
+
+
+// .forgot-password-button {
+//     text-align: right;
+//     margin-right: 15px;
+//     margin-top: 20px;
+// }
+
+// .trouble-signing-in-button {
+//     text-align: center;
+
+// }

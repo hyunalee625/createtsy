@@ -4,10 +4,12 @@
     margin-top: 5px;
 }
 
-.logo {
-    width: 100px;
+.createtsy-logo {
+    font-size: 30px;
     cursor: pointer;
     margin-left: 10px;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 146, 87)
 }
 
 .right-nav-buttons {
@@ -30,7 +32,7 @@
 }
 
 .nav-signin-button:hover {
-    border-radius: 20px;
+    // border-radius: 20px;
     background-color: rgb(255, 146, 87);
     color: white;
 }

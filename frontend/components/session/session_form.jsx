@@ -62,74 +62,33 @@ class SessionForm extends React.Component {
         )
     }
 
-    render() {
+    render() { 
+        // let error = 
         return this.props.formType === "Sign in" ? (
           <div className="signin-form-container">
             <form className="signin-form-box" onSubmit={this.handleSubmit}>
               <div className="signin-input-form-container">
                 <div className="signin-form-top-level">
                   <h3 className="signin-form-header">Sign in</h3>
-                  <div className="top-register-button">
-                    {this.props.otherForm}
+                  <div className="register-demo-buttons">
+                    <div className="modal-register-button">
+                      {this.props.otherForm}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={this.demoLogin}
+                      className="demo-button"
+                    >
+                      Demo
+                    </button>
                   </div>
                 </div>
                 <div className="form-input">
                   {/* <div class="form-input-box"> */}
-                  <label>
-                    <div className="input-title">Email address</div>
-                    <input
-                      className="info-input-form"
-                      type="text"
-                      value={this.state.email}
-                      onChange={this.update("email")}
-                    />
-                  </label>
-                  <br />
-                  <label>
-                    <div className="input-title">Password</div>
-                    <input
-                      className="info-input-form"
-                      type="password"
-                      value={this.state.password}
-                      onChange={this.update("password")}
-                    />
-                  </label>
-                  {/* </div> */}
-
-                  <div className="forgot-password-button">
-                    <a href="/forgot_password?">Forgot your password?</a>
-                  </div>
-                </div>
-                <button className="session-submit-container" type="submit">
-                  Sign in
-                </button>
-
-                <div className="trouble-signing-in-button">
-                  <a href="/trouble-signing-in?">Trouble signing in?</a>
-                </div>
-              </div>
-              <div className="form-errors-container">{this.renderErrors()}</div>
-            </form>
-
-            <button type="button" onClick={this.demoLogin} className="demo-button">Demo</button>
-          </div>
-        ) : (
-          <div className="register-form-container">
-            <form className="register-form-box" onSubmit={this.handleSubmit}>
-              <div className="register-input-form-container">
-                <div className="register-form-top-level">
-                  <h3 className="register-form-header">Create you account</h3>
-
-                  <div className="top-signin-button">
-                    {this.props.otherForm}
-                  </div>
-                </div>
-                <h5 className="sub-header">Registration is easy.</h5>
-
-                <div className="form-input">
-                  <div className="form-input-box">
+                  <div className="email-input-form">
                     <label>
                       <div className="input-title">Email address</div>
+                      {/* <div className="${}">*</div> */}
                       <input
                         className="info-input-form"
                         type="text"
@@ -137,17 +96,12 @@ class SessionForm extends React.Component {
                         onChange={this.update("email")}
                       />
                     </label>
-                    <br />
-                    <label>
-                      <div className="input-title">First name</div>
-                      <input
-                        className="info-input-form"
-                        type="text"
-                        value={this.state.first_name}
-                        onChange={this.update("first_name")}
-                      />
-                    </label>
-                    <br />
+                    <div className="form-errors-container">
+                      {this.renderErrors()}
+                    </div>
+                  </div>
+                  <br />
+                  <div className="password-input-form">
                     <label>
                       <div className="input-title">Password</div>
                       <input
@@ -157,19 +111,108 @@ class SessionForm extends React.Component {
                         onChange={this.update("password")}
                       />
                     </label>
+                    <div className="form-errors-container">
+                      {this.renderErrors()}
+                    </div>
+                  </div>
+                  {/* </div> */}
+
+                  {/* <div className="forgot-password-button">
+                    <a href="/forgot_password?">Forgot your password?</a>
+                  </div> */}
+                </div>
+                <button className="session-submit-container" type="submit">
+                  Sign in
+                </button>
+
+                {/* <div className="trouble-signing-in-button">
+                  <a href="/trouble-signing-in?">Trouble signing in?</a>
+                </div> */}
+              </div>
+            </form>
+          </div>
+        ) : (
+          <div className="register-form-container">
+            <form className="register-form-box" onSubmit={this.handleSubmit}>
+              <div className="register-input-form-container">
+                <div className="register-form-top-level">
+                  <h3 className="register-form-header">Create you account</h3>
+
+                  <div className="signin-demo-button">
+                    {this.props.otherForm}
+                    <button
+                      type="button"
+                      onClick={this.demoLogin}
+                      className="demo-button"
+                    >
+                      Demo
+                    </button>
+                  </div>
+                </div>
+                <h5 className="sub-header">Registration is easy.</h5>
+
+                <div className="form-input">
+                  <div className="form-input-box">
+                    <div className="email-input-form">
+                      <label>
+                        <div className="input-title">
+                          Email address<span className="asterisk">*</span>
+                        </div>
+                        <input
+                          className="info-input-form"
+                          type="text"
+                          value={this.state.email}
+                          onChange={this.update("email")}
+                        />
+                      </label>
+                      <div className="form-errors-container">
+                        {this.renderErrors()}
+                      </div>
+                    </div>
+                    <br />
+                    <div className="firstname-input-form">
+                      <label>
+                        <div className="input-title">
+                          First name<span className="asterisk">*</span>
+                        </div>
+                        <input
+                          className="info-input-form"
+                          type="text"
+                          value={this.state.first_name}
+                          onChange={this.update("first_name")}
+                        />
+                      </label>
+                      <div className="form-errors-container">
+                        {this.renderErrors()}
+                      </div>
+                    </div>
+                    <br />
+                    <div className="password-input-form">
+                      <label>
+                        <div className="input-title">
+                          Password<span className="asterisk">*</span>
+                        </div>
+                        <input
+                          className="info-input-form"
+                          type="password"
+                          value={this.state.password}
+                          onChange={this.update("password")}
+                        />
+                      </label>
+                      <div className="form-errors-container">
+                        {this.renderErrors()}
+                      </div>
+                    </div>
                     <br />
                   </div>
                   <button type="submit" className="session-submit-btn">
                     {this.props.formType}
                   </button>
-                  <div className="form-errors-container">
-                    {this.renderErrors()}
-                  </div>
+                  <div className="form-errors-container"></div>
                 </div>
                 {/* <Link to="/login">Register</Link> */}
               </div>
             </form>
-            <button type="button" onClick={this.demoLogin} className="register-demo-button">Demo</button>
           </div>
         );
     }

@@ -32,7 +32,7 @@
     margin-bottom: 0px;
 }
 
-.top-signin-button {
+.signin-demo-button {
     display: flex;
     font-size: 15px;
     color: rgb(255, 146, 87);
@@ -44,12 +44,16 @@
 .sub-header {
     font-size: 12px;
     margin-left: 15px;
-    margin-top: 3px;
+    margin-top: 0px;
+}
+
+.asterisk {
+    color: rgb(213, 93, 39)
 }
 
 .signin-button {
     border: 1px solid rgb(255, 146, 87);
-    border-radius: 4px;
+    border-radius: 20px;
     // height: 15px;
     // width: 20px;
     // display: inline-block;
@@ -65,27 +69,31 @@
 
 }
 
-.register-demo-button {
-    border: 1px solid rgb(255, 146, 87);
-    border-radius: 4px;
-    // display: inline-block;
-    text-align: center;
-    margin: 4px 2px;
-    padding: 10px;
-    position: absolute;
-    top: 43px;
-    right: 109px;
-    color: rgb(255, 146, 87);
+// .register-demo-button {
+//     border: 1px solid rgb(255, 146, 87);
+//     border-radius: 4px;
+//     // display: inline-block;
+//     text-align: center;
+//     margin: 4px 2px;
+//     padding: 10px;
+//     position: absolute;
+//     top: 43px;
+//     right: 109px;
+//     color: rgb(255, 146, 87);
     
-}
+// }
 
-.register-demo-button:hover {
-    background-color: rgb(255, 146, 87);
-    color: white;
+// .register-demo-button:hover {
+//     background-color: rgb(255, 146, 87);
+//     color: white;
+// }
+
+.firstname-input-form {
+    margin-bottom: 6px;
 }
 
 .session-submit-btn {
-    margin: 35px 25px;
+    margin: 10px 25px;
     background-color: rgb(255, 146, 87);
     height: 47px;
     width: 322px;

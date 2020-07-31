@@ -15,7 +15,7 @@ const App = () => (
             <div className="navbar-container">
 
                 <div className="logo">
-                    <a href="/"><img src="https://sarahrenaeclark.com/wp-content/uploads/2018/02/etsy_logo.png" rel="stylesheet" className="etsy-logo"/></a>
+                    <a href="/" className="createtsy-logo">creatEtsy</a>
                 </div>
                 <NavContainer />
             </div>
