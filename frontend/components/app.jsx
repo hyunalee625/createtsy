@@ -8,6 +8,9 @@ import SignupFormContainer from './session/signup_form_container';
 import NavContainer from './nav/nav_container';
 import Modal from './modal/modal'
 
+// console.log(process.env.REACT_APP_CREATETSY_API_KEY);
+
+
 const App = () => (
     <div>
     <Modal />

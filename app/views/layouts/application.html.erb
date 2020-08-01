@@ -7,7 +7,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      window.PRODUCT_API_KEY = "<%= Rails.application.credentials.etsy[:api_key] %>"
+    </script>
   </head>
 
   <body>

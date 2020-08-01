@@ -4,4 +4,12 @@ bundle.js*
 bundle.js.map
 /public/assets
 /config/master.key
-git
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+#api keys
+.env
+# Ignore application configuration
+/config/application.yml

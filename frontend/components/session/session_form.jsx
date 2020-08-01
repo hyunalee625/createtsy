@@ -156,7 +156,8 @@ class SessionForm extends React.Component {
                     <div className="email-input-form">
                       <label>
                         <div className="input-title">
-                          Email address<span className="asterisk">*</span>
+                          Email address
+                          {/* <span className="asterisk">*</span> */}
                         </div>
                         <input
                           className="info-input-form"
@@ -173,7 +174,8 @@ class SessionForm extends React.Component {
                     <div className="firstname-input-form">
                       <label>
                         <div className="input-title">
-                          First name<span className="asterisk">*</span>
+                          First name
+                          {/* <span className="asterisk">*</span> */}
                         </div>
                         <input
                           className="info-input-form"
@@ -190,7 +192,8 @@ class SessionForm extends React.Component {
                     <div className="password-input-form">
                       <label>
                         <div className="input-title">
-                          Password<span className="asterisk">*</span>
+                          Password
+                          {/* <span className="asterisk">*</span> */}
                         </div>
                         <input
                           className="info-input-form"

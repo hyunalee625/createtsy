@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import configureStore from "./store/store";
 import Root from "./components/root"
-import * as sessionAPIUtil from './util/session_api_util'
-
+import * as sessionAPIUtil from './util/session_api_util';
+import { getAllProducts } from './util/product_api_util';
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.signup = sessionAPIUtil.signup;
     window.login = sessionAPIUtil.login;
     window.logout = sessionAPIUtil.logout;
+    window.getAllProducts = getAllProducts;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
+
     
     
     const root = document.getElementById("root");

@@ -2,8 +2,8 @@
 
 import { RECEIVE_USER, RECEIVE_ERRORS, CLEAR_ERRORS } from '../actions/session_actions';
 
-const sessionErrorsReducer = (state = [], action) => {
-    Object.freeze(state);
+const sessionErrorsReducer = (oldState = [], action) => {
+    Object.freeze(oldState);
     //  debugger
     switch (action.type) {
       case RECEIVE_ERRORS:
@@ -14,7 +14,7 @@ const sessionErrorsReducer = (state = [], action) => {
       case CLEAR_ERRORS:
         return action.errors;
       default:
-        return state;
+        return oldState;
     }
 }
 
