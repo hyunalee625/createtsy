@@ -5,10 +5,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_include_tag "https://openapi.etsy.com/v2/listings/active?api_key=j7empvnlknpxz69tj8ikeo7k" %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
     <script type="text/javascript">
-      window.PRODUCT_API_KEY = "<%= Rails.application.credentials.etsy[:api_key] %>"
+      // window.PRODUCT_API_KEY = "<%= Rails.application.credentials.etsy[:api_key] %>"
+     
     </script>
   </head>
 

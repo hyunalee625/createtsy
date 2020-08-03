@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import { getAllProducts } from '../../actions/product_action';
+import { getAllProducts, getOneProduct } from '../../actions/product_actions';
 import ProductIndex from './product_index';
 
-const msp = state => {
+const msp = ( state ) => {
     return {
         products: Object.values(state.entities.products)
     }
@@ -10,7 +10,8 @@ const msp = state => {
 
 const mdp = dispatch => {
     return {
-        getAllProducts: () => dispatch(getAllProducts())
+        getAllProducts: () => dispatch(getAllProducts()),
+        getOneProduct: id => dispatch(getOneProduct(id))
     }
 }
 

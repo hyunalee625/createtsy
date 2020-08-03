@@ -1,0 +1,42 @@
+h2.landing-page-header {
+    font-family: "Guardian-EgypTT",serif;
+    font-weight: 300;
+    letter-spacing: .5px;
+    font-size: 24px;
+    line-height: 28px;
+    // margin-left: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.landing-page-pic-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 15px;
+    flex-basis: 50%;
+    // max-width: 1402px
+}
+
+.dream-catcher {
+    flex-basis: 50%;
+    padding-right: 1%;
+}
+
+.right-side-pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 39.5%;
+}
+
+.hanging-plant {
+    width: 100%;
+    flex: 2;
+    border-radius: 15px;
+}
+
+.vintage-kitchen {
+    width: 100%;
+    flex: 1;
+    border-radius: 15px;
+}

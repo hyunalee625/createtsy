@@ -12349,3 +12349,3158 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2020-08-01 12:20:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.8ms)
+
+
+
+SyntaxError - unknown regexp options - pap
+/Users/princesslauren/Desktop/createtsy/createtsy/app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+....com/v2/listings/active?api_key=j7empvnlknpxz69tj8ikeo7k );@...
+...                        ^~~~~~~:
+  app/views/layouts/application.html.erb:7:in `'
+
+Started POST "/__better_errors/4875061ebf39371b/variables" for ::1 at 2020-08-01 12:20:09 -0400
+Started GET "/" for ::1 at 2020-08-01 12:20:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL
+...;@output_buffer.append=( https://openapi.etsy.com/v2/listing...
+...                         ^~~~~~
+/Users/princesslauren/Desktop/createtsy/createtsy/app/views/layouts/application.html.erb:7: unknown regexp options - pap
+/Users/princesslauren/Desktop/createtsy/createtsy/app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+....com/v2/listings/active?api_key=j7empvnlknpxz69tj8ikeo7k );@...
+...                        ^~~~~~~:
+  app/views/layouts/application.html.erb:7:in `'
+
+Started POST "/__better_errors/e804cd3b92a03553/variables" for ::1 at 2020-08-01 12:20:22 -0400
+Started GET "/" for ::1 at 2020-08-01 12:20:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-01 12:20:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-01 12:28:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-01 12:29:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_then or ';' or '\n'
+... (intval($status) != 200) throw new Exception("HTTP $status\...
+...                          ^~~~~:
+  app/views/layouts/application.html.erb:19:in `'
+
+Started POST "/__better_errors/ad45336d2ffe9ac2/variables" for ::1 at 2020-08-01 12:29:02 -0400
+Started GET "/" for ::1 at 2020-08-01 12:29:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5235244664921973765)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (3.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5235244664921973765)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5235244664921973765)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to UpdateProduct (20200801194344)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[35mALTER TABLE "products" ADD "pic_url" character varying NOT NULL[0m
+  ↳ db/migrate/20200801194344_update_product.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200801194344"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5235244664921973765)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/bin/annotate:23
+Started GET "/" for ::1 at 2020-08-01 15:55:24 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 46ms (Views: 38.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!!&product%5Bprice%5D=10&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 15:56:21 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-01 16:08:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 44ms (Views: 36.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-01 16:09:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-01 16:18:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-01 16:26:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!!&product%5Bprice%5D=10&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 16:26:16 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!&product%5Bprice%5D=10&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 16:34:06 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-01 17:16:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!&product%5Bprice%5D=10&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 17:16:10 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-01 17:21:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 255ms (Views: 253.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!&product%5Bprice%5D=10&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 17:21:05 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-01 17:25:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!&product%5Bprice%5D=10&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 17:25:14 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products?products%5Bproduct_name%5D=Unicorn+macarons&products%5Bdescription%5D=cute+and+yummy!&products%5Bprice%5D=10&products%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 17:25:26 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products?products%5Bproduct_name%5D=Unicorn+macarons&products%5Bdescription%5D=cute+and+yummy!&products%5Bprice%5D=10&products%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-01 17:25:40 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products?products%5Bproduct_name%5D=name&products%5Bdescription%5D=yay&products%5Bprice%5D=76&products%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-01 17:26:29 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-01 17:26:39 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started POST "/api/products" for ::1 at 2020-08-01 17:28:44 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-01 17:33:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 246ms (Views: 243.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-01 17:33:11 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-01 17:48:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 267ms (Views: 256.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-01 17:48:40 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-01 17:54:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/products?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-01 17:54:05 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 00:03:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 250ms (Views: 247.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products/product?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:24:54 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products/product?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:25:35 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 00:26:12 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 1181ms (Views: 1176.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/products/product?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:26:16 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 00:27:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/products/product?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:27:31 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products/?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:30:05 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 00:38:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 42ms (Views: 35.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 00:40:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/products/?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:40:53 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 00:52:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 37ms (Views: 30.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/products/?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:52:54 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 00:53:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/products/?product%5Bproduct_name%5D=name&product%5Bdescription%5D=yay&product%5Bprice%5D=76&product%5Bpic_url%5D=https%3A%2F%2Fphotoscissors.com%2Fimages%2Fscreenshot3.jpg" for ::1 at 2020-08-02 00:53:57 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 00:54:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 00:54:15 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 848ms (Views: 843.1ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/products" for ::1 at 2020-08-02 01:10:33 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 01:11:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/api/products" for ::1 at 2020-08-02 01:11:46 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 01:11:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart" for ::1 at 2020-08-02 01:11:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/cart"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/session" for ::1 at 2020-08-02 01:12:07 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-02 01:12:20 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-02 01:12:22 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 15:49:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 116ms (Views: 109.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 16:10:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 16:11:34 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 1042ms (Views: 1034.9ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/api/products" for ::1 at 2020-08-02 16:12:18 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/api/products/?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!&product%5Bprice%5D=42&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-02 16:14:10 -0400
+
+LoadError - Unable to autoload constant Api::ProductsController, expected /Users/princesslauren/Desktop/createtsy/createtsy/app/controllers/api/products_controller.rb to define it:
+
+Started GET "/" for ::1 at 2020-08-02 16:27:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 67ms (Views: 60.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/products/?product%5Bproduct_name%5D=Unicorn+macarons&product%5Bdescription%5D=cute+and+yummy!&product%5Bprice%5D=42&product%5Bpic_url%5D=https%3A%2F%2Fi.etsystatic.com%2F15001088%2Fr%2Fil%2F3789d4%2F1433874687%2Fil_794xN.1433874687_8i9y.jpg" for ::1 at 2020-08-02 16:27:54 -0400
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"product"=>{"product_name"=>"Unicorn macarons", "description"=>"cute and yummy!", "price"=>"42", "pic_url"=>"https://i.etsystatic.com/15001088/r/il/3789d4/1433874687/il_794xN.1433874687_8i9y.jpg"}}
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/index.json.jbuilder (8.2ms)
+Completed 200 OK in 22ms (Views: 8.6ms | ActiveRecord: 6.4ms)
+
+
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Started POST "/api/products/" for ::1 at 2020-08-02 16:29:41 -0400
+Processing by Api::ProductsController#create as JSON
+  Parameters: {"product"=>{"product_name"=>"product name", "description"=>"description!", "price"=>"4", "pic_url"=>"https://photoscissors.com/images/screenshot6.jpg"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/products_controller.rb:11
+  [1m[36mProduct Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "product name"], ["LIMIT", 1]]
+  ↳ app/controllers/api/products_controller.rb:11
+  [1m[36mProduct Create (6.9ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "product name"], ["description", "description!"], ["price", 4], ["created_at", "2020-08-02 20:29:41.850374"], ["updated_at", "2020-08-02 20:29:41.850374"], ["pic_url", "https://photoscissors.com/images/screenshot6.jpg"]]
+  ↳ app/controllers/api/products_controller.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/products_controller.rb:11
+  Rendering api/products/show.json.jbuilder
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/show.json.jbuilder (2.1ms)
+Completed 200 OK in 40ms (Views: 7.8ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:09:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:11:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 259ms (Views: 257.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:17:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 283ms (Views: 279.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:17:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:20:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 273ms (Views: 271.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:20:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 295ms (Views: 293.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:21:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:27:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 284ms (Views: 281.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:31:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 260ms (Views: 258.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:31:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 292ms (Views: 290.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 17:40:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 249ms (Views: 246.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 21:17:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 251ms (Views: 247.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 21:17:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:14:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 254ms (Views: 251.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:14:51 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (22.9ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:15:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 299ms (Views: 295.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:15:37 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (5.1ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:16:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 439ms (Views: 437.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:19:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 233ms (Views: 231.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:19:51 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (8.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/index.json.jbuilder (11.4ms)
+Completed 200 OK in 19ms (Views: 9.5ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:21:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 279ms (Views: 274.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:21:05 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (10.4ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:21:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:21:20 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (6.9ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:21:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 285ms (Views: 282.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:21:28 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (7.6ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:24:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:24:02 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (14.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/index.json.jbuilder (19.9ms)
+Completed 200 OK in 26ms (Views: 11.3ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:37:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 262ms (Views: 259.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:37:47 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (4.0ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:37:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:37:52 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/index.json.jbuilder (3.3ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:38:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 283ms (Views: 281.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:38:09 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (6.8ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:38:37 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 1064ms (Views: 1059.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:38:39 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (30.3ms)
+Completed 200 OK in 63ms (Views: 18.8ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:38:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:38:41 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (3.8ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:46:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:46:24 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (5.8ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-02 22:46:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-02 22:46:31 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/index.json.jbuilder (4.5ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 1.7ms)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (4.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Destroy (6.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ma1mRg1HNDPbxKKRWrAE2A"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (3.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "lauren@gmail.com"], ["first_name", "lauren"], ["password_digest", "$2a$12$9MgCBz48TERrDjgspseqZODPwNRbbttQd2HWLMasOr2Bx1Tx3E1Dm"], ["session_token", "ma1mRg1HNDPbxKKRWrAE2A"], ["created_at", "2020-08-03 13:58:04.408408"], ["updated_at", "2020-08-03 13:58:04.408408"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "juju@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Wa4n_dRxHFCx0d4BlxMWgQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "juju@gmail.com"], ["first_name", "juju"], ["password_digest", "$2a$12$m1xI2b3T4yRJmo74nYmyi.vuExcveZgr6x.fdVedL/p.kQoFgJoN2"], ["session_token", "Wa4n_dRxHFCx0d4BlxMWgQ"], ["created_at", "2020-08-03 13:58:04.619847"], ["updated_at", "2020-08-03 13:58:04.619847"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mProduct Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "Unicorn macarons"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "Unicorn macarons"], ["description", "cute and yummy!"], ["price", 42], ["created_at", "2020-08-03 13:58:04.623287"], ["updated_at", "2020-08-03 13:58:04.623287"], ["pic_url", "https://i.etsystatic.com/15001088/r/il/3789d4/1433874687/il_794xN.1433874687_8i9y.jpg"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "Tie-dye hoodie"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "Tie-dye hoodie"], ["description", "trendy"], ["price", 68], ["created_at", "2020-08-03 13:58:04.626585"], ["updated_at", "2020-08-03 13:58:04.626585"], ["pic_url", "https://media.thereformation.com/image/upload/q_auto:eco/c_scale,w_auto:breakpoints_100_1668_9_20:788/v1/prod/product_images/tanner-classic-hoodie/tornado/5e1f9e7324f3bb001a3b6c0d/original.jpg"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mProduct Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "ceramic cup set"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "ceramic cup set"], ["description", "perfect for gift"], ["price", 25], ["created_at", "2020-08-03 13:58:04.628898"], ["updated_at", "2020-08-03 13:58:04.628898"], ["pic_url", "https://cdn.shopify.com/s/files/1/1398/8653/products/50_7cbdcee6-d2c1-442e-bae8-24e2c3561b3f_1024x1024.jpg?v=1588300950"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+Started GET "/" for ::1 at 2020-08-03 09:59:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 09:59:12 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.8ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (9.3ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 10:00:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 335ms (Views: 332.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 10:00:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 303ms (Views: 301.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 10:00:52 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.3ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 10:01:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 316ms (Views: 313.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 10:01:15 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (19.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (32.7ms)
+Completed 200 OK in 42ms (Views: 22.5ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 10:43:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 278ms (Views: 276.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 10:43:56 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.9ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.0ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-03 10:44:10 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "86CarP2r6I89JZgvYkfdMA"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (3.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "86CarP2r6I89JZgvYkfdMA"], ["updated_at", "2020-08-03 14:44:10.606064"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered api/users/show.json.jbuilder (1.4ms)
+Completed 200 OK in 241ms (Views: 6.3ms | ActiveRecord: 15.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-08-03 11:04:00 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "86CarP2r6I89JZgvYkfdMA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "EEYfkLK7X-HvEgEHFbIHCw"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (2.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "EEYfkLK7X-HvEgEHFbIHCw"], ["updated_at", "2020-08-03 15:04:00.965316"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:04:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 286ms (Views: 283.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:04:04 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (7.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (12.7ms)
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:06:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:06:26 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/index.json.jbuilder (7.7ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:07:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:07:39 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.9ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:08:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:08:15 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (10.1ms)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-03 11:09:23 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "yvoyGTnP8UiNTTC-1ygnhQ"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (1.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "yvoyGTnP8UiNTTC-1ygnhQ"], ["updated_at", "2020-08-03 15:09:23.497729"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 200 OK in 225ms (Views: 6.5ms | ActiveRecord: 5.1ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-08-03 11:09:26 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "yvoyGTnP8UiNTTC-1ygnhQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "3-tAoMCNtr3kx2sus748wA"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "3-tAoMCNtr3kx2sus748wA"], ["updated_at", "2020-08-03 15:09:26.943456"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-03 11:09:30 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "Wcr99O5efNSxtwmNMYfeyw"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "Wcr99O5efNSxtwmNMYfeyw"], ["updated_at", "2020-08-03 15:09:30.657683"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.3ms)
+Completed 200 OK in 216ms (Views: 6.6ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-08-03 11:09:33 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Wcr99O5efNSxtwmNMYfeyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "eValX1xdqUDA6lo5tHitdg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "eValX1xdqUDA6lo5tHitdg"], ["updated_at", "2020-08-03 15:09:33.684564"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-03 11:09:35 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-03 11:09:36 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "ip1wTcsfKFc_auKu5ZYdEg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "ip1wTcsfKFc_auKu5ZYdEg"], ["updated_at", "2020-08-03 15:09:36.724179"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.3ms)
+Completed 200 OK in 218ms (Views: 5.2ms | ActiveRecord: 3.3ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-08-03 11:09:38 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ip1wTcsfKFc_auKu5ZYdEg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "3f4mn8V6gormMt4zQIQENw"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "3f4mn8V6gormMt4zQIQENw"], ["updated_at", "2020-08-03 15:09:38.091997"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:17:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:17:17 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (6.5ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-03 11:18:12 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "OskWW8W2JKZIT-Q7rUFeBA"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "OskWW8W2JKZIT-Q7rUFeBA"], ["updated_at", "2020-08-03 15:18:12.383211"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.1ms)
+Completed 200 OK in 221ms (Views: 6.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:18:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "OskWW8W2JKZIT-Q7rUFeBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 238ms (Views: 236.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:18:15 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (6.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (11.8ms)
+Completed 200 OK in 20ms (Views: 13.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:18:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "OskWW8W2JKZIT-Q7rUFeBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 283ms (Views: 281.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:18:38 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (19.1ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:24:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "OskWW8W2JKZIT-Q7rUFeBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:24:19 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (6.6ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:24:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "OskWW8W2JKZIT-Q7rUFeBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:24:21 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (7.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (13.9ms)
+Completed 200 OK in 25ms (Views: 16.3ms | ActiveRecord: 7.9ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-08-03 11:24:22 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "OskWW8W2JKZIT-Q7rUFeBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "VZBuN4rAp41eBhWgsWoTAA"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "VZBuN4rAp41eBhWgsWoTAA"], ["updated_at", "2020-08-03 15:24:22.215737"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-03 11:24:34 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "ZjKY6tojrNGgIBjz_-TpBg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "ZjKY6tojrNGgIBjz_-TpBg"], ["updated_at", "2020-08-03 15:24:34.223753"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 215ms (Views: 5.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/cart" for ::1 at 2020-08-03 11:24:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/cart"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/api/session" for ::1 at 2020-08-03 11:24:46 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ZjKY6tojrNGgIBjz_-TpBg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "5MQ2xlyfGSHVKv7z6oGMkQ"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "5MQ2xlyfGSHVKv7z6oGMkQ"], ["updated_at", "2020-08-03 15:24:46.451681"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:26:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 263ms (Views: 260.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cart" for ::1 at 2020-08-03 11:26:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/cart"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-08-03 11:26:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 310ms (Views: 308.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:41:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 265ms (Views: 260.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:42:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 182ms (Views: 179.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:42:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 256ms (Views: 253.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:45:36 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 1015ms (Views: 1010.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:46:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 287ms (Views: 285.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:47:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 272ms (Views: 270.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:47:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 295ms (Views: 292.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:51:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 267ms (Views: 265.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:51:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:52:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:54:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:55:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 308ms (Views: 304.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:55:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 529ms (Views: 526.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:55:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 341ms (Views: 332.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:56:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 199ms (Views: 197.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 11:56:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 320ms (Views: 317.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 11:56:41 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (37.8ms)
+Completed 200 OK in 53ms (Views: 33.2ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 12:04:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 12:04:34 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (13.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (17.0ms)
+Completed 200 OK in 24ms (Views: 11.1ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 12:18:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 249ms (Views: 246.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 12:18:07 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (9.1ms)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 12:19:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 256ms (Views: 254.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 12:20:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 12:21:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 318ms (Views: 316.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 12:21:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 255ms (Views: 253.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:41:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 340ms (Views: 336.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:41:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:42:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 298ms (Views: 295.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:44:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 310ms (Views: 307.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:45:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:49:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 277ms (Views: 274.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:52:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 308ms (Views: 306.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:54:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 259ms (Views: 256.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:54:49 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (31.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (37.1ms)
+Completed 200 OK in 46ms (Views: 14.5ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:54:49 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (5.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (11.4ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:55:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 284ms (Views: 282.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:55:23 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (18.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (24.3ms)
+Completed 200 OK in 35ms (Views: 15.8ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:55:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 294ms (Views: 287.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:55:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 248ms (Views: 246.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:55:49 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (27.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/index.json.jbuilder (34.1ms)
+Completed 200 OK in 42ms (Views: 14.1ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:56:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:56:48 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (10.3ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:56:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:56:52 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (4.7ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:56:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:56:56 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.2ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.2ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 13:57:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 189ms (Views: 186.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 13:57:25 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (24.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (29.3ms)
+Completed 200 OK in 40ms (Views: 15.2ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:04:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:04:13 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (34.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (41.0ms)
+Completed 200 OK in 49ms (Views: 13.4ms | ActiveRecord: 34.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:04:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:04:40 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (9.7ms)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:04:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:04:42 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (28.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (33.2ms)
+Completed 200 OK in 43ms (Views: 13.9ms | ActiveRecord: 28.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:14:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:14:13 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:14:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:14:18 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.8ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:14:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:14:22 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (25.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (31.2ms)
+Completed 200 OK in 39ms (Views: 13.2ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:14:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:14:52 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.8ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:16:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:16:33 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (6.7ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:17:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 322ms (Views: 319.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:17:45 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.8ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:18:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 267ms (Views: 265.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:18:03 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (6.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (10.5ms)
+Completed 200 OK in 17ms (Views: 10.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:18:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:18:23 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.6ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:18:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:18:37 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (6.6ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:18:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:18:48 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (13.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (1.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (27.1ms)
+Completed 200 OK in 45ms (Views: 31.5ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:19:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:19:06 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (16.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.9ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (26.3ms)
+Completed 200 OK in 39ms (Views: 22.4ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:21:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:21:03 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (11.6ms)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:21:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:21:11 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.2ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:22:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:22:08 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (14.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (20.2ms)
+Completed 200 OK in 31ms (Views: 16.4ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:22:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:22:49 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (6.3ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:41:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 333ms (Views: 329.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:41:04 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (21.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.2ms)
+  Rendered api/products/index.json.jbuilder (27.9ms)
+Completed 200 OK in 39ms (Views: 16.9ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:44:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:44:55 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.8ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:47:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:47:08 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (32.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.0ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (37.5ms)
+Completed 200 OK in 48ms (Views: 14.3ms | ActiveRecord: 32.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:48:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:48:02 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.4ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:48:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:48:49 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.3ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:53:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:53:41 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (30.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (37.2ms)
+Completed 200 OK in 45ms (Views: 13.8ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:53:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:53:50 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.6ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:54:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:54:46 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (9.3ms)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:54:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:54:48 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.2ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.2ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:55:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:55:34 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (6.3ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 14:58:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 264ms (Views: 262.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 14:58:33 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (33.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (37.9ms)
+Completed 200 OK in 44ms (Views: 11.0ms | ActiveRecord: 33.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:02:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:02:18 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.9ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:02:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:02:20 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (26.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (32.2ms)
+Completed 200 OK in 40ms (Views: 12.7ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:02:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:02:36 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.2ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.5ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:02:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:02:44 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (30.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (35.5ms)
+Completed 200 OK in 44ms (Views: 12.9ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:07:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:07:55 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.5ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:08:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:08:36 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (9.2ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:09:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:09:15 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (39.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (45.5ms)
+Completed 200 OK in 55ms (Views: 15.2ms | ActiveRecord: 39.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:09:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 63.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:09:26 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (5.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (10.6ms)
+Completed 200 OK in 19ms (Views: 13.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:09:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:09:38 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (5.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (11.3ms)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:09:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:09:49 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (33.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (40.6ms)
+Completed 200 OK in 50ms (Views: 16.2ms | ActiveRecord: 33.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:10:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:10:31 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.1ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:10:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 85ms (Views: 82.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:10:44 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.1ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:10:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:10:53 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.2ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:11:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:11:11 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.9ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:11:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:11:33 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.9ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.1ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:12:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:12:18 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (4.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (10.1ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:12:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:12:24 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (25.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (30.9ms)
+Completed 200 OK in 38ms (Views: 12.2ms | ActiveRecord: 25.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:12:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:12:30 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.2ms)
+  Rendered api/products/index.json.jbuilder (5.4ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:12:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:12:36 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (4.3ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:12:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 76ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:12:40 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (3.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (7.5ms)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:12:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 81ms (Views: 77.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:12:58 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (8.1ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-03 15:13:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-03 15:13:39 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (2.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (6.9ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 2.4ms)
+
+

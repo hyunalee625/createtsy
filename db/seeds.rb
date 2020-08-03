@@ -7,33 +7,43 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # require 'faker'
+# Faker.clear
 
 # creating User
 User.destroy_all
-Product.destroy_al
+Product.destroy_all
 
 user1 = User.create!(
-    email: 'lauren@gmail.com',
+    {email: 'lauren@gmail.com',
     first_name: 'lauren',
-    password: 'abcde'
+    password: 'abcde'}
 )
 
 user2 = User.create!(
-    email: 'juju@gmail.com',
+    {email: 'juju@gmail.com',
     first_name: 'juju',
-    password: '12345'
+    password: '12345'}
 )
 
 product1 = Product.create!(
-    product_name: "Antique necklace",
-    description: "pretty!",
-    price: 10.00
+    {product_name: "Unicorn macarons",
+    description: "cute and yummy!",
+    price: 42,
+    pic_url: "https://i.etsystatic.com/15001088/r/il/3789d4/1433874687/il_794xN.1433874687_8i9y.jpg"}
 )
 
 product2 = Product.create!(
-    product_name: "Tie-dye hoodie",
+    {product_name: "Tie-dye hoodie",
     description: "trendy",
-    price: 25.50
+    price: 68,
+    pic_url: "https://media.thereformation.com/image/upload/q_auto:eco/c_scale,w_auto:breakpoints_100_1668_9_20:788/v1/prod/product_images/tanner-classic-hoodie/tornado/5e1f9e7324f3bb001a3b6c0d/original.jpg"}
+)
+
+product3 = Product.create!(
+    {product_name: "ceramic cup set",
+    description: "perfect for gift",
+    price: 25,
+    pic_url: "https://cdn.shopify.com/s/files/1/1398/8653/products/50_7cbdcee6-d2c1-442e-bae8-24e2c3561b3f_1024x1024.jpg?v=1588300950"}
 )
 
 

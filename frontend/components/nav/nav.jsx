@@ -11,12 +11,20 @@ const Nav = ({ currentUser, logout, openModal }) => {
             </div>
         </nav>
     )
-    const personalGreeting = () => (  // when logged in
-        <hgroup className="header">
-            <h3 className="greeting">Welcome back, {currentUser.first_name}!</h3>
-            <button className="nav-signout-button" onClick={ logout }>Sign out</button>
-        </hgroup>
-    )
+    const personalGreeting = () => (
+      // when logged in
+      <hgroup className="header">
+        <button className="nav-signout-button" onClick={logout}>
+          Sign out
+        </button>
+        <div className="shopping-cart-icon">
+          <a href="/cart">
+            <img src="https://www.iconsdb.com/icons/preview/red/shopping-cart-xxl.png" />
+          </a>
+        </div>
+        <h3 className="greeting">Welcome back, {currentUser.first_name}!</h3>
+      </hgroup>
+    );
 
     return currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
 

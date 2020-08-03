@@ -1,7 +1,7 @@
-class API::ProductsController < ApplicationController
+class Api::ProductsController < ApplicationController
 
     def index
-        @products = Product.all
+        @products = Product.all 
         render :index
     end
 
@@ -11,20 +11,23 @@ class API::ProductsController < ApplicationController
         if @product.save
             render :show
         else
-            render json: @product.errors.full_messages, status:422
+            render json: @product.errors.full_messages, status: 422
         end
         
     end
     
     def show
-        @product = Product.find_by(id: params[:id])
+        @product = Product.find(params[:id])
         render :show
     end
 
     private
 
     def product_params
-        params.require(:product).permit(:product_name, :description, :price)
+        params.require(:product).permit(:product_name, :description, :price, :pic_url)
     end
 
 end
+
+
+# $.ajax({type: 'GET', url: '/api/products/', data: {product: {product_name: "name", description: "yay", price: 76, pic_url: "https://photoscissors.com/images/screenshot3.jpg"}}})
