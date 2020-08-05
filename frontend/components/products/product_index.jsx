@@ -17,10 +17,9 @@ class ProductIndex extends React.Component {
     return (
       <div className="all-products">
         <div className="trending-items">
-          <label>Trending items</label>
+          <h2 className="trending-items-header">Trending items</h2>
             <ul className="product-listing">
               {products.map(product => <ProductIndexItem key={product.id} product={product}/>)}
-              {/* {window.EtsyAPIKey} */}
             </ul>
         </div>
       </div>

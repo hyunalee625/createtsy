@@ -10,7 +10,6 @@ import NavContainer from './nav/nav_container';
 import LandingContainer from './landing/landing_container';
 import Modal from './modal/modal'
 
-// console.log(process.env.REACT_APP_CREATETSY_API_KEY);
 
 
 const App = () => (

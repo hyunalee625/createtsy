@@ -2,15 +2,22 @@ import React from "react";
 
 const Nav = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
-        <nav className="navbar-container">
-            <div className="right-nav-buttons">
-                <button className="nav-signin-button" onClick={ () => openModal('login')}>Sign in</button>
-                <div className="shopping-cart-icon">
-                    <a href="/cart"><img src="https://www.iconsdb.com/icons/preview/red/shopping-cart-xxl.png" /></a>
-                </div>
-            </div>
-        </nav>
-    )
+      <nav className="navbar-container">
+        <div className="right-nav-buttons">
+          <button
+            className="nav-signin-button"
+            onClick={() => openModal("login")}
+          >
+            Sign in
+          </button>
+          <div className="shopping-cart-icon">
+            <a href="/cart">
+              <img src="https://www.iconsdb.com/icons/preview/orange/shopping-cart-xxl.png" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    );
     const personalGreeting = () => (
       // when logged in
       <hgroup className="header">

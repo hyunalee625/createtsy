@@ -38,6 +38,34 @@ class Landing extends React.Component {
                   </div>
                 </div>
               </div>
+
+              <div className="banner">
+                <div className="sub-banner">
+                  <div className="sub-banner-headers">
+                    <h3 className="sub-banner-header">One-of-a-kind pieces</h3>
+                  </div>
+                  <p className="sub-banner-p">
+                      A special gift for yourself or your loved ones.
+                    </p>
+                </div>
+                <div className="sub-banner">
+                  <div className="sub-banner-headers">
+                    <h3 className="sub-banner-header">Small shop owners</h3>
+                  </div>
+                    <p className="sub-banner-p">
+                      Independent shops that make and sell unique and creative items that you've been looking for.
+                    </p>
+                </div>
+                <div className="sub-banner">
+                  <div className="sub-banner-headers">
+                    <h3 className="sub-banner-header">Safe shopping</h3>
+                  </div>
+                  <p className="sub-banner-p">
+                      We use best-in-class technology to protect your
+                      transactions.
+                    </p>
+                </div>
+              </div>
             </div>
           );
 
