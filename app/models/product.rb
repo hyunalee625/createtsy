@@ -13,4 +13,6 @@
 class Product < ApplicationRecord
     validates :product_name, uniqueness: true, presence: true
     validates :description, :price, :pic_url, presence: true
+
+    has_one_attached :photo
 end

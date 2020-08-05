@@ -17517,3 +17517,406 @@ Processing by Api::ProductsController#index as JSON
 Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 5.9ms)
 
 
+Started GET "/" for ::1 at 2020-08-04 21:34:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 112ms (Views: 99.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-04 21:34:47 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (37.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (1.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/index.json.jbuilder (46.6ms)
+Completed 200 OK in 55ms (Views: 16.5ms | ActiveRecord: 37.3ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-04 21:35:10 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "T7pCdKPRWbjSxPrFNtWx8g"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (5.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "T7pCdKPRWbjSxPrFNtWx8g"], ["updated_at", "2020-08-05 01:35:10.329051"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 200 OK in 224ms (Views: 6.8ms | ActiveRecord: 11.5ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-08-04 21:35:16 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "T7pCdKPRWbjSxPrFNtWx8g"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "kJS5E6lSZyM_3h66fdCdPA"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "kJS5E6lSZyM_3h66fdCdPA"], ["updated_at", "2020-08-05 01:35:16.513814"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-04 21:35:21 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/users" for ::1 at 2020-08-04 21:35:24 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "EZudqsaNLoY6k1Bv_UyYuw"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+Started POST "/api/users" for ::1 at 2020-08-04 21:35:26 -0400
+  [1m[35m (3.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 404 Not Found in 1470ms (Views: 0.2ms | ActiveRecord: 4.5ms)
+
+
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Osf01Ssk035VKwMb9tKhSA"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 404 Not Found in 204ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-04 21:35:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-04 21:35:31 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (17.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.3ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (22.1ms)
+Completed 200 OK in 28ms (Views: 10.9ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/cart" for ::1 at 2020-08-04 21:35:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/cart"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5235244664921973765)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveStorageTables (20200805022626)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200805022626_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200805022626_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200805022626_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200805022626_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200805022626_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200805022626"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (3.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5235244664921973765)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "product"], ["LIMIT", 1]]
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "product"], ["description", "description"], ["price", 20], ["created_at", "2020-08-05 02:50:52.448846"], ["updated_at", "2020-08-05 02:50:52.448846"], ["pic_url", "https://i.etsystatic.com/17502615/r/il/8741f8/1695782116/il_1588xN.1695782116_12yi.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Product"], ["name", "photo"], ["LIMIT", 1]]
+  [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduct Destroy (1.1ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 2]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "Unicorn macarons"], ["LIMIT", 1]]
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "Unicorn macarons"], ["description", "cute and yummy!"], ["price", 42], ["created_at", "2020-08-05 03:40:52.634037"], ["updated_at", "2020-08-05 03:40:52.634037"], ["pic_url", "https://i.etsystatic.com/15001088/r/il/3789d4/1433874687/il_794xN.1433874687_8i9y.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mProduct Destroy (1.7ms)[0m  [1m[31mDELETE FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "Tie-dye hoodie"], ["LIMIT", 1]]
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "Tie-dye hoodie"], ["description", "trendy"], ["price", 68], ["created_at", "2020-08-05 03:44:23.499878"], ["updated_at", "2020-08-05 03:44:23.499878"], ["pic_url", "https://media.thereformation.com/image/upload/q_auto:eco/c_scale,w_auto:breakpoints_100_1668_9_20:788/v1/prod/product_images/tanner-classic-hoodie/tornado/5e1f9e7324f3bb001a3b6c0d/original.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "ceramic cup set"], ["LIMIT", 1]]
+  [1m[36mProduct Create (1.5ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "ceramic cup set"], ["description", "perfect for gift"], ["price", 25], ["created_at", "2020-08-05 03:44:29.189796"], ["updated_at", "2020-08-05 03:44:29.189796"], ["pic_url", "https://cdn.shopify.com/s/files/1/1398/8653/products/50_7cbdcee6-d2c1-442e-bae8-24e2c3561b3f_1024x1024.jpg?v=1588300950"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."product_name" = $1 LIMIT $2[0m  [["product_name", "Unicorn macarons"], ["LIMIT", 1]]
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("product_name", "description", "price", "created_at", "updated_at", "pic_url") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_name", "Unicorn macarons"], ["description", "cute and yummy!"], ["price", 42], ["created_at", "2020-08-05 03:44:37.113069"], ["updated_at", "2020-08-05 03:44:37.113069"], ["pic_url", "https://i.etsystatic.com/15001088/r/il/3789d4/1433874687/il_794xN.1433874687_8i9y.jpg"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Product"], ["name", "photo"], ["LIMIT", 1]]
+[36m  S3 Storage (753.3ms) [0m[32mUploaded file to key: 3aJjiDvsxHL5wvWf4tdKDvgz (checksum: 5nuWOYnxWDwYbrRASM8CaQ==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Blob Create (2.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "3aJjiDvsxHL5wvWf4tdKDvgz"], ["filename", "tie_dye_hoodie.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 62075], ["checksum", "5nuWOYnxWDwYbrRASM8CaQ=="], ["created_at", "2020-08-05 03:56:13.294108"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Create (8.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Product"], ["record_id", 7], ["blob_id", 1], ["created_at", "2020-08-05 03:56:13.332047"]]
+  [1m[36mProduct Update (0.5ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2020-08-05 03:56:13.342769"], ["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 06e821f3-c8db-46b2-8785-998c980820d3) to Async(default) with arguments: #<GlobalID:0x00007f8ac3854a58 @uri=#<URI::GID gid://createtsy/ActiveStorage::Blob/1>>
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [06e821f3-c8db-46b2-8785-998c980820d3] Performing ActiveStorage::AnalyzeJob (Job ID: 06e821f3-c8db-46b2-8785-998c980820d3) from Async(default) with arguments: #<GlobalID:0x00007f8ac3a04088 @uri=#<URI::GID gid://createtsy/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [06e821f3-c8db-46b2-8785-998c980820d3] [36m  S3 Storage (233.1ms) [0m[34mDownloaded file from key: 3aJjiDvsxHL5wvWf4tdKDvgz[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [06e821f3-c8db-46b2-8785-998c980820d3] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [06e821f3-c8db-46b2-8785-998c980820d3]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [06e821f3-c8db-46b2-8785-998c980820d3]   [1m[36mActiveStorage::Blob Update (1.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [06e821f3-c8db-46b2-8785-998c980820d3]   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [06e821f3-c8db-46b2-8785-998c980820d3] Performed ActiveStorage::AnalyzeJob (Job ID: 06e821f3-c8db-46b2-8785-998c980820d3) from Async(default) in 428.64ms
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Product"], ["name", "photo"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-08-05 09:14:14 -0400
+  [1m[35m (16.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/princesslauren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 96ms (Views: 82.9ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-05 09:14:15 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (5.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.4ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (60.0ms)
+Completed 200 OK in 84ms (Views: 54.3ms | ActiveRecord: 21.1ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-05 09:14:46 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/users" for ::1 at 2020-08-05 09:14:49 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "efBDXUkXedq017o8_HxZEA"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 404 Not Found in 221ms (Views: 0.1ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-05 09:14:51 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "OoibcNyZUXP1PKOTOTm5GQ"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "OoibcNyZUXP1PKOTOTm5GQ"], ["updated_at", "2020-08-05 13:14:51.530716"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (1.8ms)
+Completed 200 OK in 224ms (Views: 7.4ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-08-05 09:14:55 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "OoibcNyZUXP1PKOTOTm5GQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "u8Zgv66L9ALBNiOq6RvlQg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "u8Zgv66L9ALBNiOq6RvlQg"], ["updated_at", "2020-08-05 13:14:55.053353"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-05 09:15:25 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hyunalee625@gmail.com", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hyunalee625@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-05 09:15:28 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hyunalee625@gmail.com", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hyunalee625@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-05 09:15:30 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hyunalee625@gmail.com", "first_name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hyunalee625@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-05 09:15:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-05 09:15:32 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.5ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (5.3ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-05 09:15:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/products" for ::1 at 2020-08-05 09:15:40 -0400
+Processing by Api::ProductsController#index as JSON
+  Rendering api/products/index.json.jbuilder
+  [1m[36mProduct Load (25.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/api/products/index.json.jbuilder:1
+  Rendered api/products/_product.json.jbuilder (0.6ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/_product.json.jbuilder (0.1ms)
+  Rendered api/products/index.json.jbuilder (32.0ms)
+Completed 200 OK in 44ms (Views: 18.6ms | ActiveRecord: 25.2ms)
+
+
+Started POST "/api/session" for ::1 at 2020-08-05 09:15:42 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"lauren@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lauren@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "lauren@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "efaFLcY43RIqIhAiR--mFQ"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:38
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "efaFLcY43RIqIhAiR--mFQ"], ["updated_at", "2020-08-05 13:15:42.337848"], ["id", 2]]
+  ↳ app/models/user.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:38
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (1.9ms)
+Completed 200 OK in 219ms (Views: 7.6ms | ActiveRecord: 2.4ms)
+
+
