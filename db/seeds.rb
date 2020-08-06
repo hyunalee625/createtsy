@@ -50,7 +50,7 @@ product2 = Product.create!(
     {
         product_name: "Ceramic cup set",
         description: "perfect for gift",
-        price: 25,
+        price: 25.50,
     }
 )
 
