@@ -105,7 +105,7 @@ product7 = Product.create!(
     {
         product_name: "Batman sanitizer holder",
         description: "The convenient adjustable silicone strap allows you to take germ fighting hand sanitizers with you wherever you go. Loop onto school bags, purses, gym bags and so much more. Fighting germs doesn't have to be boring.",
-        price: 2.50,
+        price: 3,
     }
 )
 
