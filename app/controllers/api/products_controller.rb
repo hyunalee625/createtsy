@@ -24,10 +24,10 @@ class Api::ProductsController < ApplicationController
     private
 
     def product_params
-        params.require(:product).permit(:product_name, :description, :price, :pic_url)
+        params.require(:product).permit(:product_name, :description, :price)
     end
 
 end
 
 
-# $.ajax({type: 'GET', url: '/api/products/', data: {product: {product_name: "name", description: "yay", price: 76, pic_url: "https://photoscissors.com/images/screenshot3.jpg"}}})
+# $.ajax({type: 'GET', url: '/api/products/', data: {product: {product_name: "name", description: "yay", price: 76}}})

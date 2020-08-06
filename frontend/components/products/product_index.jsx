@@ -5,15 +5,19 @@ import { Link } from 'react-router-dom';
 class ProductIndex extends React.Component {
 
   constructor(props) {
-    super(props)
+    super(props);
+
   }
 
   componentDidMount() {
+    // debugger
     this.props.getAllProducts()
   }
 
+
   render() {
     const { products } = this.props;
+    // debugger
     return (
       <div className="all-products">
         <div className="trending-items">

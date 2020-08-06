@@ -17,11 +17,9 @@ const App = () => (
     <Modal />
     <header>
       <div className="navbar-container">
-        <div className="logo">
           <a href="/" className="createtsy-logo">
-            creatEtsy
+            <img src={window.logo} />
           </a>
-        </div>
         <div>
           <NavContainer />
         </div>

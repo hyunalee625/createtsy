@@ -37,10 +37,14 @@ export const getOneProduct = id => dispatch => {
 };
 
 export const getAllProducts = () => (dispatch) => {
-  return productAPIUtil.getAllProducts()
-    .then(products => dispatch(receiveAllProducts(products))
-    , error => (dispatch(receiveProductErrors(error.responseJSON))
-    ))
+  // debugger
+  return productAPIUtil.getAllProducts().then(products => { 
+      // debugger
+      return dispatch(receiveAllProducts(products))
+    } 
+    // , error => (dispatch(receiveProductErrors(error.responseJSON))
+  )
+    // )
 };
 
 

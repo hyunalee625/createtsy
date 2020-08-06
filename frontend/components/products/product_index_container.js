@@ -3,6 +3,7 @@ import { getAllProducts, getOneProduct } from '../../actions/product_actions';
 import ProductIndex from './product_index';
 
 const msp = ( state ) => {
+    // debugger
     return {
         products: Object.values(state.entities.products)
     }
