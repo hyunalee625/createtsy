@@ -1,4 +1,5 @@
-<h1>creatEtsy</h1>
+<!-- <h1>creatEtsy</h1> -->
+![creatEtsy](https://i.imgur.com/WVxMrxL.png)
 
 [creatEtsy](https://createtsy.herokuapp.com/#/) is an Etsy clone, an e-commerce platform where users can sell and purchase unique crafts created by other users on the platform.
 
@@ -59,5 +60,5 @@ const ProductIndexItem = ({ product }) => {
 
 ---
 <h2>Future implementations</h2>
-<li>products show: products will have its own page for users to click on and view</li>
-<li>shopping cart: users can add, remove, update shopping cart</li>
+<li>Products: products will have its own page for users to click on and view</li>
+<li>Shopping cart: users can add, remove, update shopping cart</li>
