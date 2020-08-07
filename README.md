@@ -17,7 +17,7 @@
 ---
 <h2>Features</h2>
 
-![Modal](https://i.imgur.com/sVAj8Rr.png)
+![Modal](https://i.imgur.com/netiN4P.png)
 
 ```javascript
     let component;
@@ -33,7 +33,8 @@
     }
 ```
 
-![Products](https://i.imgur.com/netiN4P.png)
+![Products](https://i.imgur.com/sVAj8Rr.png)
+
 ```javascript
 const ProductIndexItem = ({ product }) => {
     return (
