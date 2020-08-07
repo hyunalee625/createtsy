@@ -4,15 +4,19 @@ import { Link } from "react-router-dom";
 const ProductIndexItem = ({ product }) => {
   // debugger
     return (
-      <div>
-        <ul className="product-index-item">
-          <Link className="each-product" to={product.product_name}>
+
+      <div className="product-index-container">
+        <div className="product-index-item">
             <img className="product-photo" src={product.photoUrl} alt="" />
-            <li className="product-title">{product.product_name}</li>
-            <li className="product-price">${product.price}</li>
+            <div className="product-product-name">
+          <Link className="product-name" to={product.product_name}>
+            <div className="product-name">{product.product_name}</div>
           </Link>
-        </ul>
+            </div>
+            <div className="product-price">${product.price}</div>
+        </div>
       </div>
+
     );
 }
 

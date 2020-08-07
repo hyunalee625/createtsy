@@ -23,7 +23,7 @@ class ProductIndex extends React.Component {
         <div className="trending-items">
           <h2 className="trending-items-header">Trending items</h2>
             <ul className="product-listing">
-              {products.map(product => <ProductIndexItem key={product.id} product={product}/>)}
+            {products.map(product => <li key={product.id}><ProductIndexItem key={product.id} product={product} /></li>)}
             </ul>
         </div>
       </div>

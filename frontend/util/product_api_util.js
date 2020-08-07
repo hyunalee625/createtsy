@@ -1,5 +1,5 @@
 export const getAllProducts = () => {
-    debugger
+    // debugger
     // const proxyurl = "https://cors-anywhere.herokuapp.com/";
     // const url =
     //   "https://openapi.etsy.com/v2/listings/active.js?callback=getdata&api_key=j7empvnlknpxz69tj8ikeo7k&fields=title,description,price,url&limit=30";

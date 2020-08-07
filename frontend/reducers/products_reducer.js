@@ -8,7 +8,7 @@ const productsReducer = ( oldState = {}, action) => {
 
     switch (action.type) {
       case RECEIVE_ALL_PRODUCTS:
-        debugger
+        // debugger
         return action.products;
       case RECEIVE_ONE_PRODUCT:
         const newProduct = { [action.product.id]: action.product };

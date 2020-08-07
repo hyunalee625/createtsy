@@ -114,14 +114,14 @@ product7.photo.attach(io: link7, filename: 'sanitizer_holder1.jpeg')
     
 product8 = Product.create!(
     {
-        product_name: "iPad Pro stand With Apple pencil holder",
-        description: "The iPad Pro stand is a singular combination of high functionality and versatility, intuitive use, and a slender appearance. ",
-        price: 169,
+        product_name: "iPad stand",
+        description: "The iPad Stand features clean lines and a modern aesthetic, and is optimized for using on a countertop, table or desk. It works well in both landscape and portrait mode, and is compatible with all generations of iPad as well as most other tablets (can also be used with very slim-fitting cases). Handcrafted from domestically sourced wood, natural variations in texture and color make each piece subtly unique.",
+        price: 52,
     }
 )
 
-link8 = open("https://createtsy-products-seeds.s3.amazonaws.com/ipad_pro_stand1.jpg")
-product8.photo.attach(io: link8, filename: 'ipad_pro_stand1.jpg')
+link8 = open("https://createtsy-products-seeds.s3.amazonaws.com/ipad_stand.jpg")
+product8.photo.attach(io: link8, filename: 'ipad_stand.jpg')
         
 product9 = Product.create!(
     {

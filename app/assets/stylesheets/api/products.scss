@@ -1,20 +1,36 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+// .product-index-container {
+//     display: flex;
+// }
+
+.product-index-item {
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    // display: flex;
+}
+
+.product-name {
+    font-weight: 500px;
+    font-size: 16px;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+    word-wrap: noraml;
+    width: 50%;
+}
 
 .product-photo {
-    width: 30%;
+    width: 120px;
 }
 
-.product-title {
-    font-weight: 500px;
-    font-size: 16px;
-    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-}
-
-.product-price {
-    font-weight: 500px;
-    font-size: 16px;
-    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-
-}
+// .product-price {
+//     font-weight: 500px;
+//     font-size: 16px;
+//     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+// }
