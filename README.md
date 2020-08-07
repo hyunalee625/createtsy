@@ -16,7 +16,8 @@
 
 ---
 <h2>Features</h2>
-![modal](https://createtsy-dev.s3.amazonaws.com/readme-images/signin_signup_modal.png)
+
+![modal](https://imgur.com/IA2Ows9)
 
 ```javascript
     let component;
@@ -32,7 +33,7 @@
     }
 ```
 
-![products](https://createtsy-dev.s3.amazonaws.com/readme-images/products_list.png)
+![products](https://imgur.com/8kFLh0K)
 ```javascript
 const ProductIndexItem = ({ product }) => {
     return (
