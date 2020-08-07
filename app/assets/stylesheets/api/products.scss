@@ -13,20 +13,27 @@
 .product-index-item {
     margin-left: 30px;
     margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 250px;
 
     // display: flex;
+}
+
+.product-name-price {
+    display: flex;
+    width: 45%;
 }
 
 .product-name {
     font-weight: 500px;
     font-size: 16px;
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-    word-wrap: noraml;
-    width: 50%;
+    // word-wrap: normal;
+
 }
 
 .product-photo {
-    width: 120px;
+    width: 160px;
 }
 
 // .product-price {

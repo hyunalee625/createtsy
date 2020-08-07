@@ -103,14 +103,14 @@ product6.photo.attach(io: link6, filename: 'coffee_table1.jpg')
 
 product7 = Product.create!(
     {
-        product_name: "Batman sanitizer holder",
-        description: "The convenient adjustable silicone strap allows you to take germ fighting hand sanitizers with you wherever you go. Loop onto school bags, purses, gym bags and so much more. Fighting germs doesn't have to be boring.",
-        price: 3,
+        product_name: "Travel watch holder",
+        description: "Keep your favorite watches safe and protected at home or away with this functional watch roll. This portable case is thoughtfully designed to fit three watches on a padded removable cushion and features a micro suede lining, a double snap closure and a hidden compartment inside for cufflinks or collar stays. Add a foil debossed monogram for a personal touch.",
+        price: 119,
     }
 )
 
-link7 = open("https://createtsy-products-seeds.s3.amazonaws.com/sanitizer_holder1.jpeg")
-product7.photo.attach(io: link7, filename: 'sanitizer_holder1.jpeg')
+link7 = open("https://createtsy-products-seeds.s3.amazonaws.com/watch_holder1.jpg")
+product7.photo.attach(io: link7, filename: 'watch_holder1.jpeg')
     
 product8 = Product.create!(
     {
