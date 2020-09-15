@@ -8,9 +8,9 @@ const ProductIndexItem = ({ product }) => {
       <div className="product-index-container">
         <div className="product-index-item">
             <img className="product-photo" src={product.photoUrl} alt="" />
-            <div product-name-price>
+            <div className="product-name-price">
             <div className="product-product-name">
-          <Link className="product-name" to={product.product_name}>
+          <Link className="product-url" to={`/products/${product.id}`}>
             <div className="product-name">{product.product_name}</div>
           </Link>
             </div>

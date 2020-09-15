@@ -12,7 +12,6 @@ const msp = ( state ) => {
 const mdp = dispatch => {
     return {
         getAllProducts: () => dispatch(getAllProducts()),
-        getOneProduct: id => dispatch(getOneProduct(id))
     }
 }
 

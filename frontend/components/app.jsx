@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import ProductIndexContainer from './products/product_index_container';
+import ProductShowContainer from './products/product_show_container';
 // import { AuthRoute } from '../util/route_util';
 import NavContainer from './nav/nav_container';
 import LandingContainer from './landing/landing_container';
@@ -17,22 +18,28 @@ const App = () => (
     <Modal />
     <header>
       <div className="navbar-container">
-          <a href="/" className="createtsy-logo">
-            <img src={window.logo} />
-          </a>
+        <a href="/">
+          <h1 className="createtsy-logo">creatEtsy</h1>
+        </a>
         <div>
           <NavContainer />
         </div>
       </div>
     </header>
-    <div>
-      <LandingContainer />
-    </div>
     <Switch>
-      <Route path="/login" component={LoginFormContainer} />
-      <Route path="/signup" component={SignupFormContainer} />
-      <Route path="/" component={ProductIndexContainer} />
-      <Route path="/"></Route>
+      <Route path="/login" exact component={LoginFormContainer} />
+      <Route path="/signup" exact component={SignupFormContainer} />
+      <Route
+        path="/products/:productId"
+        exact
+        component={ProductShowContainer}
+      />
+      <Route path="/">
+        <div>
+          <LandingContainer />
+          <ProductIndexContainer />
+        </div>
+      </Route>
     </Switch>
   </div>
 );

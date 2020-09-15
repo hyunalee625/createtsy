@@ -6,7 +6,7 @@ h2.landing-page-header {
     line-height: 28px;
     // margin-left: 200px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 .landing-page-pic-container {
@@ -40,7 +40,7 @@ h2.landing-page-header {
     border-radius: 20%;
 }
 
-.banner {
+.mid-banner-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,17 +50,17 @@ h2.landing-page-header {
     margin-left: 15px;
 }
 
-.sub-banner {
+.mid-banner {
     justify-items: center;
     width: 30%;
     padding: 0 12px;
 }
 
-h3.sub-banner-header {
+h3.mid-banner-header {
     text-align: center;
 }
 
-p.sub-banner-p {
+p.mid-banner-p {
     text-align: center;
 }
 

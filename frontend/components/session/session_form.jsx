@@ -108,6 +108,7 @@ class SessionForm extends React.Component {
                         className="info-input-form"
                         type="password"
                         value={this.state.password}
+                        aria-invalid="true"
                         onChange={this.update("password")}
                       />
                     </label>

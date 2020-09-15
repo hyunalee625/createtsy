@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    border-bottom: 2px solid lightgray;
+    padding: 5px 0px;
 }
 
-.createtsy-logo {
-    cursor: pointer;
-    margin-left: 10px;
-    width: 8%;
+h1.createtsy-logo {
+    color: rgb(227, 128, 124);
+    font-family: 'Bree Serif', serif;
+    padding-left: 7px;
 }
 
 .right-nav-buttons {
     justify-content: flex-end;
     display: flex;
+    margin-top: 5px;
     // margin-right: 30px;
 }
 
@@ -43,17 +47,12 @@
     width: 34px;
     height: 34px;
     // margin-left: 20px;
-    color: rgb(229, 133, 129);
     margin-right: 15px;
 }
 
-.shopping-cart-icon:hover {
-    border-radius: 50%;
-    background-color: rgb(229, 133, 129);
-    // background-color: lightgrey;
-    padding: 8px;
-    
-}
+// .shopping-cart-icon:hover {
+   
+// }
 
 .nav-signout-button {
     border-radius: 20px;
@@ -75,3 +74,5 @@
 .nav-right-buttons {
     display: flex;
 }
+
+

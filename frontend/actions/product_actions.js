@@ -30,6 +30,7 @@ export const receiveProductErrors = (errors) => {
 // thunk action creators
 
 export const getOneProduct = id => dispatch => {
+  // debugger
   return productAPIUtil.getOneProduct(id)
     .then(product => dispatch(receiveOneProduct(product))
     , error => (dispatch(receiveProductErrors(error.responseJSON))

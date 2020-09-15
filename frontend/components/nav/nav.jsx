@@ -3,6 +3,9 @@ import React from "react";
 const Nav = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
       <nav className="navbar-container">
+      {/* <div className="left-nav-">
+        <h3 className="createtsy-logo">creatEtsy</h3>
+      </div> */}
         <div className="right-nav-buttons">
           <button
             className="nav-signin-button"
