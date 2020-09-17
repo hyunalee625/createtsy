@@ -3,7 +3,7 @@ import React from "react";
 const Nav = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
       <nav className="navbar-container">
-      {/* <div className="left-nav-">
+        {/* <div className="left-nav-">
         <h3 className="createtsy-logo">creatEtsy</h3>
       </div> */}
         <div className="right-nav-buttons">
@@ -14,7 +14,7 @@ const Nav = ({ currentUser, logout, openModal }) => {
             Sign in
           </button>
           <div className="shopping-cart-icon">
-            <a href="/cart">
+            <a href="/shopping-cart">
               <img src={window.shopping_cart} />
             </a>
           </div>
@@ -29,7 +29,7 @@ const Nav = ({ currentUser, logout, openModal }) => {
             Sign out
           </button>
           <div className="shopping-cart-icon">
-            <a href="/cart">
+            <a href="/shopping-cart">
               <img src={window.shopping_cart} />
             </a>
           </div>

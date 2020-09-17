@@ -8,7 +8,7 @@ export const getAllProducts = () => {
       url: `api/products/`,
     });
     // debugger
-    return response
+
 }
 
 export const getOneProduct = id => {

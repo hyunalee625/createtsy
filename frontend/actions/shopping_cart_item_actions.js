@@ -1,4 +1,4 @@
-import * ShoppingCartItemAPIUtil from '../util/shopping_cart_item_api_util';
+import * as ShoppingCartItemAPIUtil from '../util/shopping_cart_item_api_util';
 
 export const RECEIVE_SHOPPING_CART_ITEM = "RECEIVE_SHOPPING_CART_ITEM";
 export const RECEIVE_SHOPPING_CART_ITEMS = "RECEIVE_SHOPPING_CART_ITEMS";

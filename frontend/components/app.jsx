@@ -6,6 +6,7 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import ProductIndexContainer from './products/product_index_container';
 import ProductShowContainer from './products/product_show_container';
+import ShoppingCartItemContainer} from './shopping_cart_items/shopping_cart_item_container'
 // import { AuthRoute } from '../util/route_util';
 import NavContainer from './nav/nav_container';
 import LandingContainer from './landing/landing_container';
@@ -40,6 +41,7 @@ const App = () => (
           <ProductIndexContainer />
         </div>
       </Route>
+      <Route path="/shopping-cart" exact component={ShoppingCartItemContainer}></Route>
     </Switch>
   </div>
 );

@@ -75,17 +75,27 @@
     padding: 1vh;
 }
 
+.price-stock {
+    display: inline-flex;
+    padding: 0.5vh;
+}
+
 .product-show-price {
     font-size: 1.5rem;
-    padding: 3vh;
+    padding: 2vh;
+}
+
+.in-stock {
+    font-size: 1rem;
+    padding: 2.5vh 35.5vh;
 }
 
 .add-to-cart-btn-container {
     padding: 3vh 0;
 }
 
-.product-show-description {
-    padding-top: 15px;
+.product-description-container .product-show-description {
+    padding-top: 1vh;
 }
 
 img.product-show-photo {

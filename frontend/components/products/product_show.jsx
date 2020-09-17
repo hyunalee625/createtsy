@@ -27,27 +27,33 @@ class ProductShow extends React.Component {
                   <div className="product-show-name">
                     {product.product_name}
                   </div>
-                  <div className="product-show-price">${product.price}</div>
-                </div>
-                <div className="add-to-cart-btn-container">
-                  <button type="button" className="add-to-cart-btn">
-                    Add to cart
-                  </button>
-                </div>
-                <div className="product-show-description">
-                  Description:
-                  <p>{product.description}</p>
+                  <div className="price-stock">
+                    <div className="product-show-price">${product.price}</div>
+                    <div className="in-stock"> &#10004; In stock</div>
+                  </div>
+
+                  <div className="add-to-cart-btn-container">
+                    <button type="button" className="add-to-cart-btn">
+                      Add to cart
+                    </button>
+                  </div>
+                  <div className="product-description-container">
+                    Description:
+                    <p className="product-show-description">
+                      {product.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-            <div className="product-show-mid">
-              <div className="show-page-banner">
-                <span>Made to order, just for you</span>
-                <span>This item is handmade</span>
-                <span>Ships in 1-3 business days</span>
-              </div>
+          <div className="product-show-mid">
+            <div className="show-page-banner">
+              <span>Made to order, just for you</span>
+              <span>This item is handmade</span>
+              <span>Ships in 1-3 business days</span>
             </div>
+          </div>
         </div>
       );
   }
