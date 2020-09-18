@@ -5,16 +5,16 @@ class Api::ProductsController < ApplicationController
         render :index
     end
 
-    def create
-        @product = Product.new(product_params)
+    # def create
+    #     @product = Product.new(product_params)
 
-        if @product.save
-            render :show
-        else
-            render json: @product.errors.full_messages, status: 422
-        end
+    #     if @product.save
+    #         render :show
+    #     else
+    #         render json: @product.errors.full_messages, status: 422
+    #     end
         
-    end
+    # end
     
     def show
         @product = Product.find(params[:id])

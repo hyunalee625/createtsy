@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 const Nav = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
@@ -14,9 +15,9 @@ const Nav = ({ currentUser, logout, openModal }) => {
             Sign in
           </button>
           <div className="shopping-cart-icon">
-            <a href="/shopping-cart">
+            <Link to="/shopping_cart_items">
               <img src={window.shopping_cart} />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -29,9 +30,9 @@ const Nav = ({ currentUser, logout, openModal }) => {
             Sign out
           </button>
           <div className="shopping-cart-icon">
-            <a href="/shopping-cart">
+            <Link to="/shopping_cart_items">
               <img src={window.shopping_cart} />
-            </a>
+            </Link>
           </div>
         </div>
         <br />

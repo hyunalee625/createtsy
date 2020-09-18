@@ -15,6 +15,11 @@ class User < ApplicationRecord
     validates :first_name, length: { minimum: 3}, allow_nil: true
     validates :password_digest, presence: true
     validates :password, length: { minimum: 4}, allow_nil: true
+    
+    has_many :shopping_cart_items,
+        foreign_key: :buyer_id,
+        class_name: :ShoppingCartItem
+
 
     attr_reader :password
     after_initialize :ensure_session_token!

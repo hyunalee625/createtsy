@@ -3,59 +3,58 @@ import * as ShoppingCartItemAPIUtil from '../util/shopping_cart_item_api_util';
 export const RECEIVE_SHOPPING_CART_ITEM = "RECEIVE_SHOPPING_CART_ITEM";
 export const RECEIVE_SHOPPING_CART_ITEMS = "RECEIVE_SHOPPING_CART_ITEMS";
 export const REMOVE_SHOPPING_CART_ITEM = "REMOVE_SHOPPING_CART_ITEM";
-export const RECEIVE_SHOPPING_CART_ERRORS = "RECEIVE_SHOPPING_CART_ERRORS";
+// export const RECEIVE_SHOPPING_CART_ERRORS = "RECEIVE_SHOPPING_CART_ERRORS";
 
-const receiveShoppingCartItem = (item) => {
-    return {
-        type: RECEIVE_SHOPPING_CART_ITEM,
-        item
-    }
-}
+const receiveShoppingCartItem = (cartItem) => {
+  return {
+    type: RECEIVE_SHOPPING_CART_ITEM,
+    cartItem,
+  };
+};
 
-const receiveShoppingCartItems = (items) => {
-    return {
-        type: RECEIVE_SHOPPING_CART_ITEMS,
-        items
-    }
-}
+const receiveShoppingCartItems = (cartItems) => {
+  return {
+    type: RECEIVE_SHOPPING_CART_ITEMS,
+    cartItems,
+  };
+};
 
-const removeShoppingCartItem = id => {
+const removeShoppingCartItem = (cartItemId) => {
     return {
         type: REMOVE_SHOPPING_CART_ITEM,
-        shoppingCartItemId: id
+        cartItemId
     }
 }
 
-const receivceShoppingCartErrors = errors => {
-    return {
-        type: RECEIVE_SHOPPING_CART_ERRORS,
-        errors
-    }
-}
+// const receivceShoppingCartErrors = errors => {
+//     return {
+//         type: RECEIVE_SHOPPING_CART_ERRORS,
+//         errors
+//     }
+// }
 
 // thunk action creators 
 
-export const getOneCartItem = id => dispatch => {
-    return ShoppingCartItemAPIUtil.getOneCartItem(id)
-        .then(item => dispatch(receiveShoppingCartItem(item)))
-}
-
 export const getAllCartItems = () => dispatch => {
-    return ShoppingCartItemAPIUtil.getAllCartItems()
-        .then(items => dispatch(receiveShoppingCartItems(items)))
+    return ShoppingCartItemAPIUtil.getAllCartItems().then((cartItems) =>
+      dispatch(receiveShoppingCartItems(cartItems))
+    );
 }
 
-export const createCartItem = item => dispatch => {
-    return ShoppingCartItemAPIUtil.createCartItem(item)
-        .then(item => dispatch(receiveShoppingCartItem(item)))
-}
+export const createCartItem = (cartItem) => (dispatch) => {
+  return ShoppingCartItemAPIUtil.createCartItem(cartItem).then((cartItem) =>
+    dispatch(receiveShoppingCartItem(cartItem))
+  );
+};
 
-export const updateCartItem = (data, id) => dispatch => {
-    return ShoppingCartItemAPIUtil.updateCartItem(data, id)
-        .then(item => dispatch(receiveShoppingCartItem(item)))
-}
+export const updateCartItem = (cartItem) => (dispatch) => {
+  return ShoppingCartItemAPIUtil.updateCartItem(cartItem).then((cartItem) =>
+    dispatch(receiveShoppingCartItem(cartItem))
+  );
+};
 
-export const deleteCartItem = id => dispatch => {
-    return ShoppingCartItemAPIUtil.deleteCartItem(id)
-        .then(item => dispatch(removeShoppingCartItem(item)))
-}
+export const deleteCartItem = (shoppingCartItemId) => (dispatch) => {
+  return ShoppingCartItemAPIUtil.deleteCartItem(shoppingCartItemId).then(() =>
+    dispatch(removeShoppingCartItem(shoppingCartItemId))
+  );
+};

@@ -4,11 +4,36 @@ class ProductShow extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.addToShoppingCart = this.addToShoppingCart.bind(this);
   }
 
   componentDidMount() {
       this.props.getOneProduct(this.props.match.params.productId);
   }
+
+  addToShoppingCart(e) {
+    // e.preventDefault();
+
+    const params = {
+      'product_id': this.props.product.id,
+      'quantity': 1
+    }
+
+    this.props.createCartItem(params).then(() => {
+      this.props.history.push('/shopping_cart_items')
+    })
+  }
+
+  // hideContent(content) {
+  //   if (content.length > 100) {
+  //     return (
+  //       <p className="product-show-description">{content.slice(0, 100) + "..."}<button className="learn-more" onClick={()}>Learn more about this item</button></p>
+  //     )
+  //   } else {
+  //     return <p className="product-show-description">{content}</p>;
+  //   }
+  // }
 
   render() {
       const {product} = this.props;
@@ -33,15 +58,14 @@ class ProductShow extends React.Component {
                   </div>
 
                   <div className="add-to-cart-btn-container">
-                    <button type="button" className="add-to-cart-btn">
+                    <button onClick={this.addToShoppingCart} type="button" className="add-to-cart-btn">
                       Add to cart
                     </button>
                   </div>
                   <div className="product-description-container">
                     Description:
-                    <p className="product-show-description">
-                      {product.description}
-                    </p>
+                      {/* {this.hideContent(product.description)} */}
+                      <p>{product.description}</p>
                   </div>
                 </div>
               </div>

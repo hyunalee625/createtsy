@@ -1,9 +1,10 @@
-export const getOneCartItem = id => {
-    return $.ajax({
-        method: 'GET',
-        url: `api/shopping_cart_items/${id}`
-    })
-}
+export const createCartItem = (cartItem) => {
+  return $.ajax({
+    method: "POST",
+    url: `api/shopping_cart_items`,
+    data: { cartItem },
+  });
+};
 
 export const getAllCartItems = () => {
   return $.ajax({
@@ -12,20 +13,13 @@ export const getAllCartItems = () => {
   });
 };
 
-export const createCartItem = item => {
-  return $.ajax({
-    method: "POST",
-    url: `api/shopping_cart_items`,
-    data: {item}
-  });
-};
 
-export const updateCartItem = (item) => {
-return $.ajax({
+export const updateCartItem = (cartItem) => {
+  return $.ajax({
     method: "PATCH",
-    url: `api/shopping_cart_items/${item.id}`,
-    data: { item },
-});
+    url: `api/shopping_cart_items/${shopping_cart_item.id}`,
+    data: { cartItem },
+  });
 };
 
 export const deleteCartItem = (id) => {

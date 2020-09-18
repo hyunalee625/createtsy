@@ -4,6 +4,7 @@ import configureStore from "./store/store";
 import Root from "./components/root"
 import * as sessionAPIUtil from './util/session_api_util';
 import * as productAPIUtil from './util/product_api_util';
+import * as shoppingCartItemAPIUtil from './util/shopping_cart_item_api_util';
 import receiveAllProducts from "./actions/product_actions";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,10 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.logout = sessionAPIUtil.logout;
     window.getAllProducts = productAPIUtil.getAllProducts;
     window.getOneProduct = productAPIUtil.getOneProduct;
-    window.receiveAllProducts = receiveAllProducts;
-    window.$ = $
+    window.getAllCartItems = shoppingCartItemAPIUtil.getAllCartItems;
 
-    
     
     const root = document.getElementById("root");
     ReactDOM.render(<Root store={store} />, root);

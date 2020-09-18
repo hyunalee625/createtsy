@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { getOneProduct } from '../../actions/product_actions';
 import ProductShow from './product_show';
+import { createCartItem } from '../../actions/shopping_cart_item_actions';
 
 
 const msp = (state, ownProps ) => {
@@ -14,7 +15,8 @@ const msp = (state, ownProps ) => {
 
 const mdp = dispatch => {
     return {
-      getOneProduct: (id) => dispatch(getOneProduct(id))
+      getOneProduct: (id) => dispatch(getOneProduct(id)),
+      createCartItem: (cartItem) => dispatch(createCartItem(cartItem))
     };
 }
 
