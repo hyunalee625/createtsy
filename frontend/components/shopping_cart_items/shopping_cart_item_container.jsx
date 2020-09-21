@@ -12,7 +12,7 @@ const msp = (state) => {
 
     return {
         buyer_id: state.session.id,
-        items: items
+        items
     }
 }
 

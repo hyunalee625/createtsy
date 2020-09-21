@@ -1,7 +1,7 @@
 export const createCartItem = (cartItem) => {
   return $.ajax({
     method: "POST",
-    url: `api/shopping_cart_items`,
+    url: `/api/shopping_cart_items`,
     data: { cartItem },
   });
 };
@@ -9,7 +9,7 @@ export const createCartItem = (cartItem) => {
 export const getAllCartItems = () => {
   return $.ajax({
     method: "GET",
-    url: `api/shopping_cart_items`
+    url: `/api/shopping_cart_items`
   });
 };
 
@@ -17,7 +17,7 @@ export const getAllCartItems = () => {
 export const updateCartItem = (cartItem) => {
   return $.ajax({
     method: "PATCH",
-    url: `api/shopping_cart_items/${shopping_cart_item.id}`,
+    url: `/api/shopping_cart_items/${shopping_cart_item.id}`,
     data: { cartItem },
   });
 };
@@ -25,6 +25,6 @@ export const updateCartItem = (cartItem) => {
 export const deleteCartItem = (id) => {
   return $.ajax({
     method: "DELETE",
-    url: `api/shopping_cart_items/${id}`,
+    url: `/api/shopping_cart_items/${id}`,
   });
 };

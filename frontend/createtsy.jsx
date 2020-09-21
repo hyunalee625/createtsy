@@ -4,8 +4,8 @@ import configureStore from "./store/store";
 import Root from "./components/root"
 import * as sessionAPIUtil from './util/session_api_util';
 import * as productAPIUtil from './util/product_api_util';
+import * as reviewAPIUtil from './util/review_api_util'
 import * as shoppingCartItemAPIUtil from './util/shopping_cart_item_api_util';
-import receiveAllProducts from "./actions/product_actions";
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.logout = sessionAPIUtil.logout;
     window.getAllProducts = productAPIUtil.getAllProducts;
     window.getOneProduct = productAPIUtil.getOneProduct;
-    window.getAllCartItems = shoppingCartItemAPIUtil.getAllCartItems;
+    window.fetchReviews = reviewAPIUtil.fetchReviews;
+    // window.getAllCartItems = shoppingCartItemAPIUtil.getAllCartItems;
 
     
     const root = document.getElementById("root");

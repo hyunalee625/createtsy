@@ -7,11 +7,11 @@ const productsReducer = ( oldState = {}, action) => {
     Object.freeze(oldState);
 
     switch (action.type) {
+      case RECEIVE_ONE_PRODUCT:
+        const newState = { [action.product.id]: action.product };
+        return Object.assign({}, oldState, newState);
       case RECEIVE_ALL_PRODUCTS:
         return action.products;
-      case RECEIVE_ONE_PRODUCT:
-        const newProduct = { [action.product.id]: action.product };
-        return Object.assign({}, oldState, newProduct);
       default:
         return oldState;
     }

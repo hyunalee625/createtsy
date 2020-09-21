@@ -1,10 +1,14 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
+import {Link} from 'react-router-dom'
 
 class ShoppingCartIndexItem extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state.shoppingCartItem = this.props.shoppingCartItem;
+        this.state = {
+          id: this.props.shoppingCartItem.id,
+          quantity: this.props.shoppingCartItem.quantity,
+        };    
     }
 
     itemTotal() {
@@ -22,6 +26,15 @@ class ShoppingCartIndexItem extends React.Component {
         }
     }
 
+    emptyCart() {
+        return (
+            <div>
+                <h3>Your cart is empty.</h3>
+                <Link to="/">Discover something unique to fill it up</Link>
+            </div>
+        )
+    }
+
     render() {
         const {item} = this.state;
 
@@ -32,7 +45,7 @@ class ShoppingCartIndexItem extends React.Component {
                 className="index-item-img"
                 to="{`/products/${item.product_id}`}"
               >
-                <img src={item.product.photoURL}></img>
+                <img src={item.photoURL}></img>
               </Link>
               <div className="index-info">
                 <Link

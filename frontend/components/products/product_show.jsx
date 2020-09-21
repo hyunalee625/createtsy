@@ -1,28 +1,32 @@
 import React from "react";
+import ReviewIndexContainer from '../../components/reviews/review_index_container'
 
 class ProductShow extends React.Component {
 
   constructor(props) {
     super(props);
 
-    this.addToShoppingCart = this.addToShoppingCart.bind(this);
+    this.addToCart = this.addToCart.bind(this);
   }
 
   componentDidMount() {
       this.props.getOneProduct(this.props.match.params.productId);
+      this.props.fetchReviews(this.props.match.params.productId);
   }
 
-  addToShoppingCart(e) {
-    // e.preventDefault();
+  addToCart(e) {
+    e.preventDefault();
 
     const params = {
       'product_id': this.props.product.id,
+      // 'buyer_id': this.props.buyer_id,
       'quantity': 1
     }
 
     this.props.createCartItem(params).then(() => {
       this.props.history.push('/shopping_cart_items')
     })
+
   }
 
   // hideContent(content) {
@@ -58,7 +62,7 @@ class ProductShow extends React.Component {
                   </div>
 
                   <div className="add-to-cart-btn-container">
-                    <button onClick={this.addToShoppingCart} type="button" className="add-to-cart-btn">
+                    <button onClick={this.addToCart} type="button" className="add-to-cart-btn">
                       Add to cart
                     </button>
                   </div>
@@ -78,6 +82,9 @@ class ProductShow extends React.Component {
               <span>Ships in 1-3 business days</span>
             </div>
           </div>
+          {/* <div className="reviews-container">
+            <ReviewIndexContainer />
+          </div> */}
         </div>
       );
   }

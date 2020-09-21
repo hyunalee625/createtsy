@@ -10,7 +10,7 @@
 #  updated_at :datetime         not null
 #
 class ShoppingCartItem < ApplicationRecord
-    validates :quantity, :buyer_id, :product_id, presence: true
+    validates :quantity, :product_id, presence: true
 
     belongs_to :user,
         foreign_key: :buyer_id,
