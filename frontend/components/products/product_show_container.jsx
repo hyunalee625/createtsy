@@ -10,11 +10,11 @@ import { getAllCartItems } from '../../util/shopping_cart_item_api_util';
 const msp = (state, ownProps ) => {
     let productId = ownProps.match.params.productId;
     let product = state.entities.products[productId];
-    let buyerId = state.entities.users[state.session.id].id;
+    // let buyerId = state.entities.users[state.session.id].id;
 
     return {
         product,
-        buyerId
+        // buyerId
     }
 }
 

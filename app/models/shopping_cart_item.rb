@@ -12,9 +12,9 @@
 class ShoppingCartItem < ApplicationRecord
     validates :quantity, :product_id, presence: true
 
-    belongs_to :user,
-        foreign_key: :buyer_id,
-        class_name: :User
+    # belongs_to :user,
+    #     foreign_key: :buyer_id,
+    #     class_name: :User
 
     belongs_to :product,
         foreign_key: :product_id,

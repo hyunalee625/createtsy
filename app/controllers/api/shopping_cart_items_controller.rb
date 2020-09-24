@@ -2,7 +2,8 @@ class Api::ShoppingCartItemsController < ApplicationController
     # before_action :ensure_login
 
     def index
-        @shopping_cart_items = @current_user.shopping_cart_item
+        # @shopping_cart_items = @current_user.shopping_cart_item
+        @shopping_cart_items = ShoppingCartItem.all
         render :index
     end
 
@@ -38,12 +39,12 @@ class Api::ShoppingCartItemsController < ApplicationController
         @shopping_cart_item = ShoppingCartItem.new(shopping_cart_items_params)
 
             if @shopping_cart_item.save!
-                # @shopping_cart_item.quantity += 1
-                # @max_quantity = false
-                #     if @shopping_cart_item.quantity > 10
-                #         @max_quantity = true
-                #         @shopping_cart_item.quantity = 10 # capping quantity to 10
-                #     end
+                @shopping_cart_item.quantity += 1
+                @max_quantity = false
+                    if @shopping_cart_item.quantity > 10
+                        @max_quantity = true
+                        @shopping_cart_item.quantity = 10 # capping quantity to 10
+                    end
                 render :show
             else
                 render json: @shopping_cart_item.errors.full_messages, status: 401

@@ -5,15 +5,18 @@ import {Link} from 'react-router-dom'
 class ShoppingCartIndexItem extends React.Component {
     constructor(props) {
         super(props);
+        // debugger
         this.state = {
-          id: this.props.shoppingCartItem.id,
-          quantity: this.props.shoppingCartItem.quantity,
-        };    
+          id: this.props.item.id,
+          quantity: this.props.item.quantity,
+          };   
+          
+        this.state.item = this.props.item;
     }
 
-    itemTotal() {
-        const quantity = this.props.item.quantity;
-        const price = this.props.item.price;
+    itemTotalPrice() {
+        const quantity = this.state.quantity;
+        const price = this.state.item.price;
         return parseFloat(price * quantity).toFixed(2);
 
     }
@@ -22,7 +25,7 @@ class ShoppingCartIndexItem extends React.Component {
         return e => this.setState({
             [field]: e.currentTarget.value
         }), () => {
-            this.props.updateShoppingCartItem(this.state);
+            this.props.updateCartItem(this.state);
         }
     }
 
@@ -57,12 +60,7 @@ class ShoppingCartIndexItem extends React.Component {
               </div>
               <div className="index-item-remove">
                 <button
-                  className="nav-signin-button"
-                  onClick={this.props.removeShoppingCartItem.bind(
-                    this,
-                    item.id
-                  )}
-                >
+                  onClick={() => this.props.deleteCartItem(this.props.cartItem.id).then(() => this.props.history.replace('/shopping_cart_items'))}>
                   Remove
                 </button>
               </div>
@@ -71,7 +69,7 @@ class ShoppingCartIndexItem extends React.Component {
             <div className="index-item-right">
               <select
                 className="item-quantity"
-                onChange={this.update("quantity")}
+                onChange={this.update('quantity')}
                 value={this.state.quantity}
               >
                 <option value="1">1</option>
@@ -86,7 +84,7 @@ class ShoppingCartIndexItem extends React.Component {
                 <option value="10">10</option>
               </select>
               <div className="index-item-price">
-                    <div>${this.itemTotal()}</div>
+                    <div>${this.itemTotalPrice()}</div>
                     <div>(${(item.price).toFixed(2)} each)</div>
               </div>
             </div>

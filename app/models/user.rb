@@ -16,9 +16,9 @@ class User < ApplicationRecord
     validates :password_digest, presence: true
     validates :password, length: { minimum: 4}, allow_nil: true
     
-    has_many :shopping_cart_items,
-        foreign_key: :buyer_id,
-        class_name: :ShoppingCartItem
+    # has_many :shopping_cart_items,
+    #     foreign_key: :buyer_id,
+    #     class_name: :ShoppingCartItem
 
 
     attr_reader :password

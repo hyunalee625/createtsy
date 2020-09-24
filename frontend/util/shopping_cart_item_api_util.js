@@ -17,14 +17,14 @@ export const getAllCartItems = () => {
 export const updateCartItem = (cartItem) => {
   return $.ajax({
     method: "PATCH",
-    url: `/api/shopping_cart_items/${shopping_cart_item.id}`,
+    url: `/api/shopping_cart_items/${cartItem.id}`,
     data: { cartItem },
   });
 };
 
-export const deleteCartItem = (id) => {
+export const deleteCartItem = (shoppingCartItemId) => {
   return $.ajax({
     method: "DELETE",
-    url: `/api/shopping_cart_items/${id}`,
+    url: `/api/shopping_cart_items/${shoppingCartItemId}`,
   });
 };

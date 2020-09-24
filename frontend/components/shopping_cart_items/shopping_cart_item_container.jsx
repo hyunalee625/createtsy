@@ -8,10 +8,12 @@ import {
 import { getAllProducts } from '../../util/product_api_util';
 
 const msp = (state) => {
+    // debugger
     let items = Object.keys(state.entities.shoppingCartItems).map(id => state.entities.shoppingCartItems[id]);
 
+    // debugger
     return {
-        buyer_id: state.session.id,
+        // buyer_id: state.session.id,
         items
     }
 }
@@ -19,8 +21,9 @@ const msp = (state) => {
 const mdp = dispatch => {
     return {
       getAllCartItems: () => dispatch(getAllCartItems()),
-      updateCartItem: item => dispatch(updateCartItem(item)),
-      deleteCartItem: id => dispatch(deleteCartItem(id))
+      updateCartItem: (cartItem) => dispatch(updateCartItem(cartItem)),
+      deleteCartItem: (shoppingCartItemId) =>
+        dispatch(deleteCartItem(shoppingCartItemId)),
     };
 }
 

@@ -17,21 +17,30 @@ class ShoppingCartIndex extends React.Component {
 
   totalPrice() {
       let total = 0;
-      
+      // debugger
       for(let i = 0; i < this.props.items.length; i++) {
+        // debugger
           let item = this.props.items[i];
-          total += parseFloat(item.price * item.quantity).toFixed(2);
+          total += (item.price * item.quantity);
       }
 
-      return total
+      return total.toFixed(2);
   }
 
   render() {
     return (
       <div className="cart-index-container">
         <h1>{this.totalQuantity()} items in your cart</h1>
-        <ShoppingCartIndexItem />
-
+        <div>
+          {this.props.items.map((item) => (
+            <ShoppingCartIndexItem
+              // deleteProduct={this.props.deleteShoppingCartItem}
+              updateCartItem={this.props.updateCartItem}
+              item={item}
+              key={item.id}
+            />
+          ))}
+        </div>
         <div className="item-total">
           <span>Item(s) total</span>
           <span>${this.totalPrice()}</span>
