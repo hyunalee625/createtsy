@@ -21,19 +21,28 @@
 
 User.destroy_all
 Product.destroy_all
+Review.destroy_all
 
 # creating User
-user1 = User.create!(
+Lauren = User.create!(
     {email: 'lauren@gmail.com',
     first_name: 'lauren',
     password: 'abcde'}
 )
 
-user2 = User.create!(
+Juju = User.create!(
     {email: 'juju@gmail.com',
     first_name: 'juju',
     password: '12345'}
 )
+
+Jin = User.create!(
+     {email: 'jinjin@gmail.com',
+    first_name: 'jin',
+    password: '98765'}
+)
+
+
 
 # product1 = Product.create!(
 #     {
@@ -157,3 +166,9 @@ product1.photo.attach(io: link1, filename: 'tie_dye_hoodie1.jpg')
 # link10 = open("https://createtsy-products-seeds.s3.amazonaws.com/gaming_mouse_pad1.jpg")
 # product10.photo.attach(io: link10, filename: 'gaming_mouse_pad1.jpg')
     
+
+
+## REVIEWS ##
+
+review1 = Review.create(user_id: Lauren.id, product_id: product1.id, body:"Fast shipping and quality product! Perfect item for fall weather to stay cozy.", rating: 5)
+review2 = Review.create(user_id: Juju.id, product_id: product1.id, body:'Bought it as a gift and she loved it! Highly recommend', rating: 4)

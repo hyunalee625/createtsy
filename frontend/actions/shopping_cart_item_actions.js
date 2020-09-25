@@ -53,8 +53,8 @@ export const updateCartItem = (cartItem) => (dispatch) => {
   );
 };
 
-export const deleteCartItem = (shoppingCartItemId) => (dispatch) => {
-  return ShoppingCartItemAPIUtil.deleteCartItem(shoppingCartItemId).then(() =>
-    dispatch(removeShoppingCartItem(shoppingCartItemId))
+export const deleteCartItem = (cartItemId) => (dispatch) => {
+  return ShoppingCartItemAPIUtil.deleteCartItem(cartItemId).then((cartItem) =>
+    dispatch(removeShoppingCartItem(cartItem.id))
   );
 };

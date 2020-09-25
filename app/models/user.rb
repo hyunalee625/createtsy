@@ -20,6 +20,8 @@ class User < ApplicationRecord
     #     foreign_key: :buyer_id,
     #     class_name: :ShoppingCartItem
 
+    has_many :reviews
+
 
     attr_reader :password
     after_initialize :ensure_session_token!

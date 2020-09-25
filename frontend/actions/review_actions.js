@@ -5,10 +5,12 @@ export const RECEIVE_ALL_REVIEWS = "RECEIVE_ALL_REVIEWS";
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
 export const RECEIVE_REVIEW_ERRORS = "RECEIVE_REVIEW_ERRORS";
 
-export const receiveOneReview = review => {
+export const receiveOneReview = (review, rating, user) => {
   return {
     type: RECEIVE_ONE_REVIEW,
     review,
+    rating,
+    user
   };
 };
 
@@ -44,7 +46,7 @@ export const fetchReviews = productId => dispatch => {
 
 export const createReview = (review) => (dispatch) => {
   return ReviewAPIUtil.createReview(review).then(
-    (review) => dispatch(receiveAllReviews(review)),
+    (review) => dispatch(receiveOneReview(review)),
     (errors) => dispatch(receiveReviewErrors(errors.responseJSON))
   );
 };

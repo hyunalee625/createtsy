@@ -10,6 +10,7 @@ import ShoppingCartItemContainer from './shopping_cart_items/shopping_cart_item_
 // import { AuthRoute } from '../util/route_util';
 import NavContainer from './nav/nav_container';
 import LandingContainer from './landing/landing_container';
+import SearchContainer from "./search/search_container";
 import Modal from './modal/modal'
 
 
@@ -22,6 +23,7 @@ const App = () => (
         <a href="/">
           <h1 className="createtsy-logo">creatEtsy</h1>
         </a>
+        <SearchContainer />
         <div>
           <NavContainer />
         </div>
@@ -46,6 +48,7 @@ const App = () => (
           <ProductIndexContainer />
         </div>
       </Route>
+      <Route path="/search" exact component={ProductIndexContainer} />
     </Switch>
   </div>
 );

@@ -3,6 +3,10 @@ import {
   RECEIVE_ALL_PRODUCTS,
 } from "../actions/product_actions";
 
+import {
+  RECEIVE_PRODUCT_SEARCH
+} from '../actions/search_actions';
+
 const productsReducer = ( oldState = {}, action) => {
     Object.freeze(oldState);
 
@@ -12,6 +16,12 @@ const productsReducer = ( oldState = {}, action) => {
         return Object.assign({}, oldState, newState);
       case RECEIVE_ALL_PRODUCTS:
         return action.products;
+      case RECEIVE_PRODUCT_SEARCH:
+        if (!action.products) {
+          return {}
+        } else {
+          return action.products;
+        }
       default:
         return oldState;
     }

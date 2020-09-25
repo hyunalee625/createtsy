@@ -60,7 +60,8 @@ class ShoppingCartIndexItem extends React.Component {
               </div>
               <div className="index-item-remove">
                 <button
-                  onClick={() => this.props.deleteCartItem(this.props.cartItem.id).then(() => this.props.history.replace('/shopping_cart_items'))}>
+                  onClick= {() => this.props.deleteCartItem(this.props.item.id)}
+                >
                   Remove
                 </button>
               </div>
@@ -69,8 +70,8 @@ class ShoppingCartIndexItem extends React.Component {
             <div className="index-item-right">
               <select
                 className="item-quantity"
-                onChange={this.update('quantity')}
-                value={this.state.quantity}
+                onChange={this.update("quantity")}
+                value={this.props.quantity}
               >
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -84,8 +85,8 @@ class ShoppingCartIndexItem extends React.Component {
                 <option value="10">10</option>
               </select>
               <div className="index-item-price">
-                    <div>${this.itemTotalPrice()}</div>
-                    <div>(${(item.price).toFixed(2)} each)</div>
+                <div>${this.itemTotalPrice()}</div>
+                <div>(${item.price.toFixed(2)} each)</div>
               </div>
             </div>
           </div>

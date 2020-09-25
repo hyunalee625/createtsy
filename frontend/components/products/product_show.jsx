@@ -62,14 +62,18 @@ class ProductShow extends React.Component {
                   </div>
 
                   <div className="add-to-cart-btn-container">
-                    <button onClick={this.addToCart} type="button" className="add-to-cart-btn">
+                    <button
+                      onClick={this.addToCart}
+                      type="button"
+                      className="add-to-cart-btn"
+                    >
                       Add to cart
                     </button>
                   </div>
                   <div className="product-description-container">
                     Description:
-                      {/* {this.hideContent(product.description)} */}
-                      <p>{product.description}</p>
+                    {/* {this.hideContent(product.description)} */}
+                    <p>{product.description}</p>
                   </div>
                 </div>
               </div>
@@ -82,9 +86,10 @@ class ProductShow extends React.Component {
               <span>Ships in 1-3 business days</span>
             </div>
           </div>
-          {/* <div className="reviews-container">
-            <ReviewIndexContainer />
-          </div> */}
+          <div className="reviews-container">
+            <ReviewIndexContainer
+            />
+          </div>
         </div>
       );
   }

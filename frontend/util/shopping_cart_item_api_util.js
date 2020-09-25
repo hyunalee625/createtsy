@@ -22,9 +22,9 @@ export const updateCartItem = (cartItem) => {
   });
 };
 
-export const deleteCartItem = (shoppingCartItemId) => {
+export const deleteCartItem = (cartItemId) => {
   return $.ajax({
     method: "DELETE",
-    url: `/api/shopping_cart_items/${shoppingCartItemId}`,
+    url: `/api/shopping_cart_items/${cartItemId}`,
   });
 };
