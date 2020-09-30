@@ -11,7 +11,7 @@ class ProductShow extends React.Component {
 
   componentDidMount() {
       this.props.getOneProduct(this.props.match.params.productId);
-      this.props.fetchReviews(this.props.match.params.productId);
+      // this.props.fetchReviews(this.props.match.params.productId);
   }
 
   addToCart(e) {
@@ -52,7 +52,7 @@ class ProductShow extends React.Component {
                 </div>
               </div>
               <div className="product-right-col">
-                <div className="prdocut-info">
+                <div className="product-info">
                   <div className="product-show-name">
                     {product.product_name}
                   </div>
@@ -86,10 +86,10 @@ class ProductShow extends React.Component {
               <span>Ships in 1-3 business days</span>
             </div>
           </div>
-          <div className="reviews-container">
+          {/* <div className="reviews-container">
             <ReviewIndexContainer
             />
-          </div>
+          </div> */}
         </div>
       );
   }

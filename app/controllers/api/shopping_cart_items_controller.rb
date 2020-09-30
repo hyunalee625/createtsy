@@ -2,22 +2,17 @@ class Api::ShoppingCartItemsController < ApplicationController
     # before_action :ensure_login
 
     def index
-        # @shopping_cart_items = @current_user.shopping_cart_item
+        # @shopping_cart_items = current_user.shopping_cart_items
         @shopping_cart_items = ShoppingCartItem.all
+        # @products = Product.all
         render :index
     end
-
-
-    # def index 
-    #     @shopping_cart_items = ShoppingCartItem.where(buyer_id: params[:buyer_id])
-    #     render :index 
-    # end
 
     # def create
     #     @shopping_cart_item = ShoppingCartItem.find_by(buyer_id: params[:cartItem][:buyer_id], product_id: params[:cartItem][:product_id])
 
     #     if @shopping_cart_item
-    #         @shopping_cart_item.quantity += 1
+    #         @shoppinog_cart_item.quantity += 1
             # @max_quantity = false
             # if @shopping_cart_item.quantity > 10
             #     @max_quantity = true
@@ -40,11 +35,11 @@ class Api::ShoppingCartItemsController < ApplicationController
 
             if @shopping_cart_item.save!
                 @shopping_cart_item.quantity += 1
-                @max_quantity = false
-                    if @shopping_cart_item.quantity > 10
-                        @max_quantity = true
-                        @shopping_cart_item.quantity = 10 # capping quantity to 10
-                    end
+                # @max_quantity = false
+                #     if @shopping_cart_item.quantity > 10
+                #         @max_quantity = true
+                #         @shopping_cart_item.quantity = 10 # capping quantity to 10
+                #     end
                 render :show
             else
                 render json: @shopping_cart_item.errors.full_messages, status: 401

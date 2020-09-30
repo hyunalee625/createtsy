@@ -22,7 +22,7 @@ const mdp = dispatch => {
     return {
       getOneProduct: (id) => dispatch(getOneProduct(id)),
       createCartItem: (cartItem) => dispatch(createCartItem(cartItem)),
-      fetchReviews: (productId) => dispatch(fetchReviews(productId))
+    //   fetchReviews: (productId) => dispatch(fetchReviews(productId))
     };
 }
 
