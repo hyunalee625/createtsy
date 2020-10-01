@@ -11,10 +11,10 @@ export const getAllProducts = () => {
 
 }
 
-export const getOneProduct = id => {
+export const getOneProduct = productId => {
     return $.ajax({
         method: 'GET',
-        url: `api/products/${id}`
+        url: `api/products/${productId}`
 
     })
 }

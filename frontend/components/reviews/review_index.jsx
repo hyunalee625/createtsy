@@ -1,6 +1,9 @@
 import React from 'react';
-import ReviewIndexItem from './review_index_item';
 import Rating from 'react-rating';
+import ReviewIndexItem from './review_index_item';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
+// import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 
 
 class ReviewIndex extends React.Component {
@@ -34,6 +37,7 @@ class ReviewIndex extends React.Component {
         return (
             <div>
                 <div>
+                <div>Reviews</div>
                     {reviews}
                 </div>
             </div>

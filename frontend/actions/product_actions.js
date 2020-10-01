@@ -29,12 +29,12 @@ export const receiveProductErrors = (errors) => {
 
 // thunk action creators
 
-export const getOneProduct = id => dispatch => {
+export const getOneProduct = productId => dispatch => {
   // debugger
-  return productAPIUtil.getOneProduct(id)
-    .then(product => dispatch(receiveOneProduct(product))
-    , error => (dispatch(receiveProductErrors(error.responseJSON))
-  ))
+  return productAPIUtil.getOneProduct(productId).then(
+    (product) => dispatch(receiveOneProduct(product)),
+    (error) => dispatch(receiveProductErrors(error.responseJSON))
+  );
 };
 
 export const getAllProducts = () => (dispatch) => {

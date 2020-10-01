@@ -1,28 +1,34 @@
 import { connect } from 'react-redux';
-import { getOneProduct } from '../../actions/product_actions';
 import ProductShow from './product_show';
+import { getOneProduct } from '../../actions/product_actions';
+import { fetchUser } from "../../actions/user_actions";
 import { createCartItem } from '../../actions/shopping_cart_item_actions';
-import {fetchReviews} from '../../actions/review_actions';
-import { fetchCartItems } from '../../util/shopping_cart_item_api_util';
+import { deleteReview } from '../../actions/review_actions';
+import createReviewForm from '../reviews/review_form';
 
 
 
 const msp = (state, ownProps ) => {
-    let productId = ownProps.match.params.productId;
-    let product = state.entities.products[productId];
-    // let buyerId = state.entities.users[state.session.id].id;
+    // let productId = ownProps.match.params.productId;
+    let product = state.entities.products[ownProps.match.params.productId];
+    // let reviews = Object.values(state.entities.reviews)
+    let user = state.entities.users
 
     return {
         product,
-        // buyerId
+        user,
+        // reviews: product && reviews.length > 0 ? product.reviewIds.map((reviewId) => state.entities.review[reviewId]) : [],
+        // currentUser: state.session.currentUser ? state.entities.users[state.session.currentUser.id] : {},
+        
     }
 }
 
 const mdp = dispatch => {
     return {
-      getOneProduct: (id) => dispatch(getOneProduct(id)),
+      fetchUser: (userId) => dispatch(fetchUser(userId)),
+      getOneProduct: (productId) => dispatch(getOneProduct(productId)),
       createCartItem: (cartItem) => dispatch(createCartItem(cartItem)),
-    //   fetchReviews: (productId) => dispatch(fetchReviews(productId))
+      deleteReview: (reviewId) => dispatch(deleteReview(reviewId)),
     };
 }
 

@@ -2,8 +2,9 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { createReview } from '../../actions/review_actions';
 import ReviewIndex from './review_index'
+import ReviewForm from './review_form'
 
-const msp = (state, ownProps) => {
+const msp = (state) => {
     const review = {
         body: '',
         user_id: state.session.id,
@@ -12,9 +13,8 @@ const msp = (state, ownProps) => {
     }
 
     return {
-        review: review,
-        reviews: state.entities.review,
-        errors: state.errors.comment,
+        review,
+        reviews: state.entities.reviews,
         user_id: state.session.id,
         product_id: state.entities.products.id,
     }
@@ -27,4 +27,4 @@ const mdp = dispatch => {
     }
 }
 
-export default withRouter(connect(msp, mdp)(ReviewIndex))
+export default withRouter(connect(msp, mdp)(ReviewForm))
