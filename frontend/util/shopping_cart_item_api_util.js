@@ -6,7 +6,7 @@ export const createCartItem = (cartItem) => {
   });
 };
 
-export const getAllCartItems = () => {
+export const fetchCartItems = () => {
   return $.ajax({
     method: "GET",
     url: `/api/shopping_cart_items`

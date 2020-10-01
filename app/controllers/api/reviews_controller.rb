@@ -1,7 +1,14 @@
 class Api::ReviewsController < ApplicationController
 
     def index
-            @reviews = Review.where(product_id: params[:product_id])
+        # @reviews = Review.where(product_id: params[:product_id])
+        @reviews = Review.all 
+        render :index
+    end
+
+    def show
+        @review = Review.find_by(id: params[:id])
+        render :show
     end
 
     def create
@@ -28,7 +35,6 @@ class Api::ReviewsController < ApplicationController
         @review = Review.find_by(id: params[:id])
 
         if @review.destroy
-            render :show
         else
             render json: @review.errors.full_messages, status: 422
         end
@@ -37,8 +43,8 @@ class Api::ReviewsController < ApplicationController
     private
 
     def review_params
-        # params.require(:review).permit(:body, :user_id, :product_id, :rating)
-        params.require(:review).permit(:product_id, :rating)
-
+        params.require(:review).permit(:id, :body, :user_id, :product_id, :rating)
+        # params.require(:review).permit(:product_id, :rating)
     end
+    
 end

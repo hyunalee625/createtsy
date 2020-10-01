@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
 import ShoppingCartIndex from './shopping_cart_index';
 import {
-  getAllCartItems,
+  fetchCartItems,
   updateCartItem,
   deleteCartItem,
 } from "../../actions/shopping_cart_item_actions";
-import { getAllProducts } from '../../util/product_api_util';
 
 const msp = (state) => {
     // debugger
@@ -13,17 +12,15 @@ const msp = (state) => {
 
     // debugger
     return {
-        // buyer_id: state.session.id,
         items
     }
 }
 
 const mdp = dispatch => {
     return {
-      getAllCartItems: () => dispatch(getAllCartItems()),
+      fetchCartItems: () => dispatch(fetchCartItems()),
       updateCartItem: (cartItem) => dispatch(updateCartItem(cartItem)),
-      deleteCartItem: (shoppingCartItemId) =>
-        dispatch(deleteCartItem(shoppingCartItemId)),
+      deleteCartItem: (cartItemId) => dispatch(deleteCartItem(cartItemId)),
     };
 }
 

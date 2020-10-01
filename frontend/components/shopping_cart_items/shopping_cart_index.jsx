@@ -8,7 +8,7 @@ class ShoppingCartIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getAllCartItems();;
+    this.props.fetchCartItems();;
   }
 
   totalQuantity() {
@@ -34,7 +34,6 @@ class ShoppingCartIndex extends React.Component {
         <div>
           {this.props.items.map((item) => (
             <ShoppingCartIndexItem
-              // deleteProduct={this.props.deleteShoppingCartItem}
               updateCartItem={this.props.updateCartItem}
               item={item}
               key={item.id}

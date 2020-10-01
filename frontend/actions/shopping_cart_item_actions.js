@@ -8,7 +8,7 @@ export const REMOVE_SHOPPING_CART_ITEM = "REMOVE_SHOPPING_CART_ITEM";
 const receiveShoppingCartItem = (cartItem) => {
   return {
     type: RECEIVE_SHOPPING_CART_ITEM,
-    cartItem,
+    cartItem: cartItem,
   };
 };
 
@@ -35,8 +35,8 @@ const removeShoppingCartItem = (cartItemId) => {
 
 // thunk action creators 
 
-export const getAllCartItems = () => dispatch => {
-    return ShoppingCartItemAPIUtil.getAllCartItems().then((cartItems) =>
+export const fetchCartItems = () => dispatch => {
+    return ShoppingCartItemAPIUtil.fetchCartItems().then((cartItems) =>
       dispatch(receiveShoppingCartItems(cartItems))
     );
 }
@@ -54,7 +54,7 @@ export const updateCartItem = (cartItem) => (dispatch) => {
 };
 
 export const deleteCartItem = (cartItemId) => (dispatch) => {
-  return ShoppingCartItemAPIUtil.deleteCartItem(cartItemId).then((cartItem) =>
-    dispatch(removeShoppingCartItem(cartItem.id))
+  return ShoppingCartItemAPIUtil.deleteCartItem(cartItemId).then(() =>
+    dispatch(removeShoppingCartItem(cartItemId))
   );
 };

@@ -3,7 +3,7 @@ import { getOneProduct } from '../../actions/product_actions';
 import ProductShow from './product_show';
 import { createCartItem } from '../../actions/shopping_cart_item_actions';
 import {fetchReviews} from '../../actions/review_actions';
-import { getAllCartItems } from '../../util/shopping_cart_item_api_util';
+import { fetchCartItems } from '../../util/shopping_cart_item_api_util';
 
 
 
