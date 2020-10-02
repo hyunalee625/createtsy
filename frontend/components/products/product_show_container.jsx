@@ -4,7 +4,6 @@ import { getOneProduct } from '../../actions/product_actions';
 import { fetchUser } from "../../actions/user_actions";
 import { createCartItem } from '../../actions/shopping_cart_item_actions';
 import { deleteReview } from '../../actions/review_actions';
-import createReviewForm from '../reviews/review_form';
 
 
 

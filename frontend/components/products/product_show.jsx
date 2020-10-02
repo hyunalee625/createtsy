@@ -1,6 +1,6 @@
 import React from "react";
 import ReviewIndexContainer from '../../components/reviews/review_index_container'
-import createReviewContrainer from '../reviews/create_review_container'
+import createReviewContainer from '../reviews/create_review_container'
 import { Link } from "react-router-dom";
 
 
@@ -88,8 +88,8 @@ class ProductShow extends React.Component {
           </div>
         </div>
         <div className="reviews-container">
-        <ReviewIndexContainer product_id={product.id} />
-        <createReviewContrainer />
+          <createReviewContainer />
+          <ReviewIndexContainer product_id={product.id} />
         </div>
       </div>
     );

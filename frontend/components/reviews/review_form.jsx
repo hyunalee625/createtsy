@@ -16,7 +16,7 @@ class ReviewForm extends React.Component {
     e.preventDefault();
     this.props
       .createReview(this.state)
-    .then(() => {this.setState({ body: "" })
+    .then(() => {this.setState({ 'body': "" })
     });
   }
 

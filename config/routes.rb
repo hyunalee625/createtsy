@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :reviews, only: [:index, :create, :udpate, :destroy]
     end
     resources :shopping_cart_items, only: [:index, :create, :update, :destroy]
+    get '/search', to: 'search#search'
   end
   
 

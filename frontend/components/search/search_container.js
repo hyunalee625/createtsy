@@ -9,7 +9,7 @@ const msp = (state) => ({
 
 const mdp = (dispatch) => ({
   searchProducts: (query_string) => dispatch(searchProducts(query_string)),
-  getOneProduct: (id) => dispatch(getOneProduct(id)),
+  getOneProduct: (productId) => dispatch(getOneProduct(productId)),
 });
 
 export default connect(msp, mdp)(Search);
