@@ -3,6 +3,7 @@ import * as productAPIUtil from "../util/product_api_util";
 export const RECEIVE_ONE_PRODUCT = "RECEIVE_ONE_PRODUCT";
 export const RECEIVE_ALL_PRODUCTS = "RECEIVE_ALL_PRODUCTS";
 export const RECEIVE_PRODUCT_ERRORS = "RECEIVE_PRODUCT_ERRORS";
+export const RECEIVE_SEARCH_PRODUCT = "RECEIVE_SEARCH_PRODUCT";
 
 // action creators
 export const receiveOneProduct = product => {
@@ -27,6 +28,13 @@ export const receiveProductErrors = (errors) => {
     }
 };
 
+export const receiveSearchProduct = products => {
+  return {
+    type: RECEIVE_SEARCH_PRODUCT,
+    products
+  }
+}
+
 // thunk action creators
 
 export const getOneProduct = productId => dispatch => {
@@ -48,5 +56,8 @@ export const getAllProducts = () => (dispatch) => {
     // )
 };
 
-
+export const searchProducts = (search_query) => (dispatch) =>
+  productAPIUtil
+    .searchProducts(search_query)
+    .then((products) => dispatch(receiveSearchProducts(products)));
 

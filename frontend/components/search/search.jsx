@@ -5,7 +5,7 @@ class Search extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { query: "" };
+    this.state = { search_query: "" };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
   }
@@ -13,8 +13,8 @@ class Search extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
-    this.setState({ query: "" });
-    this.props.searchProducts(this.state.query).then(() => {
+    this.setState({ search_query: "" });
+    this.props.searchProducts(this.state.search_query).then(() => {
       this.props.history.push("/search");
     });
   }
@@ -32,8 +32,8 @@ class Search extends React.Component {
           <input
             className="search-input"
             type="text"
-            onChange={this.update("query")}
-            value={this.state.query}
+            onChange={this.update("search_query")}
+            value={this.state.search_query}
             placeholder="Search for anything"
           />
 

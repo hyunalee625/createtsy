@@ -19,6 +19,13 @@ export const getOneProduct = productId => {
     })
 }
 
+export const searchProducts = (search_query) =>
+  $.ajax({
+    method: "GET",
+    url: `api/products/search`,
+    data: { search_query },
+  });
+
 // const proxyurl = "https://cors-anywhere.herokuapp.com/";
 // const url = "https://example.com"; // site that doesn’t send Access-Control-*
 // fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com

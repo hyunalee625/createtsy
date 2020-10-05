@@ -21,6 +21,17 @@ class Api::ProductsController < ApplicationController
         render :show
     end
 
+    def search 
+        search_words = params[:search_query].downcase
+
+        @products = Product.all.select do |product|
+            product_name = product.product_name.downcase
+            product_name.include?(search_words)
+        end
+
+        render :index
+    end
+
     private
 
     def product_params
