@@ -19,11 +19,11 @@ export const getOneProduct = productId => {
     })
 }
 
-export const searchProducts = (search_query) =>
+export const searchProducts = (query) =>
   $.ajax({
     method: "GET",
     url: `api/products/search`,
-    data: { search_query },
+    data: { query },
   });
 
 // const proxyurl = "https://cors-anywhere.herokuapp.com/";

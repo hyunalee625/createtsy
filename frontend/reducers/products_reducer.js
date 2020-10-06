@@ -19,10 +19,10 @@ const productsReducer = ( oldState = {}, action) => {
       case RECEIVE_ALL_PRODUCTS:
         return action.products;
       case RECEIVE_SEARCH_PRODUCT:
-        if (!action.products) {
+        if (!action.results) {
           return {};
         } else {
-          return action.products;
+          return action.results;
         }
       case RECEIVE_ONE_REVIEW:
         if (!action.product) {

@@ -4,29 +4,18 @@ class Api::ProductsController < ApplicationController
         @products = Product.all 
         render :index
     end
-
-    # def create
-    #     @product = Product.new(product_params)
-
-    #     if @product.save
-    #         render :show
-    #     else
-    #         render json: @product.errors.full_messages, status: 422
-    #     end
-        
-    # end
     
     def show
-        @product = Product.find(params[:id])
+        @product = Product.find_by(id: params[:id])
         render :show
     end
 
     def search 
-        search_words = params[:search_query].downcase
+        search_word = params[:search_query].downcase
 
         @products = Product.all.select do |product|
             product_name = product.product_name.downcase
-            product_name.include?(search_words)
+            product_name.include?(search_word)
         end
 
         render :index
@@ -35,7 +24,7 @@ class Api::ProductsController < ApplicationController
     private
 
     def product_params
-        params.require(:product).permit(:product_name, :description, :price)
+        params.require(:product).permit(:id, :product_name, :description, :price)
     end
 
 end

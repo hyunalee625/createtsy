@@ -2,9 +2,9 @@ import React from 'react';
 import { withRouter } from 'react-router-dom'
 import Rating from 'react-rating';
 import Moment from 'react-moment'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
-// import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar as fullStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 
 const ReviewIndexItem = ({review}) => {
     return (
@@ -15,8 +15,8 @@ const ReviewIndexItem = ({review}) => {
         </div>
         <Rating
           className="rating"
-          // emptySymbol={<FontAwesomeIcon icon={regularStar} />}
-          // fullSymbol={<FontAwesomeIcon icon={solidStar} />}
+          emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
+          fullSymbol={<FontAwesomeIcon icon={fullStar} />}
           initialRating={review.rating}
           readonly={true}
         />

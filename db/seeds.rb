@@ -23,7 +23,7 @@ User.destroy_all
 Product.destroy_all
 Review.destroy_all
 
-# creating User
+##### creating User #####
 Lauren = User.create!(
     {email: 'lauren@gmail.com',
     first_name: 'lauren',
@@ -37,29 +37,29 @@ Juju = User.create!(
 )
 
 Jin = User.create!(
-     {email: 'jinjin@gmail.com',
+    {email: 'jinjin@gmail.com',
     first_name: 'jin',
     password: '98765'}
 )
 
+Dan = User.create!(
+    {email: 'dan@gmail.com',
+    first_name: 'dan',
+    password: '54321'}
+)
 
+Gabe = User.create!(
+    {email: 'gabe@gmail.com',
+    first_name: 'gabe',
+    password: 'fghij'}
+)
 
-# product1 = Product.create!(
-#     {
-#         product_name: "Tie-dye hoodie",
-#         description: "trendy",
-#         price: 68,
-#     }
-# )
-
-# link1 = open("https://createtsy-products-seeds.s3.amazonaws.com/tie_dye_hoodie1.jpg")
-# product1.photo.attach(io: link1, filename: 'tie_dye_hoodie1.jpg')
-
+##### creating Product #####
 
 product1 = Product.create!(
     {
-        product_name: "Tie-dye hoodie",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et. Augue neque gravida in fermentum et. Enim ut tellus elementum sagittis. Magna fermentum iaculis eu non diam phasellus vestibulum. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Quis enim lobortis scelerisque fermentum dui. Mattis enim ut tellus elementum sagittis. Nisi porta lorem mollis aliquam ut porttitor leo. Scelerisque fermentum dui faucibus in ornare. Lectus magna fringilla urna porttitor rhoncus. In nulla posuere sollicitudin aliquam. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Risus nec feugiat in fermentum posuere urna nec tincidunt. Accumsan tortor posuere ac ut consequat semper viverra nam libero.",
+        product_name: "Tie-Dye hoodie",
+        description: "A must-have item this fall! It's super soft and smooth. You can either wash with hot/warm or cold water. The color won't bleed or fade so hold you worries!",
         price: 68,
     }
 )
@@ -67,38 +67,44 @@ product1 = Product.create!(
 link1 = open("https://createtsy-products-seeds.s3.amazonaws.com/test.jpg")
 product1.photo.attach(io: link1, filename: 'tie_dye_hoodie1.jpg')
 
-# product2 = Product.create!(
-#     {
-#         product_name: "Ceramic cup set",
-#         description: "perfect for gift",
-#         price: 25.50,
-#     }
-# )
+###
 
-# link2 = open("https://createtsy-products-seeds.s3.amazonaws.com/ceramic_cups1.jpg")
-# product2.photo.attach(io: link2, filename: 'ceramic_cups1.jpg')
-        
-# product3 = Product.create!(
-#     {
-#         product_name: "Unicorn macarons",
-#         description: "Hand Painted with food coloring and vanilla extract!",
-#         price: 42,
-#     }
-# )
+product2 = Product.create!(
+    {
+        product_name: "Doraemon Bed Sheet",
+        description: "Your child will love this cute Doraemon theme bed sheet. It is made of unique fabric that's breathable and lightweight.",
+        price: 57,
+    }
+)
 
-# link3 = open("https://createtsy-products-seeds.s3.amazonaws.com/unicorn_macarons1.jpg")
-# product3.photo.attach(io: link3, filename: 'unicorn_macarons1.jpg')
+link2 = open("https://createtsy-products-seeds.s3.amazonaws.com/bed_sheet1.jpg")
+product2.photo.attach(io: link2, filename: 'bed_sheet1.jpg')
 
-# product4 = Product.create!(
-#     {
-#         product_name: "Granite keyboard",
-#         description: "Granite is a mega-keycap set - it offers coverage over a wide variety of both common and enthusiast mechanical keyboards. If you are looking for a consistent aesthetic that you will be able to use around the world with all of your keyboards, SA Granite is the ultimate set.",
-#         price: 70,
-#     }
-# )
+###
 
-# link4 = open("https://createtsy-products-seeds.s3.amazonaws.com/granite_keyboard1.jpg")
-# product4.photo.attach(io: link4, filename: 'granite_keyboard1.jpg')
+product3 = Product.create!(
+    {
+        product_name: "Carry-On Luggauge",
+        description: "This carry-on is lightweight and sized to fit in the overhead bin of all airplanes. It is easy to bring around with spinner wheels and has an interior compression system to make packing easy.",
+        price: 120,
+    }
+)
+
+link3 = open("https://createtsy-products-seeds.s3.amazonaws.com/carry_on1.jpg")
+product3.photo.attach(io: link3, filename: 'carry_on1.jpg')
+
+###
+
+product4 = Product.create!(
+    {
+        product_name: "Desk Lamp",
+        description: "This desk lamp is perfect for late night readings or simply to leave it on to brighten up your space. The brightness is adjustable.",
+        price: 70,
+    }
+)
+
+link4 = open("https://createtsy-products-seeds.s3.amazonaws.com/desk_lamp1.jpg")
+product4.photo.attach(io: link4, filename: 'desk_lamp1.jpg')
     
 # product5 = Product.create!(
 #     {
@@ -171,4 +177,6 @@ product1.photo.attach(io: link1, filename: 'tie_dye_hoodie1.jpg')
 ## REVIEWS ##
 
 review1 = Review.create(user_id: Lauren.id, product_id: product1.id, body:"Fast shipping and quality product! Perfect item for fall weather to stay cozy.", rating: 5)
-review2 = Review.create(user_id: Juju.id, product_id: product1.id, body:'Bought it as a gift and she loved it! Highly recommend', rating: 4)
+review2 = Review.create(user_id: Juju.id, product_id: product3.id, body:"The interior was not up to par. I like the color and the exterior design, but the inside was kind of disappointing.", rating: 3)
+review3 = Review.create(user_id: Jin.id, product_id: product2.id, body:"Most adorable bed sheet! It's is very soft and comfy.", rating: 4)
+

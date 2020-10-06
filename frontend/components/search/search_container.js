@@ -3,7 +3,7 @@ import { searchProducts } from "../../actions/product_actions";
 import Search from "./search";
 
 const mdp = (dispatch) => ({
-  searchProducts: (search_query) => dispatch(searchProducts(search_query)),
+  searchProducts: (query) => dispatch(searchProducts(query)),
 });
 
 export default connect(null, mdp)(Search);

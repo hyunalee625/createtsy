@@ -8,14 +8,15 @@ class ShoppingCartIndexItem extends React.Component {
     // debugger
     this.state = {
       id: this.props.item.id,
-      quantity: this.props.item.quantity
+      // quantity: this.props.item.quantity,
     };
 
+    this.handleUpdate = this.handleUpdate.bind(this)
     this.state.item = this.props.item;
   }
 
-  itemTotalPrice(){
-    const quantity = this.state.quantity;
+  itemTotalPrice() {
+    const quantity = this.props.item.quantity;
     const price = this.props.item.price;
     return parseFloat(price * quantity).toFixed(2);
   }
@@ -24,30 +25,38 @@ class ShoppingCartIndexItem extends React.Component {
     const values = [];
 
     for (let i = 1; i <= 10; i++) {
-      values.push(<option key={i} value={i}>{`${i}`}</option>)
+      values.push(<option key={i} value={i}>{`${i}`}</option>);
     }
 
     return (
       <select
         className="item-quantity"
-        onChange={this.update("quantity")}
-        value={this.state.item.quantity}
-      >{values}</select>
+        onChange={this.handleUpdate}
+        defaultValue={this.state.item.quantity}
+      >
+        {values}
+      </select>
     );
   }
 
-  update(field) {
-    return (
-      (e) =>
-        this.setState({
-          [field]: e.currentTarget.value,
-        }),
-      () => {
-        this.props.updateCartItem(this.state);
-      }
+  // update(field) {
+  //   return (
+  //     (e) => {
+  //       this.setState({
+  //         [item.field]: e.currentTarget.value,
+  //       });
+  //     },
+  //     () => {
+  //       this.props.updateCartItem(this.state);
+  //     }
+  //   );
+  // }
+
+  handleUpdate(e) {
+    this.setState({ quantity: parseInt(e.target.value) }, () =>
+      this.props.updateCartItem(this.state)
     );
   }
-
 
   emptyCart() {
     return (
@@ -92,7 +101,7 @@ class ShoppingCartIndexItem extends React.Component {
         </div>
 
         <div className="index-item-right">
-        <div>{this.selectQuantity()}</div>
+          <div>{this.selectQuantity()}</div>
           <div className="index-item-price">
             <div>${this.itemTotalPrice()}</div>
             <div>(${item.price.toFixed(2)} each)</div>

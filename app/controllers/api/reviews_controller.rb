@@ -1,8 +1,8 @@
 class Api::ReviewsController < ApplicationController
 
     def index
-        # @reviews = Review.where(product_id: params[:product_id])
-        @reviews = Review.all 
+        @reviews = Review.where(product_id: params[:product_id])
+        # @reviews = Review.all 
         render :index
     end
 

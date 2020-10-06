@@ -32,7 +32,7 @@ const App = () => (
     <Switch>
       <Route path="/login" exact component={LoginFormContainer} />
       <Route path="/signup" exact component={SignupFormContainer} />
-      <Route exact path="/" component={ProductIndexContainer} />
+      {/* <Route exact path="/" component={ProductIndexContainer} /> */}
       <Route
         path="/products/:productId"
         exact
@@ -49,7 +49,7 @@ const App = () => (
           <ProductIndexContainer />
         </div>
       </Route>
-      <Route path="/products/search" exact component={ProductIndexContainer} />
+      <Route path="/search" exact component={ProductIndexContainer} />
     </Switch>
   </div>
 );

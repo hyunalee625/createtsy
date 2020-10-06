@@ -1,9 +1,9 @@
 import React from "react";
 import Rating from "react-rating";
 import { withRouter } from "react-router-dom";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
-// import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar as fullStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -49,8 +49,8 @@ class ReviewForm extends React.Component {
                     <h1>Write a Review</h1>
                     
                     <Rating
-                        // emptySymbol={<FontAwesomeIcon icon={regularStar} />}
-                        // fullSymbol={<FontAwesomeIcon icon={solidStar} />}
+                        emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
+                        fullSymbol={<FontAwesomeIcon icon={fullStar} />}
                         initialRating={this.state.rating}
                         onChange={this.update('rating')}
                         />
