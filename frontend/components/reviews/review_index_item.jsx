@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'
 import Rating from 'react-rating';
-import Moment from 'react-moment'
+import moment from "moment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as fullStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
@@ -11,7 +11,7 @@ const ReviewIndexItem = ({review}) => {
       <div>
         <div>
           {review.user}
-          <Moment parse="MM DD, YY">{review.updated_at}</Moment>
+          <p>{moment($`{review.updated_at}`).format("MMMM D, YYYY")} </p>
         </div>
         <Rating
           className="rating"

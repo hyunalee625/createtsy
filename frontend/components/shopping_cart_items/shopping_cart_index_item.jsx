@@ -8,7 +8,7 @@ class ShoppingCartIndexItem extends React.Component {
     // debugger
     this.state = {
       id: this.props.item.id,
-      // quantity: this.props.item.quantity,
+      quantity: this.props.item.quantity,
     };
 
     this.handleUpdate = this.handleUpdate.bind(this)
@@ -16,7 +16,7 @@ class ShoppingCartIndexItem extends React.Component {
   }
 
   itemTotalPrice() {
-    const quantity = this.props.item.quantity;
+    const quantity = this.state.item.quantity;
     const price = this.props.item.price;
     return parseFloat(price * quantity).toFixed(2);
   }

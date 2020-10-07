@@ -34,7 +34,7 @@ class Api::ShoppingCartItemsController < ApplicationController
         if @shopping_cart_item.update(shopping_cart_items_params)
             render :show
         else
-            render json: @shopping_cart_item.errors.full_messages, status: 401
+            render json: @shopping_cart_item.errors.full_messages, status: 422
         end
     end
 

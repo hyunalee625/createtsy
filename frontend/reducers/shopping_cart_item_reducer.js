@@ -4,6 +4,7 @@ import {
   REMOVE_SHOPPING_CART_ITEM,
 } from "../actions/shopping_cart_item_actions";
 
+
 const shoppingCartItemsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
     let newState = Object.assign({}, oldState)

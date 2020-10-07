@@ -9,10 +9,12 @@ import {
 const msp = (state) => {
     // debugger
     let items = Object.keys(state.entities.shoppingCartItems).map(id => state.entities.shoppingCartItems[id]);
+    let products = state.entities.products
 
     // debugger
     return {
-        items
+        items,
+        products
     }
 }
 

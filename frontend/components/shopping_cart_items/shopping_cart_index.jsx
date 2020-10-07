@@ -12,7 +12,14 @@ class ShoppingCartIndex extends React.Component {
   }
 
   totalQuantity() {
-      return this.props.items.length;
+    let cartItems = this.props.items ;
+    let quantity = 0;
+    
+    cartItems.forEach (item => {
+      quantity += item.quantity
+    })
+
+    return quantity;
   }
 
   totalPrice() {
