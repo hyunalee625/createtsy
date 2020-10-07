@@ -6,7 +6,7 @@ import { RECEIVE_USER_PROFILE } from '../actions/user_actions'
 const usersReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
 
-    let nextState = Object.assign({}, oldState)
+    // let newState = Object.assign({}, oldState)
     switch (action.type) {
       case RECEIVE_USER:
         return Object.assign({}, oldState, { [action.user.id]: action.user });

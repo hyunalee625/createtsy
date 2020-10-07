@@ -6,10 +6,10 @@ import {
 
 const shoppingCartItemsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
-    let nextState = Object.assign({}, oldState)
+    let newState = Object.assign({}, oldState)
     switch(action.type) {
         case RECEIVE_SHOPPING_CART_ITEM:
-            return Object.assign(nextState, { [action.cartItem.id]: action.cartItem })
+            return Object.assign(newState, { [action.cartItem.id]: action.cartItem })
         case RECEIVE_SHOPPING_CART_ITEMS:
             return action.cartItems;
         case REMOVE_SHOPPING_CART_ITEM:

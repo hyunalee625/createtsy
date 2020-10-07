@@ -34,6 +34,7 @@ class ShoppingCartIndex extends React.Component {
         <div>
           {this.props.items.map((item) => (
             <ShoppingCartIndexItem
+              deleteCartItem={this.props.deleteCartItem}
               updateCartItem={this.props.updateCartItem}
               item={item}
               key={item.id}
