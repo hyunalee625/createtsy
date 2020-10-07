@@ -81,9 +81,9 @@ class ShoppingCartIndexItem extends React.Component {
           <div className="index-info">
             <Link
               className="index-item-name"
-              to="{`/products/${item.product.id}`}"
+              to={`/products/${item.product_id}`}
             >
-              <img className="product-show-photo" src={item.photoUrl} />
+              <img className="product-show-photo" src={item.photo} />
               <label>{item.product_name}</label>
             </Link>
           </div>

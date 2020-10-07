@@ -9,6 +9,7 @@ class ProductShow extends React.Component {
     super(props);
     this.state = {
       reviews: null,
+      quantity: null
     };
 
     this.addToCart = this.addToCart.bind(this);
@@ -51,7 +52,7 @@ class ProductShow extends React.Component {
           <div className="product-show-top">
             <div className="product-left-col">
               <div className="product-show-image">
-                <img className="product-show-photo" src={product.photoUrl} />
+                <img className="product-show-photo" src={product.photo} />
               </div>
             </div>
             <div className="product-right-col">
