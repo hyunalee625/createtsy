@@ -7,7 +7,7 @@ class Api::ProductsController < ApplicationController
     
     def show
         @product = Product.find_by(id: params[:id])
-        render :show
+        # render :show
     end
 
     def search 
@@ -24,7 +24,7 @@ class Api::ProductsController < ApplicationController
     private
 
     def product_params
-        params.require(:product).permit(:id, :product_name, :description, :price)
+        params.require(:product).permit(:id, :product_name, :description, :price, :photo)
     end
 
 end

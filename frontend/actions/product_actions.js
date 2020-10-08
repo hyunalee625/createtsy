@@ -28,10 +28,10 @@ export const receiveProductErrors = (errors) => {
     }
 };
 
-export const receiveSearchProduct = results => {
+export const receiveSearchProduct = product_search => {
   return {
     type: RECEIVE_SEARCH_PRODUCT,
-    results
+    product_search
   }
 }
 
@@ -56,8 +56,8 @@ export const getAllProducts = () => (dispatch) => {
     // )
 };
 
-export const searchProducts = (query) => (dispatch) =>
+export const searchProducts = (search_query) => (dispatch) =>
   productAPIUtil
-    .searchProducts(query)
-    .then((results) => dispatch(receiveSearchProducts(products)));
+    .searchProducts(search_query)
+    .then((product_search) => dispatch(receiveSearchProducts(product_search)));
 

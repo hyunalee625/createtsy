@@ -32,7 +32,6 @@ const App = () => (
     <Switch>
       <Route path="/login" exact component={LoginFormContainer} />
       <Route path="/signup" exact component={SignupFormContainer} />
-      {/* <Route exact path="/" component={ProductIndexContainer} /> */}
       <Route
         path="/products/:productId"
         exact

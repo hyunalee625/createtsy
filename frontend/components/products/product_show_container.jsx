@@ -25,9 +25,9 @@ const msp = (state, ownProps ) => {
 const mdp = dispatch => {
     return {
       fetchUser: (userId) => dispatch(fetchUser(userId)),
-      getOneProduct: (productId) => dispatch(getOneProduct(productId)),
+      getOneProduct: (product) => dispatch(getOneProduct(product)),
       createCartItem: (cartItem) => dispatch(createCartItem(cartItem)),
-      deleteReview: (reviewId) => dispatch(deleteReview(reviewId)),
+    //   deleteReview: (reviewId) => dispatch(deleteReview(reviewId)),
     };
 }
 
