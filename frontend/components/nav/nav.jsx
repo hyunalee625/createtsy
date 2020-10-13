@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 
+
 const Nav = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
       <nav className="navbar-container">

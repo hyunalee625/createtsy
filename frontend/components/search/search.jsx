@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import productsReducer from "../../reducers/products_reducer";
 
 class Search extends React.Component {
 

@@ -48,7 +48,7 @@ const App = () => (
           <ProductIndexContainer />
         </div>
       </Route>
-      <Route path="/search" exact component={ProductIndexContainer} />
+      <Route path="/search" component={ProductIndexContainer} />
     </Switch>
   </div>
 );

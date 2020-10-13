@@ -19,5 +19,5 @@ export const searchProducts = (search_query) => {
     url: `/api/products/search`,
     data: { search_query },
   });
-}
+};
 

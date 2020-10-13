@@ -23,11 +23,12 @@ class Product < ApplicationRecord
     has_many :reviews, dependent: :destroy
 
     def self.search(search_query)
-        searched = self.where("name like ?", "%" + search_query + "%")
-        if results != []
-            results
-        else
-            Product.all
-        end
+        results = self.where("product_name LIKE ?", "%#{search_query}%")
+        return results
+        # if results != []
+        #     results
+        # else
+        #     Product.all
+        # end
     end
 end
