@@ -75,9 +75,21 @@ h1.createtsy-logo {
 }
 
 .search-input {
-    width: 20rem;
-    border-radius: 12px;
-    border: 1px solid darkgray;
+    height: 48px;
+    line-height: 28px;
+    width: 50rem;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border: 1px solid rgba(34, 34, 34, 0.15);
+    background: rgb(241, 241, 241);
+    font-size: 1rem;
+}
+
+.search-button {
+    margin-left: 0.5rem;
+    font-size: 1em;
 }
 
 

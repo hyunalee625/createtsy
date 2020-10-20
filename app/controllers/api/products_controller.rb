@@ -16,7 +16,7 @@ class Api::ProductsController < ApplicationController
     def search 
         search_word = params[:search_query].downcase
 
-        debugger
+        # debugger
         @products = Product.all.select do |product|
             product_name = product.product_name.downcase
             product_name.include?(search_word)

@@ -47,7 +47,8 @@ class Landing extends React.Component {
           <div className="mid-banner-container">
             <div className="mid-banner">
               <div className="mid-banner-headers">
-                <h3 className="mid-banner-header">Unique everything</h3>
+                <h3 className="mid-banner-header">                        
+                  Unique everything</h3>
               </div>
               <p className="mid-banner-p">
                 We have millions of one-of-a-kind items, so you can find
