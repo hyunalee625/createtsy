@@ -39,19 +39,6 @@ class ShoppingCartIndexItem extends React.Component {
     );
   }
 
-  // update(field) {
-  //   return (
-  //     (e) => {
-  //       this.setState({
-  //         [item.field]: e.currentTarget.value,
-  //       });
-  //     },
-  //     () => {
-  //       this.props.updateCartItem(this.state);
-  //     }
-  //   );
-  // }
-
   handleUpdate(e) {
     this.setState({ quantity: parseInt(e.target.value) }, () =>
       this.props.updateCartItem(this.state)
@@ -73,17 +60,13 @@ class ShoppingCartIndexItem extends React.Component {
     return (
       <div className="item-container">
         <div className="index-item-left">
-          {/* <Link
-            className="index-item-img"
-            to="{`/products/${item.product_id}`}"
-          >
-          </Link> */}
+
           <div className="index-info">
             <Link
               className="index-item-name"
               to={`/products/${item.product_id}`}
             >
-              <img className="product-show-photo" src={item.photo} />
+              <img className="shopping-cart-photo" src={item.photo} />
               <label>{item.product_name}</label>
             </Link>
           </div>
