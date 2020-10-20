@@ -56,6 +56,9 @@ class ShoppingCartIndexItem extends React.Component {
 
   render() {
     const { item } = this.state;
+    const {quantity} = this.state.item.quantity
+
+    
 
     return (
       <div className="item-container">
