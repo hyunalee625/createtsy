@@ -19,25 +19,20 @@ class ReviewIndex extends React.Component {
         const reviews = this.props.reviews.map(review => {
             
             return(
-                <div className="reviews-container">
+                <div className="reviews-index-container">
                     <ReviewIndexItem 
                         key={review.id}
                         review={review}
                         productId={review.product_id}
                     />
-
-                    {/* <Rating 
-                        rating={this.props.rating}
-                        readonly={true}
-                    /> */}
                 </div>
             )
         })
 
         return (
-            <div>
-                <div>
-                <div>Reviews</div>
+            <div className="reviews-container">
+                <div className="reviews-sub-container">
+                <div className="reviews-header">Reviews</div>
                     {reviews}
                 </div>
             </div>

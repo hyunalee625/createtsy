@@ -74,7 +74,6 @@ class ProductShow extends React.Component {
                 </div>
                 <div className="product-description-container">
                   Description:
-                  {/* {this.hideContent(product.description)} */}
                   <p>{product.description}</p>
                 </div>
               </div>

@@ -7,14 +7,14 @@ const ProductIndexItem = ({ product }) => {
 
       <div className="product-index-container">
         <div className="product-index-item">
-            <img className="product-photo" src={product.photo} alt="" />
+            <Link className="product-url" to={`/products/${product.id}`}>
+              <img className="product-photo" src={product.photo} alt="" />
+            </Link>
             <div className="product-name-price">
-            <div className="product-product-name">
           <Link className="product-url" to={`/products/${product.id}`}>
-            <div className="product-name">{product.product_name}</div>
-          </Link>
-            </div>
             <div className="product-price">${product.price}</div>
+            {/* <div className="product-name">{product.product_name}</div> */}
+          </Link>
           </div>
         </div>
       </div>
