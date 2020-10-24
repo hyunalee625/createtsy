@@ -37,7 +37,10 @@ class ShoppingCartIndex extends React.Component {
   render() {
     return (
       <div className="cart-index-container">
-        <div className="items-in-your-cart">{this.totalQuantity()} items in your cart</div>
+        <div className="items-in-your-cart">
+        {this.totalQuantity()} items in your cart
+        <button className="keep-shopping">Keep shopping</button>
+        </div>
         <div className="cart-index-sub">
         <div className="cart-index-sub-sub">
             <div className="shopping-cart-index-item">
@@ -50,16 +53,18 @@ class ShoppingCartIndex extends React.Component {
                 />
               ))}
             </div>
-            <div className="item-checkout">
+            <div className="item-transaction">
               <div className="item-total">
-                <span>How you'll pay</span>
+                <span className="how">How you'll pay</span>
                 <br />
-                <span>Item(s) total</span>
-                <span> ${this.totalPrice()}</span>
+                <div className="total-price">
+                  <span className="total">Item(s) total</span>
+                  <span> ${this.totalPrice()}</span>
+                </div>
               </div>
               <div className="shipping">
                 <span>Shipping</span>
-                <span> FREE</span>
+                <span className="green"> FREE</span>
               </div>
 
               <div className="subtotal">

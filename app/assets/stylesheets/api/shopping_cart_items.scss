@@ -15,6 +15,12 @@
     background-color: rgb(250, 249, 246);
     padding: 10px 0px;
     padding-left: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keep-shopping {
+    border: 1px solid  rgb(226, 227, 224);
 }
 
 .cart-index-container {
@@ -22,12 +28,16 @@
 }
 
 .cart-index-sub {
-    margin-top: 20px;
-    margin-left: 10px;
+    margin: 2vw 1vw;
+    border: 1px solid rgb(226, 227, 224);
+    border-radius: 5px;
+    
 }
 
 .cart-index-sub-sub {
     display: flex;
+    margin-top: 1.5vw;
+    background-color: rgb(255, 255, 255);
 }
 
 h1.items-in-cart {
@@ -42,6 +52,10 @@ img.shopping-cart-photo {
 .index-item-left {
     width: 40vw;
     display: flex;
+}
+
+.shopping-cart-photo {
+    margin-left: 1vw;
 }
 
 .index-item-right {
@@ -61,12 +75,44 @@ img.shopping-cart-photo {
     margin-left: 15px;
 }
 
-button.checkout {
+.item-transaction {
+    box-shadow: 10px 10px 10px 5px rgb(244, 244, 244);
+    border-radius: 18px !important;
+    height: 35vh;
+    width: 25vw;
+}
+
+.item-total span.how {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+}
+
+.total-price, .shipping, .subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 1vw;
+}
+
+.shipping span.green {
+    color: rgb(72, 131, 66);
+
+}
+
+.total-price, .shipping, .subtotal, .checkout {
+    margin-top: 3.5vh;
+}
+ 
+
+.checkout {
     border: 1px solid black;
     padding: 10px;
     border-radius: 20px;
     color: white;
     background-color: black;
+    text-align: center;
+
 }
 
 
