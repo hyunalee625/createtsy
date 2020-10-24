@@ -2,8 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.item-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.items-in-your-cart {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    background-color: rgb(250, 249, 246);
+    padding: 10px 0px;
+    padding-left: 1.5vw;
+}
+
 .cart-index-container {
+    margin-top: 20px;
+}
+
+.cart-index-sub {
+    margin-top: 20px;
     margin-left: 10px;
+}
+
+.cart-index-sub-sub {
+    display: flex;
 }
 
 h1.items-in-cart {
@@ -14,3 +38,35 @@ img.shopping-cart-photo {
     width: 15vw;
 
 }
+
+.index-item-left {
+    width: 40vw;
+    display: flex;
+}
+
+.index-item-right {
+    display: flex;
+    width: 30vw;
+
+    .select-quantity {
+        margin-right: 1vw;
+    }
+}
+
+.index-info {
+    display: flex;
+}
+
+.index-item-name-remove, .item-quantity, .index-item-price {
+    margin-left: 15px;
+}
+
+button.checkout {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+
+

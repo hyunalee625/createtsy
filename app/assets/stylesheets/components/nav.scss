@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url(fontawesome-all.min.css);
+
 
 .navbar-container {
     display: flex;
@@ -9,14 +11,14 @@
 h1.createtsy-logo {
     color: rgb(227, 128, 124);
     font-family: 'Bree Serif', serif;
-    padding-left: 30px;
+    padding-left: 1vw;
 }
 
 .right-nav-buttons {
     justify-content: flex-end;
     display: flex;
     margin-top: 7px;
-    margin-right: 40px;
+    margin-right: 1vw;
 }
 
 .nav-signin-button {
@@ -26,7 +28,7 @@ h1.createtsy-logo {
     width: 78px;
     height: 36px;
     color: rgb(229, 133, 129);
-    margin-right: 40px;
+    margin-right: 3vw;
     font-weight: 500;
     font-size: 20px;
 }
@@ -52,7 +54,7 @@ h1.createtsy-logo {
     width: 78px;
     height: 36px;
     color: rgb(229, 133, 129);
-    margin-right: 40px;
+    margin-right: 3vw;
     font-weight: 500;
     font-size: 20px;
 }
@@ -70,12 +72,13 @@ h1.createtsy-logo {
 
 .search-container {
     padding-top: 3px;
+    display: inline-flex;
 }
 
 .search-input {
     height: 40px;
     line-height: 28px;
-    width: 55rem;
+    width: 55vw;
     border-radius: 25px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -88,6 +91,11 @@ h1.createtsy-logo {
 .search-button {
     margin-left: 0.5rem;
     font-size: 1em;
+}
+
+#search-btn {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 

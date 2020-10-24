@@ -39,19 +39,6 @@ class ShoppingCartIndexItem extends React.Component {
     );
   }
 
-  // update(field) {
-  //   return (
-  //     (e) => {
-  //       this.setState({
-  //         [item.field]: e.currentTarget.value,
-  //       });
-  //     },
-  //     () => {
-  //       this.props.updateCartItem(this.state);
-  //     }
-  //   );
-  // }
-
   handleUpdate(e) {
     this.setState({ quantity: parseInt(e.target.value) }, () =>
       this.props.updateCartItem(this.state)
@@ -72,28 +59,31 @@ class ShoppingCartIndexItem extends React.Component {
             >
               <img className="shopping-cart-photo" src={item.photo} />
             </Link>
+            <div className="index-item-name-remove">
             <Link
               className="index-item-name"
               to={`/products/${item.product_id}`}
             >
               <label>{item.product_name}</label>
             </Link>
-          </div>
-          <div className="index-item-remove">
-            <button
-              onClick={() =>
-                this.props
-                  .deleteCartItem(this.props.item.id)
-                  .then(() => this.props.history.push("/shopping_cart_items"))
-              }
-            >
-              Remove
-            </button>
+          
+            <div className="index-item-remove">
+                <button
+                  onClick={() =>
+                    this.props
+                      .deleteCartItem(this.props.item.id)
+                      .then(() => this.props.history.push("/shopping_cart_items"))
+                  }
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="index-item-right">
-          <div>{this.selectQuantity()}</div>
+          <div className="select-quantity">{this.selectQuantity()}</div>
           <div className="index-item-price">
             <div>${this.itemTotalPrice()}</div>
             <div>(${item.price.toFixed(2)} each)</div>

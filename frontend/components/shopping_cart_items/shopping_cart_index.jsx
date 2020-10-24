@@ -37,31 +37,39 @@ class ShoppingCartIndex extends React.Component {
   render() {
     return (
       <div className="cart-index-container">
-        <h1>{this.totalQuantity()} items in your cart</h1>
-        <div>
-          {this.props.items.map((item) => (
-            <ShoppingCartIndexItem
-              deleteCartItem={this.props.deleteCartItem}
-              updateCartItem={this.props.updateCartItem}
-              item={item}
-              key={item.id}
-            />
-          ))}
-        </div>
-        <div className="item-total">
-          <span>Item(s) total</span>
-          <span>${this.totalPrice()}</span>
-        </div>
-        <div className="shipping">
-          <span>Shipping</span>
-          <span>Free</span>
-        </div>
+        <div className="items-in-your-cart">{this.totalQuantity()} items in your cart</div>
+        <div className="cart-index-sub">
+        <div className="cart-index-sub-sub">
+            <div className="shopping-cart-index-item">
+              {this.props.items.map((item) => (
+                <ShoppingCartIndexItem
+                  deleteCartItem={this.props.deleteCartItem}
+                  updateCartItem={this.props.updateCartItem}
+                  item={item}
+                  key={item.id}
+                />
+              ))}
+            </div>
+            <div className="item-checkout">
+              <div className="item-total">
+                <span>How you'll pay</span>
+                <br />
+                <span>Item(s) total</span>
+                <span> ${this.totalPrice()}</span>
+              </div>
+              <div className="shipping">
+                <span>Shipping</span>
+                <span> FREE</span>
+              </div>
 
-        <div className="subtotal">
-          <span>Subtotal</span>
-          <span>${this.totalPrice()}</span>
-        </div>
-        <button>Proceed to checkout</button>
+              <div className="subtotal">
+                <span>Total ({this.totalQuantity()} items)</span>
+                <span> ${this.totalPrice()}</span>
+              </div>
+              <button className="checkout">Proceed to checkout</button>
+            </div>
+          </div>
+          </div>
       </div>
     );
   }
