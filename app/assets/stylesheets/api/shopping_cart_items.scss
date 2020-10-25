@@ -12,26 +12,29 @@
     font-size: 1.5rem;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    background-color: rgb(250, 249, 246);
     padding: 10px 0px;
-    padding-left: 1.5vw;
+    padding: 0 1.5vw;
     display: flex;
     justify-content: space-between;
+
 }
 
 .keep-shopping {
     border: 1px solid  rgb(226, 227, 224);
+    border-radius: 8px;
+    padding: 5px;
 }
 
 .cart-index-container {
     margin-top: 20px;
+
 }
 
 .cart-index-sub {
     margin: 2vw 1vw;
     border: 1px solid rgb(226, 227, 224);
     border-radius: 5px;
-    
+
 }
 
 .cart-index-sub-sub {
@@ -114,5 +117,4 @@ img.shopping-cart-photo {
     text-align: center;
 
 }
-
 

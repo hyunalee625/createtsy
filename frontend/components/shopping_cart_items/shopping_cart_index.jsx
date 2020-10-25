@@ -1,6 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import ShoppingCartIndexItem from './shopping_cart_index_item';
+import {Link} from 'react-router-dom'
+
 
 class ShoppingCartIndex extends React.Component {
   constructor(props) {
@@ -39,7 +41,14 @@ class ShoppingCartIndex extends React.Component {
       <div className="cart-index-container">
         <div className="items-in-your-cart">
         {this.totalQuantity()} items in your cart
-        <button className="keep-shopping">Keep shopping</button>
+        
+          <div className="keep-btn">
+            <Link 
+            className="keep"
+            to="/">
+              <button className="keep-shopping">Keep shopping</button>
+            </Link>
+          </div>
         </div>
         <div className="cart-index-sub">
         <div className="cart-index-sub-sub">
