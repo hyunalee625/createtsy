@@ -18,8 +18,7 @@
 ---
 <h2>Features</h2>
 
-###Modal 
-![Modal](https://i.imgur.com/netiN4P.png)
+[Modal](https://i.imgur.com/netiN4P.png)
 
 <!-- ```javascript
     let component;
@@ -35,8 +34,7 @@
     }
 ``` -->
 
-###Shopping Cart 
-![ShoppingCart](https://i.imgur.com/yIcPmzj.png)
+[ShoppingCart](https://i.imgur.com/yIcPmzj.png)
 
 ```javascript
 class Search extends React.Component {
