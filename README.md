@@ -18,6 +18,8 @@
 ---
 <h2>Features</h2>
 
+<h3>Modal</h3>
+
 ![Modal](https://i.imgur.com/netiN4P.png)
 
 <!-- ```javascript
@@ -33,6 +35,8 @@
             return null;
     }
 ``` -->
+---
+<h3>Shopping Cart</h3>
 
 ![ShoppingCart](https://i.imgur.com/yIcPmzj.png)
 
