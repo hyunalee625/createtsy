@@ -65,7 +65,22 @@ class ShoppingCartIndex extends React.Component {
             <div className="item-transaction">
               <div className="item-total">
                 <span className="how">How you'll pay</span>
-                <br />
+                <div className="payment-options">
+                  <input type="radio" value="mc" defaultChecked></input>
+                    <div className="cc-logos">
+                      <img id="mc-logo" src={window.mc}></img>
+                      <img id="visa-logo" src={window.visa}></img>
+                      <img id="aa-logo" src={window.aa}></img>
+                      <img id="aa-logo" src={window.dc}></img>
+
+                    </div>
+                </div>
+                <div className="payment-options">
+                  <input type="radio" value="pp"></input>
+                    <div className="pp-logo">
+                      <img src={window.pp}></img>
+                    </div>
+                </div>
                 <div className="total-price">
                   <span className="total">Item(s) total</span>
                   <span> ${this.totalPrice()}</span>
