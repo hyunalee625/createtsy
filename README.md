@@ -34,7 +34,7 @@
     }
 ``` -->
 
-![ShoppingCart]([img]https://i.imgur.com/yIcPmzj.png[/img])
+![ShoppingCart](https://i.imgur.com/yIcPmzj.png)
 
 ```javascript
 class Search extends React.Component {
