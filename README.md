@@ -18,6 +18,7 @@
 ---
 <h2>Features</h2>
 
+###Modal 
 ![Modal](https://i.imgur.com/netiN4P.png)
 
 <!-- ```javascript
@@ -34,6 +35,7 @@
     }
 ``` -->
 
+###Shopping Cart 
 ![ShoppingCart](https://i.imgur.com/yIcPmzj.png)
 
 ```javascript
