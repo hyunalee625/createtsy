@@ -40,6 +40,7 @@ class Search extends React.Component {
 
           <button className="search-button" type="submit">
             <img id="search-btn" src={window.search}></img>
+            {/* <i class="fas fa-search"></i> */}
           </button>
         </div>
       </form>

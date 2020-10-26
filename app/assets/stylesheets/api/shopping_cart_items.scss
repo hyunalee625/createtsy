@@ -27,20 +27,23 @@
 
 .cart-index-container {
     margin-top: 20px;
-
+    background-color: rgb(250,249, 246);
+    padding-top: 5vh;
+    padding-bottom: 35vh;
 }
 
 .cart-index-sub {
     margin: 2vw 1vw;
     border: 1px solid rgb(226, 227, 224);
     border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+
 
 }
 
 .cart-index-sub-sub {
     display: flex;
     margin-top: 1.5vw;
-    background-color: rgb(255, 255, 255);
 }
 
 h1.items-in-cart {
@@ -83,6 +86,9 @@ img.shopping-cart-photo {
     border-radius: 18px !important;
     height: 35vh;
     width: 25vw;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .item-total span.how {
@@ -107,6 +113,11 @@ img.shopping-cart-photo {
     margin-top: 3.5vh;
 }
  
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+
+}
 
 .checkout {
     border: 1px solid black;

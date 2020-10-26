@@ -60,5 +60,5 @@ const ProductIndexItem = ({ product }) => {
 
 ---
 <h2>Future implementations</h2>
-<li>Products: products will have its own page for users to click on and view</li>
-<li>Shopping cart: users can add, remove, update shopping cart</li>
+<li>Categories: Products are sorted by categories</li>
+<li>Favorites: Users can add the items they like to 'favorites'</li>

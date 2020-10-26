@@ -80,7 +80,9 @@ class ShoppingCartIndex extends React.Component {
                 <span>Total ({this.totalQuantity()} items)</span>
                 <span> ${this.totalPrice()}</span>
               </div>
-              <button className="checkout">Proceed to checkout</button>
+              <div className="checkout-btn">
+                <button className="checkout">Proceed to checkout</button>
+              </div>
             </div>
           </div>
           </div>

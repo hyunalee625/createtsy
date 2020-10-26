@@ -15,4 +15,5 @@
  */
 
  @import './components/modal.scss';
- @import url(fontawesome-all.min.css);
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
