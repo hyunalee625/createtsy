@@ -18,7 +18,8 @@
 ---
 <h2>Features</h2>
 
-![Modal]([img]https://i.imgur.com/kylXUuu.gif[/img])
+![Modal](modal.gif)
+<!-- ([img]https://i.imgur.com/kylXUuu.gif[/img]) -->
 <!-- (https://i.imgur.com/netiN4P.png) -->
 
 <!-- ```javascript
