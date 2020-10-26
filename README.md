@@ -20,7 +20,7 @@
 
 ![Modal](https://i.imgur.com/netiN4P.png)
 
-```javascript
+<!-- ```javascript
     let component;
     switch(modal) {
         case 'login':
@@ -32,29 +32,55 @@
         default:
             return null;
     }
-```
+``` -->
 
-![Products](https://i.imgur.com/sVAj8Rr.png)
+![ShoppingCart]([img]https://i.imgur.com/yIcPmzj.png[/img])
 
 ```javascript
-const ProductIndexItem = ({ product }) => {
+class Search extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { search_query: "" };
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.update = this.update.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    this.setState({ search_query: "" });
+    this.props.searchProducts(this.state.search_query).then(() => {
+      this.props.history.push("/search");
+    });
+  }
+
+  update(field) {
+    return (e) => {
+      this.setState({ [field]: e.target.value });
+    };
+  }
+
+  render() {
     return (
+      <form className="search" onSubmit={this.handleSubmit}>
+        <div className="search-container">
+          <input
+            className="search-input"
+            type="text"
+            onChange={this.update("search_query")}
+            value={this.state.search_query}
+            placeholder="Search for anything"
+          />
 
-      <div className="product-index-container">
-        <div className="product-index-item">
-            <img className="product-photo" src={product.photo} alt="" />
-            <div className="product-name-price">
-            <div className="product-product-name">
-          <Link className="product-name" to={product.product_name}>
-            <div className="product-name">{product.product_name}</div>
-          </Link>
-            </div>
-            <div className="product-price">${product.price}</div>
-          </div>
+          <button className="search-button" type="submit">
+            <img id="search-btn" src={window.search}></img>
+            {/* <i class="fas fa-search"></i> */}
+          </button>
         </div>
-      </div>
-
+      </form>
     );
+  }
 }
 ```
 
