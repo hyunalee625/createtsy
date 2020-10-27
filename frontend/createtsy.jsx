@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.getOneProduct = productAPIUtil.getOneProduct;
     window.fetchReviews = reviewAPIUtil.fetchReviews;
     window.searchProducts = productAPIUtil.searchProducts;
+    window.fetchCartItems = shoppingCartItemAPIUtil.fetchCartItems
     
     const root = document.getElementById("root");
     ReactDOM.render(<Root store={store} />, root);
