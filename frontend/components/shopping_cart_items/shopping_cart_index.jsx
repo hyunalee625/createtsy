@@ -62,6 +62,7 @@ class ShoppingCartIndex extends React.Component {
                 />
               ))}
             </div>
+            <div className="right-col">
             <div className="item-transaction">
               <div className="item-total">
                 <span className="how">How you'll pay</span>
@@ -98,6 +99,7 @@ class ShoppingCartIndex extends React.Component {
               <div className="checkout-btn">
                 <button className="checkout">Proceed to checkout</button>
               </div>
+            </div>
             </div>
           </div>
           </div>

@@ -39,7 +39,7 @@
     border: 1px solid rgb(226, 227, 224);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-
+    display: flex;
 
 }
 
@@ -83,14 +83,14 @@ img.shopping-cart-photo {
     margin-left: 15px;
 }
 
+
 .item-transaction {
     box-shadow: 10px 10px 10px 5px rgb(244, 244, 244);
     border-radius: 18px !important;
-    height: 50vh;
+    height: 40vh;
     width: 25vw;
     display: flex;
     flex-direction: column;
-
 }
 
 .payment-options {
@@ -127,7 +127,7 @@ img.shopping-cart-photo {
 }
 
 .total-price, .shipping, .subtotal, .checkout {
-    margin-top: 3.5vh;
+    margin-top: 2vh;
 }
  
 .checkout-btn {
