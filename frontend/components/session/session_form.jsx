@@ -30,14 +30,11 @@ class SessionForm extends React.Component {
             // .then(() => {this.props.history.push("/")})
     }
 
-    // toggleToSignup(){
-    //     this.props.otherForm
-    // }
-
     demoLogin(e) {
         e.preventDefault();
-
+      // debugger
         const demoUser = {
+            id: 95,
             email: "lauren@gmail.com",
             password: "abcde"
         }

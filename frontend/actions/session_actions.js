@@ -8,6 +8,7 @@ export const CLEAR_ERRORS = "CLEAR_ERRORS";
 
 // action creators 
 export const receiveUser = currentUser => {
+    // debugger
     return {
         type: RECEIVE_USER,
         currentUser
