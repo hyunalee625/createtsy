@@ -5,6 +5,7 @@ import { openModal } from '../../actions/modal_actions';
 import Nav from './nav';
 
 const msp = ({ session, entities: {users} }) => {
+    // debugger
     return {
         currentUser: users[session.id]
     }

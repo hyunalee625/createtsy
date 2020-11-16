@@ -3,11 +3,9 @@ import {Link} from 'react-router-dom'
 
 
 const Nav = ({ currentUser, logout, openModal }) => {
+  // debugger
     const sessionLinks = () => (
       <nav className="navbar-container">
-        {/* <div className="left-nav-">
-        <h3 className="createtsy-logo">creatEtsy</h3>
-      </div> */}
         <div className="right-nav-buttons">
           <button
             className="nav-signin-button"
@@ -23,6 +21,7 @@ const Nav = ({ currentUser, logout, openModal }) => {
         </div>
       </nav>
     );
+    // debugger
     const personalGreeting = () => (
       // when logged in
       <nav className="navbar-container">
@@ -37,14 +36,9 @@ const Nav = ({ currentUser, logout, openModal }) => {
           </div>
         </div>
         <br />
-        {/* <div>
-          <h3 className="welcome-back">
-            Welcome back, {currentUser.first_name}!
-          </h3>
-        </div> */}
       </nav>
     );
-
+    // debugger
     return currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
 
 }
