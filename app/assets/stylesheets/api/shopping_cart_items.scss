@@ -13,7 +13,7 @@
     letter-spacing: 2px;
     margin-bottom: 10px;
     padding: 10px 0px;
-    padding: 0 1.5vw;
+    padding: 0 3.5vw;
     display: flex;
     justify-content: space-between;
 
@@ -32,117 +32,136 @@
     background-color: rgb(250,249, 246);
     padding-top: 5vh;
     padding-bottom: 35vh;
+    justify-content: center;
 }
 
 .cart-index-sub {
-    margin: 2vw 1vw;
+    /*margin: 2vh 1vw;*/
     border: 1px solid rgb(226, 227, 224);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     display: flex;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto; 
+    vertical-align: middle;
 
+    .cart-index-sub-sub {
+        display: flex;
+        margin: 3vh 1.5vw;
+    
+        .index-item-left {
+            width: 40vw;
+            display: flex;
+        }
+        
+        .index-item-right {
+            display: flex;
+            width: 30vw;
+    
+            .select-quantity {
+                margin-right: 1vw;
+            }
+        }
+        
+        h1.items-in-cart {
+            padding-bottom: 20px;
+        }
+        
+        img.shopping-cart-photo {
+            width: 15vw;
+        }
+        
+        .shopping-cart-photo {
+            margin-left: 1vw;
+        }
+        
+        .index-info {
+            display: flex;
+        }
+        
+        .index-item-name-remove, .item-quantity, .index-item-price {
+            margin-left: 15px;
+        }
+    
+        .right-col {
+            display: flex;
+            
+            .item-transaction {
+                box-shadow: 8px 8px 8px 5px rgb(244, 244, 244);
+                border-radius: 18px !important;
+                height: 40vh;
+                width: 20vw;
+                display: flex;
+                flex-direction: column;
+                
+                .payment-options {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 1.5vh;
+                }
+                
+                .cc-logos {
+                    display: flex;
+                }
+                
+                #mc-logo, #visa-logo, #aa-logo, .pp-logo {
+                    width: 3.5vw;
+                
+                }
+                
+                .item-total span.how {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+                }
+                
+                .total-price, .shipping, .subtotal {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 1vw;
+                }
+                
+                .shipping span.green {
+                    color: rgb(72, 131, 66);
+                
+                }
+                
+                .total-price, .shipping, .subtotal, .checkout {
+                    margin-top: 2vh;
+                }
+                
+                .checkout-btn {
+                    display: flex;
+                    justify-content: center;
+                
+                    .checkout:after {
+                        content: "Proceed to checkout";
+                        border: 1px solid black;
+                        padding: 10px;
+                        border-radius: 20px;
+                        color: white;
+                        background-color: black;
+                        text-align: center;
+                    }
+                
+                    .thankyou:before {
+                        content: "Thanks for Shopping with Us!";
+                        border: 1px solid black;
+                        padding: 5px;
+                        border-radius: 20px;
+                        color: white;
+                        background-color: black;
+                        text-align: center;
+                        margin-top: 2vh;
+                    }
+                }
+            }
+        }
+    }    
 }
 
-.cart-index-sub-sub {
-    display: flex;
-    margin-top: 1.5vw;
-}
-
-h1.items-in-cart {
-    padding-bottom: 20px;
-}
-
-img.shopping-cart-photo {
-    width: 15vw;
-
-}
-
-.index-item-left {
-    width: 40vw;
-    display: flex;
-}
-
-.shopping-cart-photo {
-    margin-left: 1vw;
-}
-
-.index-item-right {
-    display: flex;
-    width: 30vw;
-
-    .select-quantity {
-        margin-right: 1vw;
-    }
-}
-
-.index-info {
-    display: flex;
-}
-
-.index-item-name-remove, .item-quantity, .index-item-price {
-    margin-left: 15px;
-}
 
 
-.item-transaction {
-    box-shadow: 10px 10px 10px 5px rgb(244, 244, 244);
-    border-radius: 18px !important;
-    height: 40vh;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.payment-options {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1.5vh;
-}
-
-.cc-logos {
-    display: flex;
-}
-
-#mc-logo, #visa-logo, #aa-logo, .pp-logo {
-    width: 4vw;
-
-}
-
-.item-total span.how {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-}
-
-.total-price, .shipping, .subtotal {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 1vw;
-}
-
-.shipping span.green {
-    color: rgb(72, 131, 66);
-
-}
-
-.total-price, .shipping, .subtotal, .checkout {
-    margin-top: 2vh;
-}
- 
-.checkout-btn {
-    display: flex;
-    justify-content: center;
-
-}
-
-.checkout {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 20px;
-    color: white;
-    background-color: black;
-    text-align: center;
-
-}
 

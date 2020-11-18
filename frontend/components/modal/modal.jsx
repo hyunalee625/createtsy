@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { closeModal } from '../../actions/modal_actions';
 import LoginFormContainer from '../session/login_form_container';
 import SignupFormContainer from '../session/signup_form_container';
+import ShoppingCartItemContainer from '../shopping_cart_items/shopping_cart_item_container';
 
 
 function Modal({modal, closeModal}) {

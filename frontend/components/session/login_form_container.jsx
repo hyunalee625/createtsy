@@ -10,7 +10,6 @@ const msp = ({ errors }) => {
     return {
     errors: errors.session,
     formType: "Sign in",
-    // navLinkSignUp: <Link to="/signup">Register</Link>
     }
 }
 

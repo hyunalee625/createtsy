@@ -6,6 +6,7 @@ import {
   deleteCartItem,
 } from "../../actions/shopping_cart_item_actions";
 
+
 const msp = (state) => {
     // debugger
     let items = Object.keys(state.entities.shoppingCartItems).map(id => state.entities.shoppingCartItems[id]);

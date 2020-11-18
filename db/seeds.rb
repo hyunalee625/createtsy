@@ -58,7 +58,7 @@ Gabe = User.create!(
 
 product1 = Product.create!(
     {
-        product_name: "Tie-Dye hoodie",
+        product_name: "Tie-Dye Hoodie",
         description: "A must-have item this fall! It's super soft and smooth. You can either wash with hot/warm or cold water. The color won't bleed or fade so hold you worries!",
         price: 68,
     }
@@ -84,7 +84,7 @@ product2.photo.attach(io: link2, filename: 'bed_sheet1.jpg')
 
 product3 = Product.create!(
     {
-        product_name: "Carry-On Luggauge",
+        product_name: "Carry-On Luggage",
         description: "This carry-on is lightweight and sized to fit in the overhead bin of all airplanes. It is easy to bring around with spinner wheels and has an interior compression system to make packing easy.",
         price: 120,
     }
@@ -152,7 +152,7 @@ product8.photo.attach(io: link8, filename: 'glass_coffee_table.jpg')
         
 product9 = Product.create!(
     {
-        product_name: "Brass metal utensils",
+        product_name: "Brass Metal Utensils",
         description: "This bold flatware isn't just for company; the stainless steel core makes it sturdy enough for everyday use while its unique shape makes every meal feel a little special. ",
         price: 39.50,
     }
@@ -163,7 +163,7 @@ product9.photo.attach(io: link9, filename: 'brass_metal_utensils1.jpg')
 
 product10 = Product.create!(
     {
-        product_name: "RGB gaming mouse pad",
+        product_name: "RGB Gaming Mouse Pad",
         description: "The micro textured hard surface allows for quick and smooth gliding.  A non-slip rubber base keeps the pad from moving even during fast paced gaming sessions.  The large size allows for plenty of movement.",
         price: 30,
     }

@@ -7,6 +7,10 @@ import {Link} from 'react-router-dom'
 class ShoppingCartIndex extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      checkout: true
+    }
   }
 
   componentDidMount() {
@@ -36,7 +40,12 @@ class ShoppingCartIndex extends React.Component {
       return total.toFixed(2);
   }
 
+  changeText() {
+    this.setState({checkout: !this.state.checkout})
+  }
+
   render() {
+    let checkout = this.state.checkout ? "checkout" : "thankyou";
     return (
       <div className="cart-index-container">
         <div className="items-in-your-cart">
@@ -97,7 +106,7 @@ class ShoppingCartIndex extends React.Component {
                 <span> ${this.totalPrice()}</span>
               </div>
               <div className="checkout-btn">
-                <button className="checkout">Proceed to checkout</button>
+                <button className={checkout} onClick={this.changeText.bind(this)}></button>
               </div>
             </div>
             </div>
