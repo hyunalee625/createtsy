@@ -25,6 +25,7 @@
     border: 1px solid  rgb(226, 227, 224);
     border-radius: 8px;
     padding: 5px;
+
 }
 
 .cart-index-container {
@@ -33,6 +34,7 @@
     padding-top: 5vh;
     padding-bottom: 35vh;
     justify-content: center;
+    display: grid;
 }
 
 .cart-index-sub {
@@ -86,7 +88,7 @@
     
         .right-col {
             display: flex;
-            
+
             .item-transaction {
                 box-shadow: 8px 8px 8px 5px rgb(244, 244, 244);
                 border-radius: 18px !important;
