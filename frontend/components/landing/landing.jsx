@@ -32,6 +32,16 @@ class Landing extends React.Component {
               creatEtsy.
             </h2>
               <h3 className="landing-page-sub-header">Everyday finds</h3>
+              <div className="landing-pics-container">
+                <div className="landing1-container">
+                  <img id="landing1"src={window.landing1}></img>
+                  <small>Holiday Sweater</small>
+                </div>
+                <div className="landing2-container">
+                  <img id="landing2"src={window.landing2}></img>
+                  <small>Home Decor</small>
+                </div>
+              </div>
           </div>
 
 

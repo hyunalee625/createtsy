@@ -18,40 +18,28 @@ h3.landing-page-sub-header {
     margin: 10px 0px;
 }
 
-/*.landing-page-pic-container {
+.landing-pics-container {
     display: flex;
-    justify-content: center;
-    margin: 0 15px;
-    flex-basis: 50%;
-}
 
-.dream-catcher {
-    flex-basis: 50%;
-    padding-right: 1%;
-}
+    .landing1-container, .landing2-container {
+        margin-right: 2em;
+        padding-bottom: 3em;
 
-.right-side-pics {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: 39.5%;
-}
+        #landing1, #landing2 {
+            width: 6em;
+            height: 8em;
+        }
+    }
+    
 
-.hanging-plant {
-    width: 100%;
-    flex: 2;
-    border-radius: 20%;
 }
-
-.vintage-kitchen {
-    width: 100%;
-    flex: 1;
-    border-radius: 20%;
-}*/ 
 
 .landing-page-sub {
     width: 100%;
     background: rgb(224, 235, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
