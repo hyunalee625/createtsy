@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { createReview } from '../../actions/review_actions';
-import ReviewIndex from './review_index'
+// import { openModal } from '../../actions/modal_actions';
 import ReviewForm from './review_form'
 
-const msp = (state) => {
+const msp = (state, ownProps) => {
     const review = {
         body: '',
         user_id: state.session.id,
@@ -23,7 +23,8 @@ const msp = (state) => {
 
 const mdp = dispatch => {
     return {
-        createReview: review => dispatch(createReview(review))
+        createReview: review => dispatch(createReview(review)),
+
     }
 }
 

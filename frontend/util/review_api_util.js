@@ -21,16 +21,17 @@ export const createReview = (review) => {
 }
 
 export const updateReview = (review) => {
+  debugger
   return $.ajax({
     method: "PATCH",
-    url: `/api/reviews/${review.product_id}/reviews/${review.id}`,
+    url: `/api/products/${review.product_id}/reviews/${review.id}`,
     data: { review },
   });
 }
 
-export const deleteReview = (reviewId) => {
+export const deleteReview = (review) => {
   return $.ajax({
     method: "DELETE",
-    url: `/api/reviews/${review.productId}/reviews/${review.id}`,
+    url: `/api/products/${review.productId}/reviews/${review.id}`,
   });
 }

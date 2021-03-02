@@ -54,6 +54,30 @@ Gabe = User.create!(
     password: 'fghij'}
 )
 
+Austin = User.create!(
+    {email: 'austin@gmail.com',
+    first_name: 'Austin',
+    password: '12345'}
+)
+
+Annie = User.create!(
+    {email: 'annie@gmail.com',
+    first_name: 'Annie',
+    password: '67890'}
+)
+
+Jessica = User.create!(
+    {email: 'jessica@gmail.com',
+    first_name: 'Jessica',
+    password: '98765'}
+)
+
+Tiffany = User.create!(
+    {email: 'tiffany@gmail.com',
+    first_name: 'Tiffany',
+    password: 'asdfg'}
+)
+
 ##### creating Product #####
 
 product1 = Product.create!(
@@ -171,19 +195,162 @@ product10 = Product.create!(
 
 link10 = open("https://createtsy-products-seeds.s3.amazonaws.com/gaming_mouse_pad1.jpg")
 product10.photo.attach(io: link10, filename: 'gaming_mouse_pad1.jpg')
-    
+
+product11 = Product.create!(
+    {
+        product_name: "Christmas Doll",
+        description: "Get a little festive with these cute dolls. Scandinavian Elf is handcraft with love. It is a unique piece for decorate Christmas festival.",
+        price: 42,
+    }
+)
+
+link11 = open("https://createtsy-products-seeds.s3.amazonaws.com/christmas_doll.jpg")
+product11.photo.attach(io: link11, filename: 'christmas_doll.jpg')
+
+product12 = Product.create!(
+    {
+        product_name: "Bamboo Cutting Board",
+        description: "Made of 100% bamboo. It can easily handle the full range of everyday food prep including chopping veggies, slicing bread and trimming meats.",
+        price: 16,
+    }
+)
+
+link12 = open("https://createtsy-products-seeds.s3.amazonaws.com/bambu_cutting_board.png")
+product12.photo.attach(io: link12, filename: 'bambu_cutting_board.png')
+
+product13 = Product.create!(
+    {
+        product_name: "Personalized Robe",
+        description: "Our robe is the ultimate lounging accessory for the winter season and beyond. Offered in various colors, you can find one that suits your style and also personalize it. ",
+        price: 79,
+    }
+)
+
+link13 = open("https://createtsy-products-seeds.s3.amazonaws.com/robe.jpg")
+product13.photo.attach(io: link13, filename: 'robe.jpg')
+
+product14 = Product.create!(
+    {
+        product_name: "Glass Water Bottle",
+        description: "Inspired by the inevitable and beautiful mist that covers a city that’s never bothered to be like anywhere else.",
+        price: 52,
+    }
+)
+
+link14 = open("https://createtsy-products-seeds.s3.amazonaws.com/glass_water_bottle.jpg")
+product14.photo.attach(io: link14, filename: 'glass_water_bottle.jpg')
+
+product15 = Product.create!(
+    {
+        product_name: "Cable Knit Baby Sweater",
+        description: "Cable knit in soft warmth with a brown buttons.",
+        price: 39,
+    }
+)
+
+link15 = open("https://createtsy-products-seeds.s3.amazonaws.com/baby_sweater.jpg")
+product15.photo.attach(io: link15, filename: 'baby_sweater.jpg')
+
+product16 = Product.create!(
+    {
+        product_name: "Velvet Scrunchies",
+        description: "The micro textured hard surface allows for quick and smooth gliding.  A non-slip rubber base keeps the pad from moving even during fast paced gaming sessions.  The large size allows for plenty of movement.",
+        price: 17,
+    }
+)
+
+link16 = open("https://createtsy-products-seeds.s3.amazonaws.com/velvet_scrunchies.jpeg")
+product16.photo.attach(io: link16, filename: 'velvet_scrunchies.jpeg')
+
+product17 = Product.create!(
+    {
+        product_name: "Grey Washed Bucket Hat",
+        description: "Scrunchies are here to play! Our new scrunchies are the perfect hair accessories for your skincare routine. Super comfy, kink-free, and tug-proof so you can easily tie hair up without damaging it.",
+        price: 24,
+    }
+)
+
+link17 = open("https://createtsy-products-seeds.s3.amazonaws.com/grey_washed_bucket_hat.jpeg")
+product17.photo.attach(io: link17, filename: 'grey_washed_bucket_hat.jpeg')
+
+product18 = Product.create!(
+    {
+        product_name: "Laundry Hamper",
+        description: "Finally, a laundry hamper that looks just as good as your clothes do! This design’s braided texture brings airy charm to this everyday essential, while its fibers are mold and water-resistant perfect for stowing just-used towels, wet bathing suits, and beyond on the way to the laundry room.",
+        price: 67,
+    }
+)
+
+link18 = open("https://createtsy-products-seeds.s3.amazonaws.com/laundry_hamper.jpg")
+product18.photo.attach(io: link18, filename: 'laundry_hamper.jpg')
+
+product19 = Product.create!(
+    {
+        product_name: "Pet WaterBottle",
+        description: "A wide sink that makes it easier for your fur baby to drink from. It is leakproof and light to bring everywhere with you!",
+        price: 27,
+    }
+)
+
+link19 = open("https://createtsy-products-seeds.s3.amazonaws.com/pet_water_bottle.jpg")
+product19.photo.attach(io: link19, filename: 'pet_water_bottle.jpg')
+
+product20 = Product.create!(
+    {
+        product_name: "Chocolate Covered Strawberries",
+        description: "ipped and Drizzled Strawberries. What better way to eat chocolate and strawberries than dipping strawberries in chocolate!",
+        price: 29,
+    }
+)
+
+link20 = open("https://createtsy-products-seeds.s3.amazonaws.com/chocolate_covered_strawberries.jpg")
+product20.photo.attach(io: link20, filename: 'chocolate_covered_strawberries.jpg')
+
 
 
 ## REVIEWS ##
 
 review1 = Review.create(user_id: Lauren.id, product_id: product1.id, body:"Fast shipping and quality product! Perfect item for fall weather to stay cozy.", rating: 4)
-review2 = Review.create(user_id: Juju.id, product_id: product2.id, body:"The interior was not up to par. I like the color and the exterior design, but the inside, not so much.", rating: 3)
-review3 = Review.create(user_id: Jin.id, product_id: product3.id, body:"Most adorable bed sheet! It's is very soft and comfy.", rating: 4)
-review4 = Review.create(user_id: Dan.id, product_id: product4.id, body:"Reading a book in bed has gotten better, but I wish it has a dimmer.", rating: 3)
-review5 = Review.create(user_id: Gabe.id, product_id: product5.id, body:"I love FRIENDS!! I put store-bought cookies in this jar as well. The cookies stay fresh for at least a week.", rating: 5)
 review6 = Review.create(user_id: Lauren.id, product_id: product6.id, body:"Bought a couple of sets to host dinner parties and received so many compliments on these!", rating: 5)
-review7 = Review.create(user_id: Juju.id, product_id: product7.id, body:"Looks nice, but the quality isn't as expected.", rating: 2)
-review8 = Review.create(user_id: Jin.id, product_id: product8.id, body:"Delivery process was very very disappointing! The glass was BROKEN.", rating: 1)
-review9 = Review.create(user_id: Dan.id, product_id: product9.id, body:"Durable and easy to clean and store. I pack lunch to work every day and it's been a great purchase so far.", rating: 5)
-review10 = Review.create(user_id: Gabe.id, product_id: product10.id, body:"The color of this keyboard is sick! Kind of hard to press the keys tho.", rating: 4)
+review11 = Review.create(user_id: Lauren.id, product_id: product11.id, body:"These dolls were the highlight of this year's christmas decoration. Going to resue them next year.", rating: 4)
+review16 = Review.create(user_id: Lauren.id, product_id: product16.id, body:"There were signs of wear and tear.", rating: 1)
 
+review2 = Review.create(user_id: Juju.id, product_id: product2.id, body:"The interior was not up to par. I like the color and the exterior design, but the inside, not so much.", rating: 3)
+review7 = Review.create(user_id: Juju.id, product_id: product7.id, body:"Looks nice, but the quality isn't as expected.", rating: 2)
+review12 = Review.create(user_id: Juju.id, product_id: product12.id, body:"Really great for cutting steak, fruits, and overall anything. Durable and easy to wash.", rating: 5)
+review17 = Review.create(user_id: Juju.id, product_id: product17.id, body:"It was a good buy. Just what I was looking for.", rating: 4)
+
+review3 = Review.create(user_id: Jin.id, product_id: product3.id, body:"Most adorable bed sheet! It's is very soft and comfy.", rating: 4)
+review8 = Review.create(user_id: Jin.id, product_id: product8.id, body:"Delivery process was very very disappointing! The glass was BROKEN.", rating: 1)
+review13 = Review.create(user_id: Jin.id, product_id: product13.id, body:"Personalization made this robe special. Happy to have found the one.", rating: 4)
+review18 = Review.create(user_id: Jin.id, product_id: product18.id, body:"The handle fell off.", rating: 1)
+
+review4 = Review.create(user_id: Dan.id, product_id: product4.id, body:"Reading a book in bed has gotten better, but I wish it has a dimmer.", rating: 3)
+review9 = Review.create(user_id: Dan.id, product_id: product9.id, body:"Durable and easy to clean and store. I pack lunch to work every day and it's been a great purchase so far.", rating: 5)
+review14 = Review.create(user_id: Dan.id, product_id: product14.id, body:"Experienced some leaks, but the design is cool. Still waiting on a new one.", rating: 3)
+review19 = Review.create(user_id: Dan.id, product_id: product19.id, body:"The buttons were hard to press. It wasn't worht the price.", rating: 2)
+
+review10 = Review.create(user_id: Gabe.id, product_id: product10.id, body:"The color of this keyboard is sick! Kind of hard to press the keys tho.", rating: 4)
+review5 = Review.create(user_id: Gabe.id, product_id: product5.id, body:"I love FRIENDS!! I put store-bought cookies in this jar as well. The cookies stay fresh for at least a week.", rating: 5)
+review15 = Review.create(user_id: Gabe.id, product_id: product15.id, body:"Bought it for my baby niece. The fabric is great.", rating: 5)
+review20 = Review.create(user_id: Gabe.id, product_id: product20.id, body:"Ordered a dozen, but only received 6. Customer service followed up and sent me a brand new box.", rating: 3)
+
+review21 = Review.create(user_id: Austin.id, product_id: product6.id, body:"Add to your cart now!", rating: 5)
+review22 = Review.create(user_id: Austin.id, product_id: product12.id, body:"Bought it for my girlfriend and she was very pleased with it", rating: 5)
+review23 = Review.create(user_id: Austin.id, product_id: product17.id, body:"Wish the size was bigger. Didn't fit right :(", rating: 2)
+review24 = Review.create(user_id: Austin.id, product_id: product9.id, body:"It was too heavy to use. Had to return them.", rating: 2)
+
+review25 = Review.create(user_id: Annie.id, product_id: product18.id, body:"Just after a month of use, there are some tears already, but it does its job.", rating: 4)
+review26 = Review.create(user_id: Annie.id, product_id: product13.id, body:"Ordered a set for my sister and myself. The quality is top notch and super comfy!", rating: 5)
+review27 = Review.create(user_id: Annie.id, product_id: product4.id, body:"The quality was not up to par for the price.", rating: 3)
+review28 = Review.create(user_id: Annie.id, product_id: product20.id, body:"They looked delicious, but some of the strawberries went bad when we received it.", rating: 2)
+
+review29 = Review.create(user_id: Jessica.id, product_id: product1.id, body:"The color came off. Very disappointing!!", rating: 1)
+review30 = Review.create(user_id: Jessica.id, product_id: product8.id, body:"It goes well great with the other furnitures in my living room.", rating: 4)
+review31 = Review.create(user_id: Jessica.id, product_id: product14.id, body:"It leaked in my bag and got everything wet. I gave two stars only because the customer service was great and sent me a brand new one.", rating: 2)
+review32 = Review.create(user_id: Jessica.id, product_id: product16.id, body:"A fashion statement you need!", rating: 5)
+
+review33 = Review.create(user_id: Tiffany.id, product_id: product7.id, body:"Been really into nature-esque feel. Not the best one out there, but it's good for now.", rating: 3)
+review34 = Review.create(user_id: Tiffany.id, product_id: product2.id, body:"Got it for my nephew for his birthday, but it's not soft. Had to return", rating: 3)
+review35 = Review.create(user_id: Tiffany.id, product_id: product15.id, body:"Friend's baby looked absolutely adorable in this sweater! Must get!", rating: 5)
+review36 = Review.create(user_id: Tiffany.id, product_id: product10.id, body:"As a gamer, this is just what I needed.", rating: 4)

@@ -12,6 +12,7 @@ import NavContainer from './nav/nav_container';
 import LandingContainer from './landing/landing_container';
 import SearchContainer from "./search/search_container";
 import Modal from './modal/modal'
+import Footer from './footer';
 
 
 
@@ -50,6 +51,9 @@ const App = () => (
       </Route>
       <Route path="/search" component={ProductIndexContainer} />
     </Switch>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 );
 

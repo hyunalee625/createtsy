@@ -75,7 +75,7 @@ class ShoppingCartIndex extends React.Component {
             <div className="item-transaction">
               <div className="item-total">
                 <span className="how">How you'll pay</span>
-                <div className="payment-options">
+                <label className="payment-options">
                   <input type="radio" value="mc" defaultChecked></input>
                     <div className="cc-logos">
                       <img id="mc-logo" src={window.mc}></img>
@@ -84,13 +84,13 @@ class ShoppingCartIndex extends React.Component {
                       <img id="aa-logo" src={window.dc}></img>
 
                     </div>
-                </div>
-                <div className="payment-options">
+                </label>
+                <label className="payment-options">
                   <input type="radio" value="pp"></input>
                     <div className="pp-logo">
                       <img src={window.pp}></img>
                     </div>
-                </div>
+                </label>
                 <div className="total-price">
                   <span className="total">Item(s) total</span>
                   <span> ${this.totalPrice()}</span>
@@ -106,7 +106,10 @@ class ShoppingCartIndex extends React.Component {
                 <span> ${this.totalPrice()}</span>
               </div>
               <div className="checkout-btn">
-                <button className={checkout} onClick={this.changeText.bind(this)}></button>
+                <Link 
+                  to="/">
+                  <button className="checkout" onClick={this.changeText.bind(this)}>Proceed to checkout</button>
+                </Link>
               </div>
             </div>
             </div>

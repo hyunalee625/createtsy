@@ -1,10 +1,82 @@
 .reviews-container {
-    margin-left: 1%;
-    padding-bottom: 2rem;
+    margin-left: 2vw;
+    
+}
+
+.reviews-sub-container {
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .reviews-header {
-    font-size: 1.5rem;
-    font-family: inherit;
-    padding: 1rem 0;
+    font-size: 2rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding-top: 1rem;
+    font-weight: 700;
+}
+
+.avg-rating {
+    padding-bottom: 1rem;
+}
+
+.review-index-item-container {
+    margin-left: 30px;
+}
+
+.review-user {
+    margin-bottom: 3px;
+    font-size: 1.25rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: italic;
+    
+}
+
+.review-date {
+    margin-bottom: 3px;
+    font-size: 1rem;
+}
+
+.rating, .review-body {
+    margin-bottom: 3px;
+}
+
+.review-edit-btn, .review-delete-btn {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 3px;
+    margin-top: 1vh;
+}
+
+.review-delete-btn {
+    margin-left: 1.5vw;
+}
+
+.review-form {
+        margin-left: 2vw;
+        padding-bottom: 1rem;
+
+    em {
+        font-size: 2rem;
+        font-family: "Lucida Console", "Courier New", monospace;
+        padding-top: 1rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        margin-top: 8px;
+        border: 1px solid grey;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    button {
+        border-radius: 5px;
+        background-color: lightgray;
+        padding: 10px;
+    }
 }

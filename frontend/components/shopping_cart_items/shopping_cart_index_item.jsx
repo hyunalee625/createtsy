@@ -45,7 +45,22 @@ class ShoppingCartIndexItem extends React.Component {
     );
   }
 
-  render() {
+  emptyCart() {
+    const quantity = this.props.item.quantity;
+    if (quantity === 0) {
+      return (
+        <div>
+          <h2>Your cart is empty.</h2>
+          <a href="/">
+            <h3 className="discover-something">Discover something unique to fill it up</h3>
+          </a>
+        </div>
+      )
+    }
+
+  }
+
+  fullCart() {
     const { item } = this.state;
 
     return (
@@ -91,6 +106,17 @@ class ShoppingCartIndexItem extends React.Component {
         </div>
       </div>
     );
+  }
+
+  render() {
+    // const { item } = this.state;
+    let {quantity} = this.props;
+    if (quantity === 0) {
+      return this.emptyCart();
+    } else {
+      return this.fullCart();
+    }
+    // return quantity ? this.emptyCart() : this.fullCart()
   }
 }
 

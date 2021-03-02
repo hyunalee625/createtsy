@@ -28,19 +28,36 @@ class Landing extends React.Component {
         <div className="landing-page-container">
           <div className="landing-page-sub">
             <h2 className="landing-page-header">
-              Find things you'll love. Support independent sellers. Only on
-              creatEtsy.
+              Celebrate everyone who makes you feel loved.
             </h2>
-              <h3 className="landing-page-sub-header">Everyday finds</h3>
+              <h3 className="landing-page-sub-header">Shop Valentine’s Day</h3>
               <div className="landing-pics-container">
-                <div className="landing1-container">
-                  <img id="landing1"src={window.landing1}></img>
-                  <small>Holiday Sweater</small>
-                </div>
-                <div className="landing2-container">
-                  <img id="landing2"src={window.landing2}></img>
-                  <small>Home Decor</small>
-                </div>
+                <div className="landing-pics-subcontainer">
+                  <div className="landing1-container">
+                    <img id="landing1"src={window.landing1}></img>
+                    <small>Romantic ambiance</small>
+                  </div>
+                  <div className="landing2-container">
+                    <img id="landing2"src={window.landing2}></img>
+                    <small>Necklaces</small>
+                  </div>
+                  <div className="landing3-container">
+                    <img id="landing3"src={window.landing3}></img>
+                    <small>Personalized cards</small>
+                  </div>
+                  <div className="landing4-container">
+                    <img id="landing4"src={window.landing4}></img>
+                    <small>Coasters</small>
+                  </div>
+                  <div className="landing5-container">
+                    <img id="landing5"src={window.landing5}></img>
+                    <small>Valentine’s wreaths</small>
+                  </div>
+                  <div className="landing6-container">
+                    <img id="landing6"src={window.landing6}></img>
+                    <small>Engagement rings</small>
+                  </div>
+                  </div>
               </div>
           </div>
 
@@ -48,29 +65,27 @@ class Landing extends React.Component {
           <div className="mid-banner-container">
             <div className="mid-banner">
               <div className="mid-banner-headers">
-                <h3 className="mid-banner-header">                        
-                  Unique everything</h3>
+                <h3 className="mid-banner-header"><img id="mid-banner-icon" src={window.unique}></img>                        
+                  A one-of-a-kind community</h3>
               </div>
               <p className="mid-banner-p">
-                We have millions of one-of-a-kind items, so you can find
-                whatever you need (or really, really want).
+                creatEtsy is a global online marketplace, where people come together to make, sell, buy, and collect unique items.
               </p>
             </div>
             <div className="mid-banner">
               <div className="mid-banner-headers">
-                <h3 className="mid-banner-header">Independent sellers</h3>
+                <h3 className="mid-banner-header"><img id="mid-banner-icon" src={window.lightbulb}></img>Support independent creators</h3>
               </div>
               <p className="mid-banner-p">
-                Buy directly from someone who put their heart and soul into
-                making something special.
+                There’s no creatEtsy warehouse – just millions of people selling the things they love. We make the whole process easy, helping you connect directly with makers to find something extraordinary.
               </p>
             </div>
             <div className="mid-banner">
               <div className="mid-banner-headers">
-                <h3 className="mid-banner-header">Secure shopping</h3>
+                <h3 className="mid-banner-header"><img id="mid-banner-icon" src={window.heart}></img>Peace of mind</h3>
               </div>
               <p className="mid-banner-p">
-                We use best-in-class technology to protect your transactions.{" "}
+                Your privacy is the highest priority of our dedicated team. And if you ever need assistance, we are always ready to step in for support.
               </p>
             </div>
           </div>

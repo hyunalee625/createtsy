@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     get '/products/search', to: 'products#search'
     resource :session, only: [:create, :destroy]
     resources :products, only: [:index, :show] do 
-      resources :reviews, only: [:index, :create, :udpate, :destroy]
+      resources :reviews, only: [:index, :create, :edit, :update, :destroy]
     end
     resources :shopping_cart_items, only: [:index, :create, :update, :destroy]
 

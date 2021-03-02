@@ -1,8 +1,17 @@
 class Api::ReviewsController < ApplicationController
+    #   before_action :ensure_login, only: [:create]
+
 
     def index
-        @reviews = Review.where(product_id: params[:product_id])
-        # @reviews = Review.all 
+
+        if params[:user_id]
+            @reviews = Review.where(user_id: params[:user_id])
+        elsif params[:product_id]
+            @reviews = Review.where(product_id: params[:product_id])
+        else
+            @reciews = Review.all
+        end
+        
         render :index
     end
 
@@ -21,7 +30,13 @@ class Api::ReviewsController < ApplicationController
         end
     end
 
+    def edit
+        @review = Review.find(params[:id])
+        render :edit
+    end
+
     def update
+        debugger
         @review = Review.find_by(id: params[:id])
 
         if @review.update(review_params)
@@ -44,7 +59,6 @@ class Api::ReviewsController < ApplicationController
 
     def review_params
         params.require(:review).permit(:id, :body, :user_id, :product_id, :rating)
-        # params.require(:review).permit(:product_id, :rating)
     end
     
 end

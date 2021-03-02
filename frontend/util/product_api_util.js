@@ -21,3 +21,11 @@ export const searchProducts = (search_query) => {
   });
 };
 
+export const createReview = (review) => {
+  return $.ajax({
+    method: "POST",
+    url: `/api//reviews`,
+    data: { review },
+  });
+}
+

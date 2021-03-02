@@ -8,7 +8,7 @@ import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.props.review
+    this.state = this.props.review;
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -31,23 +31,13 @@ class ReviewForm extends React.Component {
         }
     }
 
-    userReviewed() {
-      const { reviews, user_id } = this.props;
-      for (let key in reviews) {
-          const subObj = reviews[key];
-          if (subObj.user_id === user_id){
-              return true; 
-          }
-      }
-      return false; 
-  }
 
   render() {
-    return this.props.user_id && !this.userReviewed() && (
+      return (
             <form onSubmit={this.handleSubmit}>
                 <div className="review-form">
-                    <h1>Write a Review</h1>
-                    
+                    <em>Write a Review</em>
+                    <br/>
                     <Rating
                         emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
                         fullSymbol={<FontAwesomeIcon icon={fullStar} />}
@@ -57,7 +47,12 @@ class ReviewForm extends React.Component {
                     <div>
                         <textarea onChange={this.update('body')} value={this.state.body}></textarea>
                     </div>
-                    <button>Save</button>
+                    <button
+                        className="review-save"
+                        onClick={() => alert("Must be logged in!")}
+                    >
+                        Save
+                    </button>
                 </div>
             </form>
         )

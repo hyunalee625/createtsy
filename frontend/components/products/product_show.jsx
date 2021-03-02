@@ -1,16 +1,16 @@
 import React from "react";
 import ReviewIndexContainer from '../../components/reviews/review_index_container'
-import createReviewContainer from '../reviews/create_review_container'
+import CreateReviewContainer from '../../components/reviews/create_review_container'
 import { Link } from "react-router-dom";
 
 
 class ProductShow extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      reviews: null,
-      quantity: null
-    };
+    // this.state = {
+    //   reviews: null,
+    //   quantity: null
+    // };
 
     this.addToCart = this.addToCart.bind(this);
   }
@@ -33,15 +33,6 @@ class ProductShow extends React.Component {
     });
   }
 
-  // hideContent(content) {
-  //   if (content.length > 100) {
-  //     return (
-  //       <p className="product-show-description">{content.slice(0, 100) + "..."}<button className="learn-more" onClick={()}>Learn more about this item</button></p>
-  //     )
-  //   } else {
-  //     return <p className="product-show-description">{content}</p>;
-  //   }
-  // }
 
   render() {
     const { product } = this.props;
@@ -60,7 +51,7 @@ class ProductShow extends React.Component {
                 <div className="product-show-name">{product.product_name}</div>
                 <div className="price-stock">
                   <div className="product-show-price">${product.price}</div>
-                  <div className="in-stock"> &#10004; In stock</div>
+                  {/* <div className="in-stock"> &#10004; In stock</div> */}
                 </div>
 
                 <div className="add-to-cart-btn-container">
@@ -73,7 +64,7 @@ class ProductShow extends React.Component {
                   </button>
                 </div>
                 <div className="product-description-container">
-                  Description:
+                  <p className="description">Description:</p>
                   <p>{product.description}</p>
                 </div>
               </div>
@@ -82,14 +73,16 @@ class ProductShow extends React.Component {
         </div>
         <div className="product-show-mid">
           <div className="show-page-banner">
-            <span>Made to order, just for you</span>
-            <span>This item is handmade</span>
-            <span>Ships in 1-3 business days</span>
+            <span><img id="show-page-icon" src={window.heart}></img>Made to order, just for you</span>
+            <span><img id="show-page-icon" src={window.handmade}></img>This item is handmade</span>
+            <span><img id="show-page-icon" src={window.send}></img>Ships in 1-3 business days</span>
           </div>
         </div>
-        <div className="reviews-container">
-          <createReviewContainer />
+        <div className="product-reviews-container">
           <ReviewIndexContainer product_id={product.id} />
+          <CreateReviewContainer />
+
+
         </div>
       </div>
     );
