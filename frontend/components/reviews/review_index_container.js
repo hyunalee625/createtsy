@@ -20,7 +20,7 @@ const mdp = (dispatch) => {
   return {
     fetchReviews: (productId) => dispatch(fetchReviews(productId)),
     updateReview: (review) => dispatch(updateReview(review)),
-    deleteReview: (reviewId) => dispatch(deleteReview(reviewId)),
+    deleteReview: (review) => dispatch(deleteReview(review)),
   };
 };
 

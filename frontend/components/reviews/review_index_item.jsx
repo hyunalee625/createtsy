@@ -13,7 +13,8 @@ class ReviewIndexItem extends React.Component {
     super(props);
 
     this.state = {
-      formStatus: false
+      formStatus: false,
+      id: this.props.review.id
     }
 
     this.handleForm = this.handleForm.bind(this);
@@ -44,7 +45,7 @@ class ReviewIndexItem extends React.Component {
     return (
         <button className="review-delete-btn" 
         onClick={() => this.props.deleteReview(this.props.review._id)
-          .then(() => this.props.history.push("/products/{product.id}"))
+          // .then(() => this.props.history.push("/products/${revew.}"))
         }
         >
           Delete
