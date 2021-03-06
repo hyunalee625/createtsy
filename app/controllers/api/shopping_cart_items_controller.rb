@@ -3,6 +3,10 @@ class Api::ShoppingCartItemsController < ApplicationController
 
     def index
         @shopping_cart_items = ShoppingCartItem.all
+        @products = [];
+        @shopping_cart_items.each do |item|
+            @products.push(Product.find_by(id: item.product_id))
+        end
         render :index
     end
 

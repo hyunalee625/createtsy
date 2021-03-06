@@ -110,7 +110,7 @@ class ShoppingCartIndexItem extends React.Component {
 
   render() {
     // const { item } = this.state;
-    let {quantity} = this.state;
+    let {quantity} = this.props;
     if (quantity === 0) {
       return this.emptyCart();
     } else {
