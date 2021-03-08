@@ -32,6 +32,6 @@ export const updateReview = (review) => {
 export const deleteReview = (review) => {
   return $.ajax({
     method: "DELETE",
-    url: `/api/products/${review.productId}/reviews/${review.id}`,
+    url: `/api/products/${review.product_id}/reviews/${review.id}`,
   });
 }

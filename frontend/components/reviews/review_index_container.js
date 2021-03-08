@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import {
   fetchReviews,
   updateReview,
-  // deleteReview,
+  deleteReview,
 } from "../../actions/review_actions";
 import ReviewIndex from "./review_index";
 
@@ -20,7 +20,7 @@ const mdp = (dispatch) => {
   return {
     fetchReviews: (productId) => dispatch(fetchReviews(productId)),
     updateReview: (review) => dispatch(updateReview(review)),
-    // deleteReview: (review) => dispatch(deleteReview(review)),
+    deleteReview: (review) => dispatch(deleteReview(review)),
   };
 };
 

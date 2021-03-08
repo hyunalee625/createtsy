@@ -41,7 +41,7 @@ class ReviewIndexItem extends React.Component {
   };
 
   reviewDelete() {
-    debugger
+    // debugger
     return (
         <button className="review-delete-btn" 
         onClick={() => this.props.deleteReview(this.props.review._id)
@@ -55,7 +55,7 @@ class ReviewIndexItem extends React.Component {
 
   
   render () {
-    debugger
+    // debugger
     let {review} = this.props;
     return (
       <div className="review-index-item-container">

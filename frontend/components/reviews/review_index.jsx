@@ -15,43 +15,41 @@ class ReviewIndex extends React.Component {
         this.props.fetchReviews(this.props.product_id);
     }
 
-    avgRating() {
-        let sum = 0;
+    // avgRating() {
+    //     let sum = 0;
 
-        this.props.reviews.forEach((review) => {
-            sum += review.rating;
-        })
+    //     this.props.reviews.forEach((review) => {
+    //         sum += review.rating;
+    //     })
 
-        return Math.ceil(sum / (this.props.reviews.length));
-        // return (sum / (this.props.reviews.length));
+    //     return Math.ceil(sum / (this.props.reviews.length));
+    //     // return (sum / (this.props.reviews.length));
 
-    }
+    // }
 
-    renderAvgRating() {
-        return (
-            <div>
-                <Rating
-                    className="review-index-rating"
-                    emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
-                    fullSymbol={<FontAwesomeIcon icon={fullStar} />}
-                    initialRating={this.avgRating()}
-                    readonly={true}/>
-            </div>
-        )
-    }
+    // renderAvgRating() {
+    //     return (
+    //         <div>
+    //             <Rating
+    //                 className="review-index-rating"
+    //                 emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
+    //                 fullSymbol={<FontAwesomeIcon icon={fullStar} />}
+    //                 initialRating={this.avgRating()}
+    //                 readonly={true}/>
+    //         </div>
+    //     )
+    // }
 
     render() {
-        const reviews = this.props.reviews.map((review, idx) => {
+        const reviews = this.props.reviews.map((review) => {
             
             return(
-                <div className="reviews-index-container">
                     <ReviewIndexItem 
-                        key={idx}
+                        key={review.id}
                         review={review}
                         // productId={review.product_id}
-                        // deleteReview={this.props.review.deleteReview}
+                        deleteReview={this.props.deleteReview}
                     />
-                </div>
             )
         })
 
@@ -60,7 +58,7 @@ class ReviewIndex extends React.Component {
                 <div className="reviews-sub-container">
                 <div className="reviews-header">Reviews ({this.props.reviews.length})</div>
                 <br />
-                    <div className="avg-rating">{this.renderAvgRating()}</div>
+                    {/* <div className="avg-rating">{this.renderAvgRating()}</div> */}
                     {reviews}
                 </div>
             </div>
