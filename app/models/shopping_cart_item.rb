@@ -16,7 +16,7 @@ class ShoppingCartItem < ApplicationRecord
     #     foreign_key: :buyer_id,
     #     class_name: :User
 
-    debugger
+    # debugger
     belongs_to :product,
         foreign_key: :product_id,
         class_name: :Product 
