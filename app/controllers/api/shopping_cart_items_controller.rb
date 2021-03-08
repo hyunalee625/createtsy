@@ -13,7 +13,7 @@ class Api::ShoppingCartItemsController < ApplicationController
 
     def create
         @shopping_cart_item = ShoppingCartItem.find_by(product_id: params[:cartItem][:product_id])
-
+ 
         if @shopping_cart_item #if the item already exists
             @shopping_cart_item.quantity += 1 # increment the quantity 
              @max_quantity = false

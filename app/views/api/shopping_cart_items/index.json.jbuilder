@@ -1,5 +1,5 @@
 @shopping_cart_items.each do |item|
-    # debugger
+    debugger
     json.set! item.id do
         json.extract! item, :id, :product_id, :quantity
         # json.extract! item.product, :product_name, :price
@@ -10,7 +10,7 @@ end
 
 @products.each do |product|
     debugger
-    json.set! product.id do
+    json.set! product do
         json.extract! product, :product_name, :price
     end
 end

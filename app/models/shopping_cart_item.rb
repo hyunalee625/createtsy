@@ -19,5 +19,6 @@ class ShoppingCartItem < ApplicationRecord
     debugger
     belongs_to :product,
         foreign_key: :product_id,
-        class_name: :Product
+        class_name: :Product 
+        
 end
