@@ -9,7 +9,7 @@ class Api::ReviewsController < ApplicationController
         elsif params[:product_id]
             @reviews = Review.where(product_id: params[:product_id])
         else
-            @reciews = Review.all
+            @reviews = Review.all
         end
         
         render :index
@@ -36,10 +36,11 @@ class Api::ReviewsController < ApplicationController
     end
 
     def update
-        debugger
+        # debugger
         @review = Review.find_by(id: params[:id])
 
         if @review.update(review_params)
+            debugger
             render :show
         else
             render json: @review.errors.full_messages, status: 422
@@ -48,8 +49,9 @@ class Api::ReviewsController < ApplicationController
 
     def destroy
         @review = Review.find_by(id: params[:id])
-
         if @review.destroy
+            @reviews = Review.where(product_id: params[:product_id])
+            render json: { data: @reviews }
         else
             render json: @review.errors.full_messages, status: 422
         end

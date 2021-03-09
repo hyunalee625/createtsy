@@ -46,77 +46,86 @@ class ShoppingCartIndex extends React.Component {
 
   render() {
     let checkout = this.state.checkout ? "checkout" : "thankyou";
-    return (
-      <div className="cart-index-container">
-        <div className="items-in-your-cart">
-        {this.totalQuantity()} items in your cart
-        
-          <div className="keep-btn">
-            <Link 
-            className="keep"
-            to="/">
-              <button className="keep-shopping">Keep shopping</button>
-            </Link>
-          </div>
+    if (this.totalQuantity() === 0) {
+      return (
+        <div>
+          <h3>Your cart is empty!</h3>
+          <button>Go back to main page</button>
         </div>
-        <div className="cart-index-sub">
-        <div className="cart-index-sub-sub">
-            <div className="shopping-cart-index-item">
-              {this.props.items.map((item) => (
-                <ShoppingCartIndexItem
-                  deleteCartItem={this.props.deleteCartItem}
-                  updateCartItem={this.props.updateCartItem}
-                  item={item}
-                  key={item.id}
-                />
-              ))}
-            </div>
-            <div className="right-col">
-            <div className="item-transaction">
-              <div className="item-total">
-                <span className="how">How you'll pay</span>
-                <label className="payment-options">
-                  <input type="radio" value="mc" defaultChecked></input>
-                    <div className="cc-logos">
-                      <img id="mc-logo" src={window.mc}></img>
-                      <img id="visa-logo" src={window.visa}></img>
-                      <img id="aa-logo" src={window.aa}></img>
-                      <img id="aa-logo" src={window.dc}></img>
-
-                    </div>
-                </label>
-                <label className="payment-options">
-                  <input type="radio" value="pp"></input>
-                    <div className="pp-logo">
-                      <img src={window.pp}></img>
-                    </div>
-                </label>
-                <div className="total-price">
-                  <span className="total">Item(s) total</span>
-                  <span> ${this.totalPrice()}</span>
-                </div>
-              </div>
-              <div className="shipping">
-                <span>Shipping</span>
-                <span className="green"> FREE</span>
-              </div>
-
-              <div className="subtotal">
-                <span>Total ({this.totalQuantity()} items)</span>
-                <span> ${this.totalPrice()}</span>
-              </div>
-              <div className="checkout-btn">
+          )
+        } else {
+        return (
+          <div className="cart-index-container">
+            <div className="items-in-your-cart">
+            {this.totalQuantity()} items in your cart
+            
+              <div className="keep-btn">
                 <Link 
-                  to="/">
-                  <button className="checkout" onClick={this.changeText.bind(this)}>Proceed to checkout</button>
+                className="keep"
+                to="/">
+                  <button className="keep-shopping">Keep shopping</button>
                 </Link>
               </div>
             </div>
-            </div>
+            <div className="cart-index-sub">
+            <div className="cart-index-sub-sub">
+                <div className="shopping-cart-index-item">
+                  {this.props.items.map((item) => (
+                    <ShoppingCartIndexItem
+                      deleteCartItem={this.props.deleteCartItem}
+                      updateCartItem={this.props.updateCartItem}
+                      item={item}
+                      key={item.id}
+                    />
+                  ))}
+                </div>
+                <div className="right-col">
+                <div className="item-transaction">
+                  <div className="item-total">
+                    <span className="how">How you'll pay</span>
+                    <label className="payment-options">
+                      <input type="radio" value="mc" defaultChecked></input>
+                        <div className="cc-logos">
+                          <img id="mc-logo" src={window.mc}></img>
+                          <img id="visa-logo" src={window.visa}></img>
+                          <img id="aa-logo" src={window.aa}></img>
+                          <img id="aa-logo" src={window.dc}></img>
+    
+                        </div>
+                    </label>
+                    <label className="payment-options">
+                      <input type="radio" value="pp"></input>
+                        <div className="pp-logo">
+                          <img src={window.pp}></img>
+                        </div>
+                    </label>
+                    <div className="total-price">
+                      <span className="total">Item(s) total</span>
+                      <span> ${this.totalPrice()}</span>
+                    </div>
+                  </div>
+                  <div className="shipping">
+                    <span>Shipping</span>
+                    <span className="green"> FREE</span>
+                  </div>
+    
+                  <div className="subtotal">
+                    <span>Total ({this.totalQuantity()} items)</span>
+                    <span> ${this.totalPrice()}</span>
+                  </div>
+                  <div className="checkout-btn">
+                    <Link 
+                      to="/">
+                      <button className="checkout" onClick={this.changeText.bind(this)}>Proceed to checkout</button>
+                    </Link>
+                  </div>
+                </div>
+                </div>
+              </div>
+              </div>
           </div>
-          </div>
-      </div>
-    );
+        );
+      } 
   }
 }
 

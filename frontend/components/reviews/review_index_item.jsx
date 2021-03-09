@@ -18,11 +18,28 @@ class ReviewIndexItem extends React.Component {
     }
 
     this.handleForm = this.handleForm.bind(this);
+    this.handleEdit = this.handleEdit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
+
   }
 
   handleForm () {
   this.setState({ formStatus: true });
   };
+
+  handleEdit(e) {
+    e.preventDefault();
+    this.props
+      .updateReview(this.props.review) 
+  } 
+
+  handleDelete(e) {
+    e.preventDefault();
+    this.props
+      .deleteReview(this.props.review)
+      // .then(fetchReviews(this.props.product_id))
+      .then(() => this.props.history.push(`/products/${this.props.review.product_id}`))
+  }
   
   editForm(e) {
       // debugger
@@ -40,18 +57,18 @@ class ReviewIndexItem extends React.Component {
       }
   };
 
-  reviewDelete() {
-    // debugger
-    return (
-        <button className="review-delete-btn" 
-        onClick={() => this.props.deleteReview(this.props.review._id)
-          // .then(() => this.props.history.push("/products/${revew.}"))
-        }
-        >
-          Delete
-      </button>
-    )
-  }
+  // reviewDelete() {
+  //   // debugger
+  //   return (
+  //       <button className="review-delete-btn" 
+  //       onClick={() => this.props.deleteReview(this.props.review._id)
+  //         // .then(() => this.props.history.push("/products/${revew.}"))
+  //       }
+  //       >
+  //         Delete
+  //     </button>
+  //   )
+  // }
 
   
   render () {
@@ -74,25 +91,19 @@ class ReviewIndexItem extends React.Component {
         <p className="review-body">{review.body}</p>
         <div className="review-btns">
           <button className="review-edit-btn"
-          onClick={() => 
-            this.props
-              .updateReview(this.props.review.id)
-              // .then(() => this.props.history.push("/reviews"))
-              }
+          onClick={this.handleEdit}
           >
             Edit
           </button>
-          <div>{this.reviewDelete()}</div>
-          {/* <button className="review-delete-btn" 
-            onClick={() => 
-            this.props
-              .deleteReview(this.props.review.id)
-              .then(() => this.props.history.push("/reviews"))
-              }
+        </div>
+          <div>
+            <button className="review-delete-btn"
+            onClick={this.handleDelete}
             >
               Delete
-          </button> */}
-        </div>
+            </button>
+          </div>
+        
         <br/>
       </div>
     );

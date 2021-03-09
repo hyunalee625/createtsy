@@ -9,10 +9,14 @@ import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 class ReviewIndex extends React.Component {
     constructor(props){
         super(props);
+        this.state = {
+            reviews: []
+        }
     }
 
     componentDidMount(){
         this.props.fetchReviews(this.props.product_id);
+        // this.setState({reviews}) 
     }
 
     // avgRating() {
@@ -40,6 +44,12 @@ class ReviewIndex extends React.Component {
     //     )
     // }
 
+    // handleDelete() {
+    //     this.setState({
+            
+    //     })
+    // }
+
     render() {
         const reviews = this.props.reviews.map((review) => {
             
@@ -48,8 +58,11 @@ class ReviewIndex extends React.Component {
                         key={review.id}
                         review={review}
                         // productId={review.product_id}
+                        updateReview={this.props.updateReview}
                         deleteReview={this.props.deleteReview}
+                        fetchReviews={this.props.fetchReviews}
                     />
+                
             )
         })
 
