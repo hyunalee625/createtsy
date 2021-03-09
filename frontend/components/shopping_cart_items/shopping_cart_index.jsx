@@ -48,9 +48,13 @@ class ShoppingCartIndex extends React.Component {
     let checkout = this.state.checkout ? "checkout" : "thankyou";
     if (this.totalQuantity() === 0) {
       return (
-        <div>
+        <div className="cart-index-container">
           <h3>Your cart is empty!</h3>
-          <button>Go back to main page</button>
+          <Link
+            className="back-to-main"
+            to="/">
+            Go back to main page
+          </Link>
         </div>
           )
         } else {

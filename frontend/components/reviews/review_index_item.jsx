@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import Rating from 'react-rating';
 import moment from "moment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +19,7 @@ class ReviewIndexItem extends React.Component {
     }
 
     this.handleForm = this.handleForm.bind(this);
-    this.handleEdit = this.handleEdit.bind(this);
+    // this.handleEdit = this.handleEdit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
 
   }
@@ -27,18 +28,18 @@ class ReviewIndexItem extends React.Component {
   this.setState({ formStatus: true });
   };
 
-  handleEdit(e) {
-    e.preventDefault();
-    this.props
-      .updateReview(this.props.review) 
-  } 
+  // handleEdit(e) {
+  //   e.preventDefault();
+  //   this.props
+  //     .updateReview(this.props.review) 
+  // } 
 
   handleDelete(e) {
     e.preventDefault();
     this.props
       .deleteReview(this.props.review)
       // .then(fetchReviews(this.props.product_id))
-      .then(() => this.props.history.push(`/products/${this.props.review.product_id}`))
+      .then(() => this.props.history.push(`/products`))
   }
   
   editForm(e) {
