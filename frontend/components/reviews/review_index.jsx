@@ -70,7 +70,7 @@ class ReviewIndex extends React.Component {
                         review={review}
                         // productId={review.product_id}
                         updateReview={this.props.updateReview}
-                        deleteReview={this.props.deleteReview}
+                        deleteReview={this.handleDelete}
                         fetchReviews={this.props.fetchReviews}
                     />
                 

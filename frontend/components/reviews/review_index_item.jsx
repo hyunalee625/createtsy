@@ -76,10 +76,8 @@ class ReviewIndexItem extends React.Component {
     let {review} = this.props;
     return (
       <div className="review-index-item-container">
-        <div>
-          <div className="review-user">{review.user}
-          </div>
-        </div>
+      <div>
+          <div className="review-user">{review.user}</div>
           <p className="review-date">{moment($`{review.created_at}`).format("MMMM D, YYYY")} </p>
         <Rating
           className="rating"
@@ -89,6 +87,7 @@ class ReviewIndexItem extends React.Component {
           readonly={true}
         />
         <p className="review-body">{review.body}</p>
+        </div>
         <div className="review-btns">
           <button className="review-edit-btn"
           onClick={this.handleEdit}
