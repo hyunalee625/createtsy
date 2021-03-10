@@ -19,10 +19,10 @@ export const receiveAllReviews = (reviews) => {
   };
 };
 
-export const removeReview = (reviewId) => {
+export const removeReview = (updatedReviews) => {
     return {
         type: REMOVE_REVIEW,
-        reviewId
+        updatedReviews
     }
 }
 
@@ -54,7 +54,7 @@ export const createReview = (review) => (dispatch) => {
 };
 
 export const updateReview = (review) => (dispatch) => {
-  debugger
+  // debugger
   return ReviewAPIUtil.updateReview(review).then(
     (review) => dispatch(receiveOneReview(review)),
     (errors) => dispatch(receiveReviewErrors(errors.responseJSON))

@@ -10,13 +10,14 @@ class ReviewIndex extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            reviews: []
+            reviews: null,
+            reviewsLength: 0
         }
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     componentDidMount(){
         this.props.fetchReviews(this.props.product_id);
-        // this.setState({reviews}) 
     }
 
     // avgRating() {
@@ -44,14 +45,24 @@ class ReviewIndex extends React.Component {
     //     )
     // }
 
-    // handleDelete() {
-    //     this.setState({
-            
-    //     })
-    // }
+    handleDelete(review) {
+        // debugger
+        this.props
+        .deleteReview(review).then(reviews => {
+            // debugger
+            this.setState({
+                reviews: reviews.updatedReviews.data,
+                reviewsLength: reviews.updatedReviews.data.length
+            });
+        });
+    }
+
 
     render() {
-        const reviews = this.props.reviews.map((review) => {
+        let currentReviews = this.state.reviews || this.props.reviews;
+        let currentReviewsLength = this.props.reviews.length;
+
+        const reviews = currentReviews.map((review) => {
             
             return(
                     <ReviewIndexItem 
@@ -69,7 +80,7 @@ class ReviewIndex extends React.Component {
         return (
             <div className="reviews-container">
                 <div className="reviews-sub-container">
-                <div className="reviews-header">Reviews ({this.props.reviews.length})</div>
+                <div className="reviews-header">Reviews ({this.state.reviewsLength ? this.state.reviewsLength : currentReviewsLength})</div>
                 <br />
                     {/* <div className="avg-rating">{this.renderAvgRating()}</div> */}
                     {reviews}
