@@ -103,7 +103,6 @@ class ReviewIndexItem extends React.Component {
               Delete
             </button>
           </div>
-        
         <br/>
       </div>
     );

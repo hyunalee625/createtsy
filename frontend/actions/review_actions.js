@@ -62,6 +62,7 @@ export const updateReview = (review) => (dispatch) => {
 };
 
 export const deleteReview = (review) => (dispatch) => {
+  debugger
   return ReviewAPIUtil.deleteReview(review).then(
     (review) => dispatch(removeReview(review)),
     (errors) => dispatch(receiveReviewErrors(errors.responseJSON))
