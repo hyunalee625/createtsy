@@ -51,7 +51,11 @@ class Api::ReviewsController < ApplicationController
         @review = Review.find_by(id: params[:id])
         if @review.destroy
             @reviews = Review.where(product_id: params[:product_id])
-            render json: { data: @reviews }
+            # render json: { data: @reviews }
+            respond_to do |format|
+                format.json
+            end
+
         else
             render json: @review.errors.full_messages, status: 422
         end

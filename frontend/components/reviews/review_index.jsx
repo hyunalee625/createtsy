@@ -51,8 +51,8 @@ class ReviewIndex extends React.Component {
         .deleteReview(review).then(reviews => {
             // debugger
             this.setState({
-                reviews: reviews.updatedReviews.data,
-                reviewsLength: reviews.updatedReviews.data.length
+                reviews: Object.values(reviews.updatedReviews),
+                reviewsLength: Object.values(reviews.updatedReviews).length
             });
         });
     }
@@ -80,7 +80,9 @@ class ReviewIndex extends React.Component {
         return (
             <div className="reviews-container">
                 <div className="reviews-sub-container">
-                <div className="reviews-header">Reviews ({this.state.reviewsLength ? this.state.reviewsLength : currentReviewsLength})</div>
+                <div className="reviews-header">
+                Reviews 
+                ({this.state.reviewsLength ? this.state.reviewsLength : currentReviewsLength})</div>
                 <br />
                     {/* <div className="avg-rating">{this.renderAvgRating()}</div> */}
                     {reviews}
