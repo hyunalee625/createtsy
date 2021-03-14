@@ -20,30 +20,30 @@ class ReviewIndex extends React.Component {
         this.props.fetchReviews(this.props.product_id);
     }
 
-    // avgRating() {
-    //     let sum = 0;
+    avgRating() {
+        let sum = 0;
 
-    //     this.props.reviews.forEach((review) => {
-    //         sum += review.rating;
-    //     })
+        this.props.reviews.forEach((review) => {
+            sum += review.rating;
+        })
 
-    //     return Math.ceil(sum / (this.props.reviews.length));
-    //     // return (sum / (this.props.reviews.length));
+        return Math.ceil(sum / (this.props.reviews.length));
+        // return (sum / (this.props.reviews.length));
 
-    // }
+    }
 
-    // renderAvgRating() {
-    //     return (
-    //         <div>
-    //             <Rating
-    //                 className="review-index-rating"
-    //                 emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
-    //                 fullSymbol={<FontAwesomeIcon icon={fullStar} />}
-    //                 initialRating={this.avgRating()}
-    //                 readonly={true}/>
-    //         </div>
-    //     )
-    // }
+    renderAvgRating() {
+        return (
+            <div>
+                <Rating
+                    className="review-index-rating"
+                    emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
+                    fullSymbol={<FontAwesomeIcon icon={fullStar} />}
+                    initialRating={this.avgRating()}
+                    readonly={true}/>
+            </div>
+        )
+    }
 
     handleDelete(review) {
         // debugger
@@ -84,7 +84,7 @@ class ReviewIndex extends React.Component {
                 Reviews 
                 ({this.state.reviewsLength ? this.state.reviewsLength : currentReviewsLength})</div>
                 <br />
-                    {/* <div className="avg-rating">{this.renderAvgRating()}</div> */}
+                    <div className="avg-rating">{this.renderAvgRating()}</div>
                     {reviews}
                 </div>
             </div>
