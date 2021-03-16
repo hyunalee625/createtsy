@@ -28,13 +28,27 @@
 
 }
 
-.cart-index-container {
+.cart-index-container-btm {
     margin-top: 20px;
     background-color: rgb(250,249, 246);
     padding-top: 5vh;
     padding-bottom: 35vh;
     justify-content: center;
 
+}
+
+.cart-index-container-tp {
+    margin-top: 20px;
+    background-color: rgb(250,249, 246);
+    padding-top: 15vh;
+    padding-bottom: 45vh;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.back-to-main {
+      text-decoration: underline;
 }
 
 .cart-index-sub {
