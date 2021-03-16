@@ -14,13 +14,16 @@ class ReviewIndexItem extends React.Component {
 
     this.state = {
       formStatus: false,
-      id: this.props.review.id,
+      // id: this.props.review.id,
       editClick: false,
+      updatedReview: null,
       review: {
-        body: '',
-        product_id: this.props.match.params.productId,
+        id: this.props.review.id,
+        body: this.props.review.body,
+        user_id: this.props.review.user_id,
+        product_id: this.props.review.product_id,
         rating: 0
-    }
+      }
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -32,9 +35,14 @@ class ReviewIndexItem extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    debugger
     this.props
-      .updateReview(this.props.review)
-      .then(() => {this.setState({ editClick: false })})
+      .updateReview(this.state.review)
+      .then((review) => { 
+        debugger
+        this.setState({ editClick: false })
+        
+        })
   }
 
   update(field) {
@@ -112,7 +120,7 @@ class ReviewIndexItem extends React.Component {
           initialRating={review.rating}
           onChange={this.update('rating')}
         />
-        <textarea onChange={this.update('body')} value={review.body}></textarea>
+        <textarea onChange={this.update('body')} defaultValue={review.body}></textarea>
         <button
                 className="review-save"
                 >
