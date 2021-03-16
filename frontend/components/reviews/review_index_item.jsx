@@ -14,14 +14,39 @@ class ReviewIndexItem extends React.Component {
 
     this.state = {
       formStatus: false,
-      id: this.props.review.id
+      id: this.props.review.id,
+      editClick: false,
+      review: {
+        body: '',
+        product_id: this.props.match.params.productId,
+        rating: 0
+    }
     }
 
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleForm = this.handleForm.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
     // this.handleDelete = this.handleDelete.bind(this);
 
   }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props
+      .updateReview(this.props.review)
+      .then(() => {this.setState({ editClick: false })})
+  }
+
+  update(field) {
+        return (e) => {
+            if (field === "rating") {
+                this.setState({ review: {[field]: e} });
+            } else {
+                this.setState({ review: {[field]: e.target.value} });
+            }
+
+        }
+    }
 
   handleForm () {
   this.setState({ formStatus: true });
@@ -31,6 +56,8 @@ class ReviewIndexItem extends React.Component {
     e.preventDefault();
     this.props
       .updateReview(this.props.review) 
+
+    this.setState({ editClick: true })
   } 
 
   // handleDelete(e) {
@@ -41,45 +68,12 @@ class ReviewIndexItem extends React.Component {
   //     .then(() => this.props.history.push(`/products`))
   // }
   
-  editForm(e) {
-      // debugger
-      if (this.state.formStatus && this.props.user_id === e.user_id) {
-          return (
-              <form onSubmit={this.handleSubmit}>
-                  <input
-                    className="input-boxes"
-                    type="text"
-                    value={e.body}
-                  //   onChange={this.update("body")}
-                  />
-              </form>
-          )
-      }
-  };
-
-  // reviewDelete() {
-  //   // debugger
-  //   return (
-  //       <button className="review-delete-btn" 
-  //       onClick={() => this.props.deleteReview(this.props.review._id)
-  //         // .then(() => this.props.history.push("/products/${revew.}"))
-  //       }
-  //       >
-  //         Delete
-  //     </button>
-  //   )
-  // }
 
   
   render () {
     // debugger
     let {review} = this.props;
-    return (
-      <div className="review-index-item-container">
-      <div>
-          <div className="review-user">{review.user}</div>
-          <p className="review-date">{moment($`{review.created_at}`).format("MMMM D, YYYY")} </p>
-        <Rating
+    let currentReview = <div> <Rating
           className="rating"
           emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
           fullSymbol={<FontAwesomeIcon icon={fullStar} />}
@@ -88,14 +82,15 @@ class ReviewIndexItem extends React.Component {
         />
         <p className="review-body">{review.body}</p>
         </div>
-        <div className="review-btns">
-          <button className="review-edit-btn"
-          onClick={this.handleEdit}
-          >
-            Edit
-          </button>
 
-        </div>
+    let editDelete = <div><div className="review-btns">
+            <button className="review-edit-btn"
+            onClick={this.handleEdit}
+            >
+              Edit
+            </button>
+
+          </div>
           <div>
             <button className="review-delete-btn"
             onClick={() => this.props.deleteReview(review)}
@@ -103,6 +98,40 @@ class ReviewIndexItem extends React.Component {
               Delete
             </button>
           </div>
+        </div>
+    
+    if (this.state.editClick === true) {
+      editDelete = null;
+
+      currentReview = 
+      <form onSubmit={this.handleSubmit}>
+        <Rating
+          className="rating"
+          emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
+          fullSymbol={<FontAwesomeIcon icon={fullStar} />}
+          initialRating={review.rating}
+          onChange={this.update('rating')}
+        />
+        <textarea onChange={this.update('body')} value={review.body}></textarea>
+        <button
+                className="review-save"
+                >
+                Save
+        </button>
+      </form>
+
+      
+
+    }
+
+    return (
+      <div className="review-index-item-container">
+      <div>
+          <div className="review-user">{review.user}</div>
+          <p className="review-date">{moment($`{review.created_at}`).format("MMMM D, YYYY")} </p>
+          {currentReview}
+        </div>
+        {editDelete}
         <br/>
       </div>
     );

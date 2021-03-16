@@ -21,7 +21,7 @@ export const createReview = (review) => {
 }
 
 export const updateReview = (review) => {
-  debugger
+  // debugger
   return $.ajax({
     method: "PATCH",
     url: `/api/products/${review.product_id}/reviews/${review.id}`,
