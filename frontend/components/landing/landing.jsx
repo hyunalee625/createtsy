@@ -28,9 +28,9 @@ class Landing extends React.Component {
         <div className="landing-page-container">
           <div className="landing-page-sub">
             <h2 className="landing-page-header">
-              Celebrate everyone who makes you feel loved.
+              Add some delight to your daily routine.
             </h2>
-              <h3 className="landing-page-sub-header">Shop Valentine’s Day</h3>
+              <h3 className="landing-page-sub-header">Shop everyday items.</h3>
               <div className="landing-pics-container">
                 <div className="landing-pics-subcontainer">
                   <div className="landing1-container">

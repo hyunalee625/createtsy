@@ -91,22 +91,22 @@ class ReviewIndexItem extends React.Component {
         <p className="review-body">{review.body}</p>
         </div>
 
-    let editDelete = <div><div className="review-btns">
+    let editDelete = 
+      <div>
+        <div className="review-btns">
             <button className="review-edit-btn"
             onClick={this.handleEdit}
             >
               Edit
             </button>
-
-          </div>
-          <div>
+            
             <button className="review-delete-btn"
             onClick={() => this.props.deleteReview(review)}
             >
               Delete
             </button>
-          </div>
         </div>
+      </div>
     
     if (this.state.editClick === true) {
       editDelete = null;
@@ -120,12 +120,16 @@ class ReviewIndexItem extends React.Component {
           initialRating={review.rating}
           onChange={this.update('rating')}
         />
+        <div className="review-edit-form">
         <textarea onChange={this.update('body')} defaultValue={review.body}></textarea>
-        <button
-                className="review-save"
-                >
-                Save
-        </button>
+        </div>
+        <div>
+          <button
+                  className="review-save-btn"
+                  >
+                  Save
+          </button>
+        </div>
       </form>
 
       
