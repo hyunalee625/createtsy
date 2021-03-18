@@ -29,7 +29,7 @@ class ReviewIndexItem extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleForm = this.handleForm.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
-    // this.handleDelete = this.handleDelete.bind(this);
+    this.handleUpdate = this.handleUpdate.bind(this);
 
   }
 
@@ -46,36 +46,36 @@ class ReviewIndexItem extends React.Component {
   }
 
   update(field) {
+    debugger
         return (e) => {
-            if (field === "rating") {
+            if (field === 'rating') {
                 this.setState({ review: {[field]: e} });
             } else {
                 this.setState({ review: {[field]: e.target.value} });
             }
-
         }
     }
+
 
   handleForm () {
   this.setState({ formStatus: true });
   };
 
   handleEdit(e) {
+    debugger
     e.preventDefault();
-    this.props
-      .updateReview(this.props.review) 
-
+  
     this.setState({ editClick: true })
   } 
 
-  // handleDelete(e) {
-  //   e.preventDefault();
-  //   this.props
-  //     .deleteReview(this.props.review)
-  //     // .then(fetchReviews(this.props.product_id))
-  //     .then(() => this.props.history.push(`/products`))
-  // }
-  
+  handleUpdate(e) {
+    debugger
+    e.preventDefault();
+      this.props
+      .updateReview(this.state.review) 
+
+    this.setState({ editClick: false })
+  }
 
   
   render () {
@@ -91,6 +91,8 @@ class ReviewIndexItem extends React.Component {
         <p className="review-body">{review.body}</p>
         </div>
 
+
+    
     let editDelete = 
       <div>
         <div className="review-btns">
@@ -99,7 +101,7 @@ class ReviewIndexItem extends React.Component {
             >
               Edit
             </button>
-            
+
             <button className="review-delete-btn"
             onClick={() => this.props.deleteReview(review)}
             >
@@ -125,6 +127,7 @@ class ReviewIndexItem extends React.Component {
         </div>
         <div>
           <button
+                  onClick={this.handleUpdate}
                   className="review-save-btn"
                   >
                   Save
@@ -150,47 +153,5 @@ class ReviewIndexItem extends React.Component {
   }
 }
 
-  
-
-// const ReviewIndexItem = ({review}) => {
-//     return (
-//       <div className="review-index-item-container">
-//         <div>
-//           <div className="review-user">{review.user}
-//           </div>
-//         </div>
-//           <p className="review-date">{moment($`{review.created_at}`).format("MMMM D, YYYY")} </p>
-//         <Rating
-//           className="rating"
-//           emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
-//           fullSymbol={<FontAwesomeIcon icon={fullStar} />}
-//           initialRating={review.rating}
-//           readonly={true}
-//         />
-//         <p className="review-body">{review.body}</p>
-//         <div className="review-btns">
-//           <button className="review-edit-btn"
-//           onClick={() => 
-//             this.props
-//               .updateReview(this.props.review.id)
-//               // .then(() => this.props.history.push("/reviews"))
-//               }
-//           >
-//             Edit
-//           </button>
-//           <button className="review-delete-btn" 
-//             onClick={() => 
-//             this.props
-//               .deleteReview(this.props.review.id)
-//               .then(() => this.props.history.push("/reviews"))
-//               }
-//             >
-//               Delete
-//           </button>
-//         </div>
-//         <br/>
-//       </div>
-//     );
-// }
 
 export default withRouter(ReviewIndexItem);

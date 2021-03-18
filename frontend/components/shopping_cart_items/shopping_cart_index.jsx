@@ -45,7 +45,6 @@ class ShoppingCartIndex extends React.Component {
   }
 
   render() {
-    let checkout = this.state.checkout ? "checkout" : "thankyou";
     if (this.totalQuantity() === 0) {
       return (
         <div className="cart-index-container-tp">

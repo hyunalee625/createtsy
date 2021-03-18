@@ -12,6 +12,8 @@ class ReviewForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+
+
   handleSubmit(e) {
     e.preventDefault();
     this.props
@@ -30,6 +32,24 @@ class ReviewForm extends React.Component {
 
         }
     }
+
+    // check_current_user() {
+    //     if (!this.state.user_id) {
+    //         <button
+    //                 className="review-save"
+    //                 onClick={() => alert("Must be logged in!")}
+    //             >
+    //                 Save
+    //         </button>
+    //     } else {
+    //         <button
+    //                 className="review-save"
+    //             >
+    //                 Save
+    //         </button>
+    //     }
+
+    // }
 
 
   render() {
@@ -53,6 +73,7 @@ class ReviewForm extends React.Component {
                     >
                         Save
                     </button>
+                    {/* {this.check_current_user} */}
                 </div>
             </form>
         )
