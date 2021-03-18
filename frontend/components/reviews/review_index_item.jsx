@@ -22,20 +22,19 @@ class ReviewIndexItem extends React.Component {
         body: this.props.review.body,
         user_id: this.props.review.user_id,
         product_id: this.props.review.product_id,
-        rating: 0
+        rating: this.props.review.rating
       }
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleForm = this.handleForm.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
-    this.handleUpdate = this.handleUpdate.bind(this);
 
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    debugger
+    // debugger
     this.props
       .updateReview(this.state.review)
       .then((review) => { 
@@ -46,36 +45,38 @@ class ReviewIndexItem extends React.Component {
   }
 
   update(field) {
-    debugger
-        return (e) => {
-            if (field === 'rating') {
-                this.setState({ review: {[field]: e} });
+    // debugger
+    // const oldReview = this.state.review;
+      return (e) => {
+          if (field === 'rating') {
+              const updatedReview = Object.assign({}, this.state.review, {[field]: e});
+              this.setState({review: updatedReview}, () => console.log(this.state.review));
             } else {
-                this.setState({ review: {[field]: e.target.value} });
+              const updatedReview = Object.assign({}, this.state.review, {[field]: e.target.value});
+              this.setState({review: updatedReview}, () => console.log(this.state.review));
             }
-        }
-    }
-
+      }
+  }
 
   handleForm () {
   this.setState({ formStatus: true });
   };
 
   handleEdit(e) {
-    debugger
+    // debugger
     e.preventDefault();
   
     this.setState({ editClick: true })
   } 
 
-  handleUpdate(e) {
-    debugger
-    e.preventDefault();
-      this.props
-      .updateReview(this.state.review) 
+  // handleUpdate(e) {
+  //   // debugger
+  //   e.preventDefault();
+  //     this.props
+  //     .updateReview(this.state.review) 
 
-    this.setState({ editClick: false })
-  }
+  //   this.setState({ editClick: false })
+  // }
 
   
   render () {
@@ -127,7 +128,6 @@ class ReviewIndexItem extends React.Component {
         </div>
         <div>
           <button
-                  onClick={this.handleUpdate}
                   className="review-save-btn"
                   >
                   Save

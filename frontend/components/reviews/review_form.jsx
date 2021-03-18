@@ -69,7 +69,7 @@ class ReviewForm extends React.Component {
                     </div>
                     <button
                         className="review-save"
-                        onClick={() => alert("Must be logged in!")}
+                        // onClick={() => alert("Must be logged in!")}
                     >
                         Save
                     </button>

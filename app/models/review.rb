@@ -13,7 +13,7 @@
 class Review < ApplicationRecord
     # validates :user_id, :product_id, presence: true
     validates :body, presence: true, length: {maximum: 350}
-    validates :rating, presence: true, inclusion: {in: (0..5)}
+    validates :rating, presence: true, inclusion: {in: (1..5)}
 
     belongs_to :user
     belongs_to :product
