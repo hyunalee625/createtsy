@@ -33,23 +33,23 @@ class ReviewForm extends React.Component {
         }
     }
 
-    // check_current_user() {
-    //     if (!this.state.user_id) {
-    //         <button
-    //                 className="review-save"
-    //                 onClick={() => alert("Must be logged in!")}
-    //             >
-    //                 Save
-    //         </button>
-    //     } else {
-    //         <button
-    //                 className="review-save"
-    //             >
-    //                 Save
-    //         </button>
-    //     }
-
-    // }
+    not_logged_in() {
+        if (!this.props.currentUser.id) {
+            return (
+            <button
+                    className="review-save"
+                    onClick={() => alert("Must be logged in!")}
+                >
+                    Save
+            </button>
+        } else {
+            <button
+                    className="review-save"
+                >
+                    Save
+            </button>
+        }
+    )}
 
 
   render() {
