@@ -22,9 +22,9 @@ function Modal({modal, closeModal}) {
             break;
         case 'checkout':
             component = 
-            <div>
+            <div className="thanks-container">
                 <h3>Thanks for shopping with us!</h3>
-                <Link to="/">Back to main page</Link>
+                <a id="back-to-main" href="/">Back to main page</a>
             </div>;
             break;
         default:

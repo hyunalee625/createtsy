@@ -45,20 +45,20 @@ class ShoppingCartIndexItem extends React.Component {
     );
   }
 
-  emptyCart() {
-    const quantity = this.props.item.quantity;
-    if (quantity === 0) {
-      return (
-        <div>
-          <h2>Your cart is empty.</h2>
-          <a href="/">
-            <h3 className="discover-something">Discover something unique to fill it up</h3>
-          </a>
-        </div>
-      )
-    }
+  // emptyCart() {
+  //   const quantity = this.props.item.quantity;
+  //   if (quantity === 0) {
+  //     return (
+  //       <div>
+  //         <h2>Your cart is empty.</h2>
+  //         <a href="/">
+  //           <h3 className="discover-something">Discover something unique to fill it up</h3>
+  //         </a>
+  //       </div>
+  //     )
+  //   }
 
-  }
+  // }
 
   fullCart() {
     const { item } = this.state;

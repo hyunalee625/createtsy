@@ -33,7 +33,7 @@ const mdp = dispatch => {
         <button
           type="button"
           onClick={() => dispatch(openModal("checkout"))}
-          className="checkout-button"
+          className="checkout"
         > Proceed to checkout
         </button>
       ),

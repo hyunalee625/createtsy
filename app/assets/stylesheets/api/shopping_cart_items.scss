@@ -106,7 +106,7 @@
             .item-transaction {
                 box-shadow: 8px 8px 8px 5px rgb(244, 244, 244);
                 border-radius: 18px !important;
-                height: 40vh;
+                height: 42vh;
                 width: 20vw;
                 display: flex;
                 flex-direction: column;
@@ -165,6 +165,23 @@
         }
     }    
 }
+
+.thanks-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, rgb(229, 133, 129) , rgb(241, 195, 193));
+    height: 375px;
+    width: 475px;
+    border-radius: 5em;
+    text-align: center;
+
+    #back-to-main {
+        text-decoration: underline;
+    }
+}
+
+
 
 
 
