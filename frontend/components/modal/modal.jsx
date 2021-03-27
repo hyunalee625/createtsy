@@ -4,6 +4,7 @@ import { closeModal } from '../../actions/modal_actions';
 import LoginFormContainer from '../session/login_form_container';
 import SignupFormContainer from '../session/signup_form_container';
 import ShoppingCartItemContainer from '../shopping_cart_items/shopping_cart_item_container';
+import {Link} from 'react-router-dom'
 
 
 function Modal({modal, closeModal}) {
@@ -18,6 +19,13 @@ function Modal({modal, closeModal}) {
             break;
         case 'signup':
             component = <SignupFormContainer />;
+            break;
+        case 'checkout':
+            component = 
+            <div>
+                <h3>Thanks for shopping with us!</h3>
+                <Link to="/">Back to main page</Link>
+            </div>;
             break;
         default:
             return null;

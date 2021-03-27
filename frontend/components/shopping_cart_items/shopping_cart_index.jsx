@@ -8,9 +8,8 @@ class ShoppingCartIndex extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      checkout: true
-    }
+    // this.checkOut = this.checkOut.bind(this);
+
   }
 
   componentDidMount() {
@@ -40,9 +39,19 @@ class ShoppingCartIndex extends React.Component {
       return total.toFixed(2);
   }
 
-  changeText() {
-    this.setState({checkout: !this.state.checkout})
-  }
+  // checkOut() {
+
+  //   if (this.props.checkOutForm) {
+  //     return (
+  //       <div>
+  //         Thanks for shopping with us!
+  //         <Link to="/">Back to main page</Link>
+  //       </div>
+  //     )
+  //   }
+    
+  // }
+
 
   render() {
     if (this.totalQuantity() === 0) {
@@ -117,10 +126,9 @@ class ShoppingCartIndex extends React.Component {
                     <span> ${this.totalPrice()}</span>
                   </div>
                   <div className="checkout-btn">
-                    <Link 
-                      to="/">
-                      <button className="checkout" onClick={this.changeText.bind(this)}>Proceed to checkout</button>
-                    </Link>
+
+                      {/* <button className="checkout" onClick={this.checkOut()}>Proceed to checkout</button> */}
+                    <div>{this.props.checkOutForm}</div>
                   </div>
                 </div>
                 </div>

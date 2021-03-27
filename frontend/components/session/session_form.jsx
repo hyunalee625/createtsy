@@ -85,7 +85,6 @@ class SessionForm extends React.Component {
                   <div className="email-input-form">
                     <label>
                       <div className="input-title">Email address</div>
-                      {/* <div className="${}">*</div> */}
                       <input
                         className="info-input-form"
                         type="text"
@@ -113,19 +112,12 @@ class SessionForm extends React.Component {
                       {this.renderErrors()}
                     </div>
                   </div>
-                  {/* </div> */}
-
-                  {/* <div className="forgot-password-button">
-                    <a href="/forgot_password?">Forgot your password?</a>
-                  </div> */}
+ 
                 </div>
                 <button className="session-submit-container" type="submit">
                   Sign in
                 </button>
 
-                {/* <div className="trouble-signing-in-button">
-                  <a href="/trouble-signing-in?">Trouble signing in?</a>
-                </div> */}
               </div>
             </form>
           </div>
