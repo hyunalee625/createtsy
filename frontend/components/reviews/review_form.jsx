@@ -49,7 +49,7 @@ class ReviewForm extends React.Component {
                     Save
             </button>
         }
-    )}
+    }
 
 
   render() {
