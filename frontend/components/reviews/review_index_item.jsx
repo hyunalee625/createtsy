@@ -11,7 +11,7 @@ class ReviewIndexItem extends React.Component {
 
   constructor(props) {
     super(props);
-    debugger
+    // debugger
     this.state = {
       formStatus: false,
       // id: this.props.review.id,
@@ -38,7 +38,7 @@ class ReviewIndexItem extends React.Component {
     this.props
       .updateReview(this.state.review)
       .then((review) => { 
-        debugger
+        // debugger
         this.setState({ editClick: false })
         
         })
@@ -70,7 +70,7 @@ class ReviewIndexItem extends React.Component {
   } 
 
   editDelete() {
-    debugger
+    if (this.state.editClick != true) {
     if (this.props.currentUser === this.props.review.user_id) {
         return (<div>
           <div className="review-btns">
@@ -89,6 +89,7 @@ class ReviewIndexItem extends React.Component {
         </div>
         )
       }
+    }
   }
 
   
@@ -106,30 +107,8 @@ class ReviewIndexItem extends React.Component {
         </div>
 
 
-    // if (this.props.currentUser === review.user_id) {
-    //   let editDelete = 
-    //     <div>
-    //       <div className="review-btns">
-    //           <button className="review-edit-btn"
-    //           onClick={this.handleEdit}
-    //           >
-    //             Edit
-    //           </button>
-
-    //           <button className="review-delete-btn"
-    //           onClick={() => this.props.deleteReview(review)}
-    //           >
-    //             Delete
-    //           </button>
-    //       </div>
-    //     </div>
-    //   } else {
-    //     editDelete = <div></div>;
-    //   }
-
     
     if (this.state.editClick === true) {
-      editDelete = null;
 
       currentReview = 
       <form onSubmit={this.handleSubmit}>
@@ -151,10 +130,7 @@ class ReviewIndexItem extends React.Component {
           </button>
         </div>
       </form>
-
-      
-
-    }
+    } 
 
     return (
       <div className="review-index-item-container">
