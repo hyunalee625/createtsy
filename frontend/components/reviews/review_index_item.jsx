@@ -11,7 +11,7 @@ class ReviewIndexItem extends React.Component {
 
   constructor(props) {
     super(props);
-
+    debugger
     this.state = {
       formStatus: false,
       // id: this.props.review.id,
@@ -29,7 +29,7 @@ class ReviewIndexItem extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleForm = this.handleForm.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
-
+    this.editDelete = this.editDelete.bind(this);
   }
 
   handleSubmit(e) {
@@ -70,28 +70,26 @@ class ReviewIndexItem extends React.Component {
   } 
 
   editDelete() {
-    let editDelete = 
-      <div>
-        <div className="review-btns">
-            <button className="review-edit-btn"
-            onClick={this.handleEdit}
-            >
-              Edit
-            </button>
+    debugger
+    if (this.props.currentUser === this.props.review.user_id) {
+        return (<div>
+          <div className="review-btns">
+              <button className="review-edit-btn"
+              onClick={this.handleEdit}
+              >
+                Edit
+              </button>
 
-            <button className="review-delete-btn"
-            onClick={() => this.props.deleteReview(review)}
-            >
-              Delete
-            </button>
+              <button className="review-delete-btn"
+              onClick={() => this.props.deleteReview(review)}
+              >
+                Delete
+              </button>
+          </div>
         </div>
-      </div>
-
-    if (this.state.review.currentUser === this.state.review.user_id) {
-      {editDelete}
-    }
+        )
+      }
   }
-
 
   
   render () {
@@ -108,23 +106,27 @@ class ReviewIndexItem extends React.Component {
         </div>
 
 
-    
-    // let editDelete = 
-    //   <div>
-    //     <div className="review-btns">
-    //         <button className="review-edit-btn"
-    //         onClick={this.handleEdit}
-    //         >
-    //           Edit
-    //         </button>
+    // if (this.props.currentUser === review.user_id) {
+    //   let editDelete = 
+    //     <div>
+    //       <div className="review-btns">
+    //           <button className="review-edit-btn"
+    //           onClick={this.handleEdit}
+    //           >
+    //             Edit
+    //           </button>
 
-    //         <button className="review-delete-btn"
-    //         onClick={() => this.props.deleteReview(review)}
-    //         >
-    //           Delete
-    //         </button>
+    //           <button className="review-delete-btn"
+    //           onClick={() => this.props.deleteReview(review)}
+    //           >
+    //             Delete
+    //           </button>
+    //       </div>
     //     </div>
-    //   </div>
+    //   } else {
+    //     editDelete = <div></div>;
+    //   }
+
     
     if (this.state.editClick === true) {
       editDelete = null;
@@ -161,8 +163,7 @@ class ReviewIndexItem extends React.Component {
           <p className="review-date">{moment($`{review.created_at}`).format("MMMM D, YYYY")} </p>
           {currentReview}
         </div>
-        {/* {editDelete} */}
-        {this.editDelete}
+        {this.editDelete()}
         <br/>
       </div>
     );

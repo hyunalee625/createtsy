@@ -4,7 +4,7 @@ import { createReview } from '../../actions/review_actions';
 import ReviewForm from './review_form'
 
 const msp = (state, ownProps) => {
-    debugger
+    // debugger
     const review = {
         body: '',
         user_id: state.session.id,
@@ -13,7 +13,7 @@ const msp = (state, ownProps) => {
         rating: 0
     }
 
-    debugger
+    // debugger
     return {
         review,
         reviews: state.entities.reviews,

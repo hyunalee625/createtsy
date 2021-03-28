@@ -39,12 +39,12 @@ class ReviewIndex extends React.Component {
         let currentReviewsLength = this.props.reviews.length;
 
         const reviews = currentReviews.map((review) => {
-            
+            debugger
             return(
                     <ReviewIndexItem 
                         key={review.id}
                         review={review}
-                        // productId={review.product_id}
+                        currentUser={this.props.user_id}
                         updateReview={this.props.updateReview}
                         deleteReview={this.handleDelete}
                         fetchReviews={this.props.fetchReviews}
