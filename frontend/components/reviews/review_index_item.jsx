@@ -69,14 +69,29 @@ class ReviewIndexItem extends React.Component {
     this.setState({ editClick: true })
   } 
 
-  // handleUpdate(e) {
-  //   // debugger
-  //   e.preventDefault();
-  //     this.props
-  //     .updateReview(this.state.review) 
+  editDelete() {
+    let editDelete = 
+      <div>
+        <div className="review-btns">
+            <button className="review-edit-btn"
+            onClick={this.handleEdit}
+            >
+              Edit
+            </button>
 
-  //   this.setState({ editClick: false })
-  // }
+            <button className="review-delete-btn"
+            onClick={() => this.props.deleteReview(review)}
+            >
+              Delete
+            </button>
+        </div>
+      </div>
+
+    if (this.state.review.currentUser === this.state.review.user_id) {
+      {editDelete}
+    }
+  }
+
 
   
   render () {
@@ -94,22 +109,22 @@ class ReviewIndexItem extends React.Component {
 
 
     
-    let editDelete = 
-      <div>
-        <div className="review-btns">
-            <button className="review-edit-btn"
-            onClick={this.handleEdit}
-            >
-              Edit
-            </button>
+    // let editDelete = 
+    //   <div>
+    //     <div className="review-btns">
+    //         <button className="review-edit-btn"
+    //         onClick={this.handleEdit}
+    //         >
+    //           Edit
+    //         </button>
 
-            <button className="review-delete-btn"
-            onClick={() => this.props.deleteReview(review)}
-            >
-              Delete
-            </button>
-        </div>
-      </div>
+    //         <button className="review-delete-btn"
+    //         onClick={() => this.props.deleteReview(review)}
+    //         >
+    //           Delete
+    //         </button>
+    //     </div>
+    //   </div>
     
     if (this.state.editClick === true) {
       editDelete = null;
@@ -146,7 +161,8 @@ class ReviewIndexItem extends React.Component {
           <p className="review-date">{moment($`{review.created_at}`).format("MMMM D, YYYY")} </p>
           {currentReview}
         </div>
-        {editDelete}
+        {/* {editDelete} */}
+        {this.editDelete}
         <br/>
       </div>
     );

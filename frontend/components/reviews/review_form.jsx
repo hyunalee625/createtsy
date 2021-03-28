@@ -33,21 +33,22 @@ class ReviewForm extends React.Component {
         }
     }
 
-    not_logged_in() {
-        if (!this.props.currentUser.id) {
-            debugger
-            return (
-            <div>
-                <button
-                        className="review-save"
-                        onClick={() => alert("Must be logged in!")}
-                    >
-                        Save
-                </button>
-            </div>
-            )
-        } 
-    }
+
+    // not_logged_in() {
+    //     if (!this.state.user_id) {
+    //         debugger
+    //         return (
+    //         <div>
+    //             <button
+    //                     className="review-save"
+    //                     // onClick={() => alert("Must be logged in!")}
+    //                 >
+    //                     Save
+    //             </button>
+    //         </div>
+    //         )
+    //     } 
+    // }
 
 
   render() {
@@ -65,13 +66,13 @@ class ReviewForm extends React.Component {
                     <div>
                         <textarea onChange={this.update('body')} value={this.state.body}></textarea>
                     </div>
-                    {/* <button
+                    <button
                         className="review-save"
                         // onClick={() => alert("Must be logged in!")}
                     >
                         Save
-                    </button> */}
-                    <div>{this.not_logged_in}</div>
+                    </button>
+                    {/* <div>{this.not_logged_in()}</div> */}
                 </div>
             </form>
         )

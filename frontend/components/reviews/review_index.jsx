@@ -20,30 +20,6 @@ class ReviewIndex extends React.Component {
         this.props.fetchReviews(this.props.product_id);
     }
 
-    // avgRating() {
-    //     let sum = 0;
-
-    //     this.props.reviews.forEach((review) => {
-    //         sum += review.rating;
-    //     })
-
-    //     return Math.ceil(sum / (this.props.reviews.length));
-    //     // return (sum / (this.props.reviews.length));
-
-    // }
-
-    // renderAvgRating() {
-    //     return (
-    //         <div>
-    //             <Rating
-    //                 className="review-index-rating"
-    //                 emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
-    //                 fullSymbol={<FontAwesomeIcon icon={fullStar} />}
-    //                 initialRating={this.avgRating()}
-    //                 readonly={true}/>
-    //         </div>
-    //     )
-    // }
 
     handleDelete(review) {
         // debugger
