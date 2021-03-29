@@ -43,7 +43,7 @@ class SessionForm extends React.Component {
     }
 
     componentWillUnmount() {
-      debugger
+      // debugger
         this.props.clearErrors();
     }
 

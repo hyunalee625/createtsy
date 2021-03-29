@@ -16,8 +16,7 @@ const msp = (state, ownProps) => {
     return {
         review,
         reviews: state.entities.reviews,
-        user_id: state.session.id,
-        currentUser: state.session.user,
+        user_id: state.session.id, // currentUser
         product_id: state.entities.products.id,
     }
 
@@ -25,8 +24,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => {
     return {
-        createReview: review => dispatch(createReview(review)),
-
+        createReview: review => dispatch(createReview(review))
     }
 }
 

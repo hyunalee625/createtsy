@@ -59,7 +59,7 @@ export const signup = user => dispatch => {
         )
 }
 
-debugger
+// debugger
 export const clearErrors = () => dispatch => dispatch(removeErrors())
 
 

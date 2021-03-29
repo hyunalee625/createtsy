@@ -39,18 +39,6 @@ class ShoppingCartIndex extends React.Component {
       return total.toFixed(2);
   }
 
-  // checkOut() {
-
-  //   if (this.props.checkOutForm) {
-  //     return (
-  //       <div>
-  //         Thanks for shopping with us!
-  //         <Link to="/">Back to main page</Link>
-  //       </div>
-  //     )
-  //   }
-    
-  // }
 
 
   render() {

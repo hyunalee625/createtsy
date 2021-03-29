@@ -8,13 +8,6 @@ import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //     review: {
-    //         id: this.props.review.id,
-    //         user_id: this.props.review.user_id,
-    //         product_id: this.props.review.product_id,
-    //     },
-    // };
 
     this.state = this.props.review
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -73,10 +66,20 @@ class ReviewForm extends React.Component {
 
 
   render() {
-    // if (this.props.currentUser != this.props.review.user_id) {
-        // debugger
+    //   debugger
+      let needForm = true;
 
-      return (
+    //   debugger
+    Object.values(this.props.reviews).forEach ((review) => {
+        // debugger
+        if ((review.user_id === this.props.user_id) || !this.props.user_id) {
+            needForm = false;
+        }
+    }, this)
+
+        // debugger
+        if (needForm == true) {
+        return (
             <form onSubmit={this.handleSubmit}>
                 <div className="review-form">
                     <em>Write a Review</em>
@@ -99,8 +102,10 @@ class ReviewForm extends React.Component {
                     {/* <div>{this.not_logged_in()}</div> */}
                 </div>
             </form>
-        )}
-    // } 
+        )} else {
+        return (<div></div>)
+        }
+    }
 }
 
 export default withRouter(ReviewForm);
