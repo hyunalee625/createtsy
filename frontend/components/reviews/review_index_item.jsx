@@ -11,7 +11,6 @@ class ReviewIndexItem extends React.Component {
 
   constructor(props) {
     super(props);
-    // debugger
     this.state = {
       formStatus: false,
       // id: this.props.review.id,
@@ -27,49 +26,48 @@ class ReviewIndexItem extends React.Component {
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleForm = this.handleForm.bind(this);
+    // this.handleForm = this.handleForm.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
     this.editDelete = this.editDelete.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    // debugger
+
     this.props
       .updateReview(this.state.review)
-      .then((review) => { 
-        // debugger
-        this.setState({ editClick: false })
-        
+      .then((review) => {this.setState({ editClick: false })
         })
   }
 
   update(field) {
-    // debugger
-    // const oldReview = this.state.review;
+
       return (e) => {
           if (field === 'rating') {
               const updatedReview = Object.assign({}, this.state.review, {[field]: e});
-              this.setState({review: updatedReview}, () => console.log(this.state.review));
+              // this.setState({review: updatedReview}, () => console.log(this.state.review));
+              this.setState({review: updatedReview})
             } else {
               const updatedReview = Object.assign({}, this.state.review, {[field]: e.target.value});
-              this.setState({review: updatedReview}, () => console.log(this.state.review));
+              // this.setState({review: updatedReview}, () => console.log(this.state.review));
+              this.setState({review: updatedReview});
+
             }
       }
   }
 
-  handleForm () {
-  this.setState({ formStatus: true });
-  };
+  // handleForm () {
+  // this.setState({ formStatus: true });
+  // };
 
   handleEdit(e) {
-    // debugger
     e.preventDefault();
   
     this.setState({ editClick: true })
   } 
 
   editDelete() {
+    
     if (this.state.editClick != true) {
     if (this.props.currentUser === this.props.review.user_id) {
         return (<div>
@@ -81,7 +79,7 @@ class ReviewIndexItem extends React.Component {
               </button>
 
               <button className="review-delete-btn"
-              onClick={() => this.props.deleteReview(review)}
+              onClick={() => this.props.deleteReview(this.props.review)}
               >
                 Delete
               </button>
@@ -94,7 +92,6 @@ class ReviewIndexItem extends React.Component {
 
   
   render () {
-    // debugger
     let {review} = this.props;
     let currentReview = <div> <Rating
           className="rating"

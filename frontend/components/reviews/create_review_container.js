@@ -8,7 +8,6 @@ const msp = (state, ownProps) => {
     const review = {
         body: '',
         user_id: state.session.id,
-        currentUser: state.session.user,
         product_id: ownProps.match.params.productId,
         rating: 0
     }
@@ -17,8 +16,8 @@ const msp = (state, ownProps) => {
     return {
         review,
         reviews: state.entities.reviews,
-        // user_id: state.session.id,
-        currentUser: state.session.user,
+        user_id: state.session.id,
+        // currentUser: state.session.user,
         product_id: state.entities.products.id,
     }
 

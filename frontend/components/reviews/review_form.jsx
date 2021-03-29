@@ -8,7 +8,13 @@ import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.props.review;
+    this.state = {
+        review: this.props.review,
+        // reviews,
+        showForm: true
+    };
+
+    // this.state = this.props.review
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -16,9 +22,11 @@ class ReviewForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    
     this.props
       .createReview(this.state)
     .then(() => {this.setState({ 'body': "" })
+
     });
   }
 
@@ -34,24 +42,38 @@ class ReviewForm extends React.Component {
     }
 
 
-    // not_logged_in() {
-    //     if (!this.state.user_id) {
-    //         debugger
+    // new_review_form() {
+    //     if (this.props.currentUser != this.props.user_id) {
     //         return (
-    //         <div>
-    //             <button
+    //         <form onSubmit={this.handleSubmit}>
+    //             <div className="review-form">
+    //                 <em>Write a Review</em>
+    //                 <br/>
+    //                 <Rating
+    //                     emptySymbol={<FontAwesomeIcon icon={emptyStar} />}
+    //                     fullSymbol={<FontAwesomeIcon icon={fullStar} />}
+    //                     initialRating={this.state.rating}
+    //                     onChange={this.update('rating')}
+    //                     />
+    //                 <div>
+    //                     <textarea onChange={this.update('body')} value={this.state.body}></textarea>
+    //                 </div>
+    //                 <button
     //                     className="review-save"
     //                     // onClick={() => alert("Must be logged in!")}
     //                 >
     //                     Save
-    //             </button>
-    //         </div>
-    //         )
-    //     } 
+    //                 </button>
+    //             </div>
+    //         </form>
+    //     )}
     // }
 
 
   render() {
+    if (this.props.currentUser != this.props.review.user_id) {
+        debugger
+
       return (
             <form onSubmit={this.handleSubmit}>
                 <div className="review-form">
@@ -75,7 +97,7 @@ class ReviewForm extends React.Component {
                     {/* <div>{this.not_logged_in()}</div> */}
                 </div>
             </form>
-        )
+        )}
     } 
 }
 
