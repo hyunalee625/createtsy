@@ -9,9 +9,11 @@ class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        review: this.props.review,
-        // reviews,
-        showForm: true
+        review: {
+            id: this.props.review.id,
+            user_id: this.props.review.user_id,
+            product_id: this.props.review.product_id,
+        },
     };
 
     // this.state = this.props.review

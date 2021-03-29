@@ -70,6 +70,7 @@ class ReviewIndexItem extends React.Component {
     
     if (this.state.editClick != true) {
     if (this.props.currentUser === this.props.review.user_id) {
+      // debugger
         return (<div>
           <div className="review-btns">
               <button className="review-edit-btn"
