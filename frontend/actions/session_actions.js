@@ -28,6 +28,7 @@ export const receiveErrors = errors => {   // receives an array
 };
 
 export const removeErrors = () => {
+    debugger
     return {
         type: CLEAR_ERRORS,
         errors: []
@@ -58,6 +59,7 @@ export const signup = user => dispatch => {
         )
 }
 
+debugger
 export const clearErrors = () => dispatch => dispatch(removeErrors())
 
 

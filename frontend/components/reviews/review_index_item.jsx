@@ -131,10 +131,11 @@ class ReviewIndexItem extends React.Component {
     } 
 
     return (
+      
       <div className="review-index-item-container">
       <div>
           <div className="review-user">{review.user}</div>
-          <p className="review-date">{moment($`{review.created_at}`).format("MMMM D, YYYY")} </p>
+          <p className="review-date">{moment($`{review.dateToFormat}`).format("MMMM D, YYYY")} </p>
           {currentReview}
         </div>
         {this.editDelete()}

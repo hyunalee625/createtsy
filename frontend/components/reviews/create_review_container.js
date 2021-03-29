@@ -17,7 +17,7 @@ const msp = (state, ownProps) => {
         review,
         reviews: state.entities.reviews,
         user_id: state.session.id,
-        // currentUser: state.session.user,
+        currentUser: state.session.user,
         product_id: state.entities.products.id,
     }
 
