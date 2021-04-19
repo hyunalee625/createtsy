@@ -1,3 +1,0 @@
-schema @sdl(files: ["launch/launch.graphql"]) {
-  query: Query
-}
