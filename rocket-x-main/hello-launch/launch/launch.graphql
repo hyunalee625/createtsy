@@ -1,0 +1,11 @@
+type Launch {
+  id: ID!
+  rocket: 
+  date_utc: String!
+  date_local: String!
+}
+
+type Query {
+  launchById(id: ID!): Launch
+    @rest(endpoint: "https://api.spacexdata.com/v4/launches/past")
+}
